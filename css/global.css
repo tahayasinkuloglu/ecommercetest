@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.customFooter a {
+  opacity: 80%;
+  font-size: 1.125rem;
+}
+
+.customFooter a:hover {
+  opacity: 100%;
+}
