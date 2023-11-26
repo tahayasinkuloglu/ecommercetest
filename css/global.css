@@ -17,7 +17,3 @@
 .manLink:hover ~ div .manContainer {
   display: flex;
 }
-
-.celeste:hover > .meleste {
-  display: flex !important;
-}
