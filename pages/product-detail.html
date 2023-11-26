@@ -38,8 +38,8 @@
               />
               <i class="fa-solid fa-magnifying-glass absolute px-2 text-xl"></i>
             </div>
-            <a href="index.html">
-              <img src="/assets/logo.png" alt="" />
+            <a href="../index.html">
+              <img src="/assets/logo.png" />
             </a>
             <div class="flex justify-end items-center gap-10 w-1/3 text-2xl">
               <a href="#">
@@ -563,7 +563,7 @@
       </header>
       <section class="container mx-auto">
         <article class="w-full flex my-10 gap-20">
-          <div class="w-1/2 object-cover z-50" id="img">
+          <div class="w-1/2 object-cover z-50 h-max" id="img">
             <img src="../assets/nike-3.webp" class="rounded-2xl" />
           </div>
           <div class="w-1/2 flex flex-col gap-5 justify-between">
@@ -662,9 +662,10 @@
               <a
                 href="#"
                 id="descHeader"
-                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl"
+                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl flex justify-between items-center"
               >
                 <h3>ÜRÜN ÖZELLİKLERİ</h3>
+                <i class="fa-solid fa-plus pr-3 pb-1"></i>
               </a>
               <p
                 id="desc"
@@ -689,9 +690,10 @@
               <a
                 href="#"
                 id="deliveryHeader"
-                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl"
+                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl flex justify-between items-center"
               >
                 <h3>KARGO & İADE KOŞULLARI</h3>
+                <i class="fa-solid fa-plus pr-3 pb-1"></i>
               </a>
               <p
                 id="delivery"
@@ -710,13 +712,14 @@
               <a
                 href="#"
                 id="sizeHeader"
-                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl"
+                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl flex justify-between items-center"
               >
                 <h3>NUMARA / BEDEN NASIL ÖLÇÜLÜR?</h3>
+                <i class="fa-solid fa-plus pr-3 pb-1"></i>
               </a>
               <p
                 id="size"
-                class="text-lg font-[Roboto] px-2 h-0 overflow-hidden pt-3"
+                class="text-lg font-[Roboto] px-2 h-10 overflow-hidden pt-3 opacity-0"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                 quia, sapiente recusandae dolorem error quas doloribus nostrum!
@@ -927,7 +930,7 @@
         </article>
       </section>
       <footer>
-        <article class="flex flex-col gap-5">
+        <article class="flex flex-col gap-5 mt-20">
           <div
             class="xl:container mx-auto flex max-lg:flex-col max-lg:text-center max-lg:justify-center max-lg:items-center max-lg:gap-6 justify-evenly w-full items-start"
           >
@@ -977,7 +980,6 @@
       </footer>
     </main>
     <script src="../js/global.js"></script>
-    <script src="../js/vanilla-tilt.js"></script>
     <script>
       const options = {
         zoomWidth: 900,

@@ -9,6 +9,7 @@ const deliveryHeader = document.getElementById("deliveryHeader");
 const delivery = document.getElementById("delivery");
 const sizeHeader = document.getElementById("sizeHeader");
 const size = document.getElementById("size");
+const plus = document.querySelectorAll(".fa-plus");
 
 if (descHeader) {
   descHeader.addEventListener("click", (e) => {
@@ -28,6 +29,7 @@ if (sizeHeader) {
   sizeHeader.addEventListener("click", (e) => {
     e.preventDefault();
     size.classList.toggle("h-full");
+    size.classList.toggle("opacity-100");
   });
 }
 
@@ -71,9 +73,3 @@ if (shop) {
     }
   });
 }
-
-const re = document.getElementById("re");
-
-re.addEventListener("click", (e) => {
-  e.preventDefault();
-});
