@@ -28,9 +28,9 @@
   <body>
     <main>
       <header>
-        <nav class="container mx-auto flex flex-col pt-5">
+        <nav class="xl:container mx-auto flex flex-col pt-5 px-5 md:px-10">
           <div class="flex items-center justify-between h-full w-full">
-            <div class="relative flex items-center w-1/3">
+            <div class="relative flex items-center w-full">
               <input
                 type="text"
                 class="border-2 border-black pl-8 pr-2 py-2 text-xl w-2/3"
@@ -38,10 +38,10 @@
               />
               <i class="fa-solid fa-magnifying-glass absolute px-2 text-xl"></i>
             </div>
-            <a href="../index.html">
+            <a href="../index.html" class="w-full flex justify-center">
               <img src="/assets/logo.png" />
             </a>
-            <div class="flex justify-end items-center gap-10 w-1/3 text-2xl">
+            <div class="flex justify-end items-center gap-10 w-full text-2xl">
               <a href="#">
                 <i class="fa-solid fa-cart-shopping"></i>
               </a>
@@ -54,22 +54,32 @@
             </div>
           </div>
           <div class="flex flex-col pt-5">
-            <div class="flex text-2xl text-center justify-center w-1/2 mx-auto">
-              <a href="#" class="manLink w-full hover:bg-gray-300">ERKEK</a>
-              <a href="#" class="women w-full hover:bg-gray-300">KADIN</a>
-              <a href="#" class="kids w-full hover:bg-gray-300">ÇOCUK</a>
-              <a href="#" class="special w-full hover:bg-gray-300"
-                >ÖZEL FIRSAT</a
-              >
-              <a href="#" class="newSeason w-full hover:bg-gray-300"
-                >YENİ SEZON</a
-              >
-              <a href="#" class="popular w-full hover:bg-gray-300"
-                >EN SEVİLEN</a
-              >
-              <a href="#" class="spor w-full hover:bg-gray-300">SPOR</a>
+            <div
+              class="flex text-2xl justify-center gap-10 text-center w-1/2 mx-auto"
+            >
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">ERKEK</p>
+              </a>
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">KADIN</p>
+              </a>
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">ÇOCUK</p>
+              </a>
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">ÖZEL FIRSAT</p>
+              </a>
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">YENİ SEZON</p>
+              </a>
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">EN SEVİLEN</p>
+              </a>
+              <a href="#" class="w-full hover:bg-gray-300">
+                <p class="w-max mx-auto">SPOR</p>
+              </a>
             </div>
-            <div class="hidden manContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">ÖNE ÇIKANLAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100"
@@ -140,7 +150,7 @@
                 <a href="#" class="opacity-60 hover:opacity-100">GOLF</a>
               </div>
             </div>
-            <div class="hidden womenContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">ÖNE ÇIKANLAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100"
@@ -209,7 +219,7 @@
                 <a href="#" class="opacity-60 hover:opacity-100">ÇORAP</a>
               </div>
             </div>
-            <div class="hidden kidsContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">AKSESUAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100">GÖZLÜK</a>
@@ -278,7 +288,7 @@
                 >
               </div>
             </div>
-            <div class="hidden specialContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">ÖNE ÇIKANLAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100"
@@ -349,7 +359,7 @@
                 <a href="#" class="opacity-60 hover:opacity-100">GOLF</a>
               </div>
             </div>
-            <div class="hidden newSeasonContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">ÖNE ÇIKANLAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100"
@@ -420,7 +430,7 @@
                 <a href="#" class="opacity-60 hover:opacity-100">GOLF</a>
               </div>
             </div>
-            <div class="hidden popularContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">ÖNE ÇIKANLAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100"
@@ -489,7 +499,7 @@
                 <a href="#" class="opacity-60 hover:opacity-100">ÇORAP</a>
               </div>
             </div>
-            <div class="hidden sporContainer justify-center w-2/3 mx-auto">
+            <div class="hidden justify-center w-2/3 mx-auto">
               <div class="flex flex-col text-xl w-full">
                 <h2 class="text-lg mb-2">AKSESUAR</h2>
                 <a href="#" class="opacity-60 hover:opacity-100">GÖZLÜK</a>
@@ -561,12 +571,12 @@
           </div>
         </nav>
       </header>
-      <section class="container mx-auto">
-        <article class="w-full flex my-10 gap-20">
-          <div class="w-1/2 object-cover z-50 h-max" id="img">
-            <img src="../assets/nike-3.webp" class="rounded-2xl" />
+      <section class="2xl:container mx-auto px-5 md:px-10">
+        <article class="w-full flex my-10 gap-10 xl:gap-20 max-lg:flex-col">
+          <div class="w-full xl:w-1/2">
+            <img src="../assets/nike-3.webp" class="rounded-2xl w-full" />
           </div>
-          <div class="w-1/2 flex flex-col gap-5 justify-between">
+          <div class="w-full xl:w-1/2 flex flex-col gap-5 justify-between">
             <h1 class="text-5xl">NIKE COURT VISION</h1>
             <div class="flex items-center">
               <p class="text-3xl">60$</p>
@@ -581,7 +591,7 @@
             </div>
             <div class="flex flex-col gap-2">
               <h2 class="text-2xl">NUMARA / BEDEN</h2>
-              <div class="flex gap-3">
+              <div class="flex gap-3 max-xl:flex-wrap">
                 <div>
                   <input
                     type="button"
@@ -641,21 +651,25 @@
               </div>
               <p>TAHMİNİ TESLİMAT: 28 KASIM</p>
             </div>
-            <div class="flex justify-between gap-6">
+            <div
+              class="flex justify-between gap-6 xl:flex-row flex-col max-lg:my-5"
+            >
               <button
-                class="w-2/5 bg-black text-white px-5 py-2 pt-3 text-2xl rounded-2xl hover:bg-opacity-70"
+                class="w-full xl:w-1/3 bg-black text-white px-5 py-2 pt-3 rounded-2xl hover:bg-opacity-70"
               >
-                SEPETE EKLE
+                <p class="text-[clamp(1.4rem,1.5vw,1.5rem)]">SEPETE EKLE</p>
               </button>
               <button
-                class="w-2/5 bg-orange-600 bg-opacity-80 text-white px-5 py-2 pt-3 text-2xl rounded-2xl hover:bg-opacity-70"
+                class="w-full xl:w-1/3 bg-orange-600 bg-opacity-80 text-white text-2xl px-5 py-2 pt-3 rounded-2xl hover:bg-opacity-70"
               >
-                HEMEN SATIN AL
+                <p class="text-[clamp(1.4rem,1.5vw,1.5rem)]">HEMEN SATIN AL</p>
               </button>
               <button
-                class="w-2/5 border-2 border-black border-opacity-20 text-black px-5 py-2 text-2xl rounded-2xl hover:border-opacity-100"
+                class="w-full xl:w-1/3 border-2 border-black border-opacity-20 text-2xl text-black px-5 py-2 rounded-2xl hover:border-opacity-100"
               >
-                FAVORİLERİME EKLE
+                <p class="text-[clamp(1.3rem,1.5vw,1.5rem)]">
+                  FAVORİLERİME EKLE
+                </p>
               </button>
             </div>
             <div class="flex flex-col">
@@ -719,7 +733,7 @@
               </a>
               <p
                 id="size"
-                class="text-lg font-[Roboto] px-2 h-10 overflow-hidden pt-3 opacity-0"
+                class="text-lg font-[Roboto] px-2 h-5 overflow-hidden pt-3 opacity-0"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                 quia, sapiente recusandae dolorem error quas doloribus nostrum!
@@ -735,38 +749,50 @@
             </div>
             <div class="flex flex-wrap gap-4">
               <div
-                class="w-[calc(50%-16px)] bg-[#FEF2F2] p-3 rounded-xl text-lg"
+                class="w-[calc(50%-16px)] bg-[#FEF2F2] p-3 rounded-xl text-base md:text-lg"
               >
-                <i class="fa-solid fa-truck-fast text-xl"></i>
-                <p class="font-[Roboto] font-semibold">Ücretsiz Kargo</p>
-                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                <i class="fa-solid fa-truck-fast text-base md:text-xl"></i>
+                <p class="font-[Roboto] font-semibold max-md:text-sm">
+                  Ücretsiz Kargo
+                </p>
+                <span
+                  class="font-[Roboto] text-sm md:text-base text-opacity-70 text-black"
                   >40$ ve üzeri yapacağınız siparişlerde kargo ücretsiz.</span
                 >
               </div>
               <div
                 class="w-[calc(50%-16px)] bg-[#F0F9FF] p-3 rounded-xl text-xl"
               >
-                <i class="fa-solid fa-dolly text-xl"></i>
-                <p class="font-[Roboto] font-semibold">Kolay İade</p>
-                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                <i class="fa-solid fa-dolly text-base md:text-xl"></i>
+                <p class="font-[Roboto] font-semibold max-md:text-sm">
+                  Kolay İade
+                </p>
+                <span
+                  class="font-[Roboto] text-sm md:text-base text-opacity-70 text-black"
                   >30 gün içerisinde sorunsuz bir şekilde ücretsiz iade.</span
                 >
               </div>
               <div
                 class="w-[calc(50%-16px)] bg-[#F0FDF4] p-3 rounded-xl text-xl"
               >
-                <i class="fa-solid fa-globe text-xl"></i>
-                <p class="font-[Roboto] font-semibold">Her Yere Teslimat</p>
-                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                <i class="fa-solid fa-globe text-base md:text-xl"></i>
+                <p class="font-[Roboto] font-semibold max-md:text-sm">
+                  Her Yere Teslimat
+                </p>
+                <span
+                  class="font-[Roboto] text-sm md:text-base text-opacity-70 text-black"
                   >Mevcut tüm bölgelere sorunsuz teslimat sağlıyoruz.</span
                 >
               </div>
               <div
                 class="w-[calc(50%-16px)] bg-[#FFFBEB] p-3 rounded-xl text-xl"
               >
-                <i class="fa-solid fa-rotate-left text-xl"></i>
-                <p class="font-[Roboto] font-semibold">Geri Ödeme Politikası</p>
-                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                <i class="fa-solid fa-rotate-left text-base md:text-xl"></i>
+                <p class="font-[Roboto] font-semibold max-md:text-sm">
+                  Geri Ödeme Politikası
+                </p>
+                <span
+                  class="font-[Roboto] text-sm md:text-base text-opacity-70 text-black"
                   >İptal edilen ürünlerin ücreti 30 gün içerisinde geri
                   ödenir.</span
                 >
@@ -776,7 +802,7 @@
         </article>
       </section>
       <section
-        class="container mx-auto border-t-2 border-black border-opacity-20"
+        class="2xl:container mx-auto border-t-2 border-black border-opacity-20 px-5 md:px-10"
       >
         <article class="w-full flex flex-col py-10 gap-10">
           <div class="flex text-2xl gap-4 items-center">
@@ -793,7 +819,7 @@
             </div>
           </div>
           <div class="w-full flex gap-20 flex-wrap">
-            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+            <div class="flex flex-col gap-3 w-full lg:w-[calc(50%-80px)]">
               <div class="flex items-center gap-3">
                 <img
                   src="../assets/user.jpg"
@@ -825,7 +851,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+            <div class="flex flex-col gap-3 w-full lg:w-[calc(50%-80px)]">
               <div class="flex items-center gap-3">
                 <img
                   src="../assets/user.jpg"
@@ -853,7 +879,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+            <div class="flex flex-col gap-3 w-full lg:w-[calc(50%-80px)]">
               <div class="flex items-center gap-3">
                 <img
                   src="../assets/user.jpg"
@@ -891,7 +917,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+            <div class="flex flex-col gap-3 w-full lg:w-[calc(50%-80px)]">
               <div class="flex items-center gap-3">
                 <img
                   src="../assets/user.jpg"
@@ -923,16 +949,18 @@
             </div>
           </div>
           <button
-            class="text-3xl border-2 border-black py-2 pt-3 rounded-2xl w-1/2 mx-auto mt-10 hover:text-white hover:bg-black duration-150"
+            class="text-2xl md:text-3xl border-2 border-black py-2 pt-3 rounded-2xl w-full md:w-1/2 mx-auto mt-10 hover:text-white hover:bg-black duration-150"
           >
             DAHA FAZLA YORUM GÖSTER
           </button>
         </article>
       </section>
       <footer>
-        <article class="flex flex-col gap-5 mt-20">
+        <article
+          class="2xl:container mx-auto flex flex-col gap-5 mt-20 px-5 md:px-10"
+        >
           <div
-            class="xl:container mx-auto flex max-lg:flex-col max-lg:text-center max-lg:justify-center max-lg:items-center max-lg:gap-6 justify-evenly w-full items-start"
+            class="flex max-lg:flex-col max-lg:text-center max-lg:justify-center max-lg:items-center max-lg:gap-6 justify-evenly w-full items-start"
           >
             <div class="flex flex-col customFooter">
               <p class="text-xl mb-2">ALIŞVERİŞ VE DETAYLI BİLGİ</p>
@@ -982,7 +1010,7 @@
     <script src="../js/global.js"></script>
     <script>
       const options = {
-        zoomWidth: 900,
+        zoomWidth: 500,
         offset: { vertical: 0, horizontal: 10 },
         scale: 1,
       };
