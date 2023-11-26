@@ -3,24 +3,49 @@ const navMenu = document.getElementById("navMenu");
 const navCon = document.getElementById("navCon");
 const shop = document.getElementById("shop");
 const shopMenu = document.getElementById("shopMenu");
+const descHeader = document.getElementById("descHeader");
+const desc = document.getElementById("desc");
+const deliveryHeader = document.getElementById("deliveryHeader");
+const delivery = document.getElementById("delivery");
+const sizeHeader = document.getElementById("sizeHeader");
+const size = document.getElementById("size");
+
+if (descHeader) {
+  descHeader.addEventListener("click", (e) => {
+    e.preventDefault();
+    desc.classList.toggle("h-full");
+  });
+}
+
+if (deliveryHeader) {
+  deliveryHeader.addEventListener("click", (e) => {
+    e.preventDefault();
+    delivery.classList.toggle("h-full");
+  });
+}
+
+if (sizeHeader) {
+  sizeHeader.addEventListener("click", (e) => {
+    e.preventDefault();
+    size.classList.toggle("h-full");
+  });
+}
 
 if (navOpen) {
   navOpen.addEventListener("click", () => {
-    if (navMenu.classList.contains("hidden")) {
-      navMenu.classList.remove("hidden");
-      navMenu.classList.add("flex");
-      navCon.classList.add("bg-white");
+    if (navMenu.classList.contains("-left-full")) {
+      navMenu.classList.remove("-left-full");
       navOpen.classList.remove("fa-bars");
-      navOpen.classList.add("fa-xmark");
-      shopMenu.classList.remove("flex");
-      shopMenu.classList.add("hidden");
-      shop.classList.add("fa-bag-shopping");
       shop.classList.remove("fa-xmark");
+      navMenu.classList.add("left-0");
+      navOpen.classList.add("fa-xmark");
+      shopMenu.classList.add("-right-full");
+      shopMenu.classList.remove("right-0");
+      shop.classList.add("fa-bag-shopping");
     } else {
-      navMenu.classList.add("hidden");
-      navMenu.classList.remove("flex");
-      navCon.classList.remove("bg-white");
+      navMenu.classList.remove("left-0");
       navOpen.classList.remove("fa-xmark");
+      navMenu.classList.add("-left-full");
       navOpen.classList.add("fa-bars");
     }
   });
@@ -28,46 +53,27 @@ if (navOpen) {
 
 if (shop) {
   shop.addEventListener("click", () => {
-    if (shopMenu.classList.contains("hidden")) {
-      shopMenu.classList.remove("hidden");
-      shopMenu.classList.add("flex");
+    if (shopMenu.classList.contains("-right-full")) {
+      shopMenu.classList.remove("-right-full");
+      shopMenu.classList.add("right-0");
       shop.classList.remove("fa-bag-shopping");
       shop.classList.add("fa-xmark");
-      navMenu.classList.add("hidden");
-      navMenu.classList.remove("flex");
+      navMenu.classList.add("-left-full");
+      navMenu.classList.remove("left-0");
       navCon.classList.remove("bg-white");
       navOpen.classList.remove("fa-xmark");
       navOpen.classList.add("fa-bars");
     } else {
-      shopMenu.classList.remove("flex");
-      shopMenu.classList.add("hidden");
+      shopMenu.classList.remove("right-0");
+      shopMenu.classList.add("-right-full");
       shop.classList.add("fa-bag-shopping");
       shop.classList.remove("fa-xmark");
     }
   });
 }
 
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
-  spaceBetween: 50,
+const re = document.getElementById("re");
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    500: {
-      slidesPerView: 2,
-    },
-
-    1024: {
-      slidesPerView: 3,
-    },
-
-    1280: {
-      slidesPerView: 4,
-    },
-  },
+re.addEventListener("click", (e) => {
+  e.preventDefault();
 });

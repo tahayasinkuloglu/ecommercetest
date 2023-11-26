@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,93 +19,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>Let's Up</title>
+    <script
+      src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js"
+      type="application/javascript"
+    ></script>
+    <title>Let's Up Shoes</title>
   </head>
   <body>
     <main>
       <header>
-        <!-- <nav id="navCon" class="fixed w-full top-0 left-0 z-40 flex flex-col">
-          <div class="flex items-center justify-between">
-            <i
-              id="navOpen"
-              class="fa-solid fa-bars text-2xl m-7 cursor-pointer z-50 relative after:content-[''] after:bg-white after:p-5 after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:-z-10 after:rounded-lg"
-            ></i>
-            <i
-              id="shop"
-              class="fa-solid fa-bag-shopping text-2xl m-7 cursor-pointer z-50 relative after:content-[''] after:bg-white after:p-5 after:absolute after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:-z-10 after:rounded-lg"
-            ></i>
-          </div>
-          <div
-            id="shopMenu"
-            class="flex fixed top-0 -right-full duration-300 ease-in-out w-2/3 lg:w-1/3 bg-white py-20 flex-col h-full border-l-2 border-black justify-between"
-          >
-            <p class="text-center text-4xl">SEPET(0)</p>
-            <a
-              href="#"
-              class="bg-black text-white w-max px-4 py-2 pt-3 text-3xl mx-auto"
-              >ALIŞVERİŞE BAŞLA</a
-            >
-          </div>
-          <div
-            id="navMenu"
-            class="w-full flex -left-full top-0 bg-white duration-200 ease-linear absolute overflow-hidden gap-5 text-2xl px-5 py-10 lg:px-10 lg:py-20 border-b-2 border-black items-center"
-          >
-            <ul class="flex flex-col gap-4">
-              <li>
-                <a href="#" class="hover:underline">GİYİM</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">AYAKKABI</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">SIRT ÇANTASI</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">JEAN</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">ÇOCUK</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">MONT & CEKET</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline">T-SHIRT & HOODIE</a>
-              </li>
-            </ul>
-            <div
-              class="flex flex-col justify-center items-center relative w-1/2 mx-auto"
-            >
-              <input
-                type="search"
-                class="border-b-2 border-black w-full outline-none pl-10 py-2 text-3xl"
-              />
-              <i class="fa-solid fa-magnifying-glass absolute left-0 top-3"></i>
-              <div>
-                <ul class="text-gray-500 text-lg">
-                  <p class="underline my-2">TREND ARAMALAR</p>
-                  <li class="flex items-center gap-3">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                    <a href="#">V YAKA T-SHIRT</a>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                    <a href="#">HOODIE</a>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                    <a href="#">DERİ ÇİZME</a>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                    <a href="#">SU GEÇİRMEZ MONT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav> -->
-        <nav class="flex flex-col px-10 py-5">
+        <nav class="container mx-auto flex flex-col pt-5">
           <div class="flex items-center justify-between h-full w-full">
             <div class="relative flex items-center w-1/3">
               <input
@@ -131,9 +54,7 @@
             </div>
           </div>
           <div class="flex flex-col pt-5">
-            <div
-              class="flex text-2xl text-center justify-center mb-5 w-1/2 mx-auto"
-            >
+            <div class="flex text-2xl text-center justify-center w-1/2 mx-auto">
               <a href="#" class="manLink w-full hover:bg-gray-300">ERKEK</a>
               <a href="#" class="women w-full hover:bg-gray-300">KADIN</a>
               <a href="#" class="kids w-full hover:bg-gray-300">ÇOCUK</a>
@@ -640,300 +561,369 @@
           </div>
         </nav>
       </header>
-      <section>
-        <article class="bg-white text-black text-center">
-          KASIM AYINA KADAR | SEPETTE %10 İNDİRİM
-        </article>
-      </section>
-      <section>
-        <article
-          class="max-lg:hidden w-full mx-auto max-w-[2000px] flex h-[650px]"
-        >
-          <div class="w-full h-full flex relative overflow-hidden group">
-            <a href="#" class="w-full">
-              <img
-                src="/assets/sale.jpeg"
-                class="w-full h-full group-hover:scale-105 duration-200 object-cover object-top"
-                alt="sale"
-              />
-            </a>
-            <a
-              href="#"
-              class="absolute top-2/3 z-10 text-4xl xl:text-7xl text-white uppercase min-w-max left-1/2 -translate-x-1/2 border-4 border-white px-10 pt-2 xl:pt-4 group-hover:bg-white group-hover:text-black duration-200"
-            >
-              İNDİRİM
-            </a>
+      <section class="container mx-auto">
+        <article class="w-full flex my-10 gap-20">
+          <div class="w-1/2 object-cover z-50" id="img">
+            <img src="../assets/nike-3.webp" class="rounded-2xl" />
           </div>
-          <div class="w-full h-full flex relative overflow-hidden group">
-            <a href="#" class="w-full">
-              <img
-                src="/assets/new.jpg"
-                class="w-full h-full scale-105 group-hover:scale-110 duration-200 object-cover object-top"
-                alt="new"
-              />
-            </a>
-            <a
-              href="#"
-              class="absolute top-3/4 z-10 text-4xl xl:text-7xl text-white uppercase min-w-max left-1/2 -translate-x-1/2 border-4 border-white px-10 pt-2 xl:pt-3 group-hover:bg-white group-hover:text-black duration-200"
-            >
-              YENİ SEZON
-            </a>
-          </div>
-          <div class="w-full h-full flex relative overflow-hidden group">
-            <a href="#" class="w-full">
-              <img
-                src="/assets/best.jpeg"
-                class="w-full h-full bg-no-repeat group-hover:scale-105 duration-200 object-cover object-center"
-                alt="new"
-              />
-            </a>
-            <a
-              href="#"
-              class="absolute top-3/4 z-10 text-4xl xl:text-7xl text-white uppercase min-w-max left-1/2 -translate-x-1/2 border-4 border-white px-10 pt-2 xl:pt-3 group-hover:bg-white group-hover:text-black duration-200"
-            >
-              EN SEVİLEN
-            </a>
-          </div>
-        </article>
-        <article
-          class="lg:hidden w-full mx-auto max-w-[2000px] flex h-full px-10 !relative"
-        >
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-full flex relative overflow-hidden group">
-                  <a href="#" class="w-full">
-                    <img
-                      src="/assets/sale.jpeg"
-                      class="w-full group-hover:scale-105 duration-200 h-full object-cover object-top"
-                      alt="sale"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    class="absolute top-3/4 z-10 text-xl lg:text-4xl xl:text-7xl text-white uppercase min-w-max left-1/2 -translate-x-1/2 border-2 lg:border-4 border-white px-10 pt-1 lg:pt-2 xl:pt-4 group-hover:bg-white group-hover:text-black duration-200"
-                  >
-                    İNDİRİM
-                  </a>
-                </div>
+          <div class="w-1/2 flex flex-col gap-5 justify-between">
+            <h1 class="text-5xl">NIKE COURT VISION</h1>
+            <div class="flex items-center">
+              <p class="text-3xl">60$</p>
+              <div class="flex text-xl pl-3 pr-1 pb-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="swiper-slide">
-                <div
-                  class="w-full h-full flex relative border-r-2 border-l-2 border-black overflow-hidden group"
-                >
-                  <a href="#" class="w-full">
-                    <img
-                      src="/assets/new.jpg"
-                      class="w-full h-full group-hover:scale-105 duration-200 object-cover object-top"
-                      alt="new"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    class="absolute top-3/4 z-10 text-xl lg:text-4xl xl:text-7xl text-white uppercase min-w-max left-1/2 -translate-x-1/2 border-2 lg:border-4 border-white px-10 pt-1 lg:pt-2 xl:pt-3 group-hover:bg-white group-hover:text-black duration-200"
-                  >
-                    YENİ SEZON
-                  </a>
+              <p class="text-2xl">268 yorum</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="text-2xl">NUMARA / BEDEN</h2>
+              <div class="flex gap-3">
+                <div>
+                  <input
+                    type="button"
+                    value="39"
+                    class="customInput cursor-not-allowed px-5 border-2 border-black rounded-2xl text-xl text-black text-opacity-30 border-opacity-30"
+                    disabled
+                  />
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-full flex relative overflow-hidden group">
-                  <a href="#" class="w-full">
-                    <img
-                      src="/assets/best.jpeg"
-                      class="w-full bg-no-repeat group-hover:scale-105 duration-200 h-full object-cover object-center"
-                      alt="new"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    class="absolute top-3/4 z-10 text-xl lg:text-4xl xl:text-7xl text-white uppercase min-w-max left-1/2 -translate-x-1/2 border-2 lg:border-4 border-white px-10 pt-1 lg:pt-2 xl:pt-3 group-hover:bg-white group-hover:text-black duration-200"
-                  >
-                    EN SEVİLEN
-                  </a>
+                <div>
+                  <input
+                    type="button"
+                    value="40"
+                    class="customInput cursor-pointer px-5 border-2 border-black rounded-2xl text-xl text-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="button"
+                    value="41"
+                    class="customInput cursor-pointer px-5 border-2 border-black rounded-2xl text-xl text-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="button"
+                    value="42"
+                    class="customInput cursor-not-allowed px-5 border-2 border-black rounded-2xl text-xl text-black text-opacity-30 border-opacity-30"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="button"
+                    value="43"
+                    class="customInput cursor-not-allowed px-5 border-2 border-black rounded-2xl text-xl text-black text-opacity-30 border-opacity-30"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="button"
+                    value="44"
+                    class="customInput cursor-pointer px-5 border-2 border-black rounded-2xl text-xl text-black"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="button"
+                    value="45"
+                    class="customInput cursor-pointer px-5 border-2 border-black rounded-2xl text-xl text-black"
+                  />
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar pt-1"></div>
-          </div>
-        </article>
-      </section>
-      <section>
-        <article class="my-20 px-10 xl:container mx-auto !relative">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a
-                  href="/pages/shoes.html"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
-                >
-                  <img
-                    src="/assets/shoes.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="shoes"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    AYAKKABI
-                  </h2>
-                </a>
+            <div class="flex flex-col text-xl w-max gap-1">
+              <div>
+                STOK DURUMU: MEVCUT
+                <i class="fa-solid fa-circle-check text-base"></i>
               </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
+              <p>TAHMİNİ TESLİMAT: 28 KASIM</p>
+            </div>
+            <div class="flex justify-between gap-6">
+              <button
+                class="w-2/5 bg-black text-white px-5 py-2 pt-3 text-2xl rounded-2xl hover:bg-opacity-70"
+              >
+                SEPETE EKLE
+              </button>
+              <button
+                class="w-2/5 bg-orange-600 bg-opacity-80 text-white px-5 py-2 pt-3 text-2xl rounded-2xl hover:bg-opacity-70"
+              >
+                HEMEN SATIN AL
+              </button>
+              <button
+                class="w-2/5 border-2 border-black border-opacity-20 text-black px-5 py-2 text-2xl rounded-2xl hover:border-opacity-100"
+              >
+                FAVORİLERİME EKLE
+              </button>
+            </div>
+            <div class="flex flex-col">
+              <a
+                href="#"
+                id="descHeader"
+                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl"
+              >
+                <h3>ÜRÜN ÖZELLİKLERİ</h3>
+              </a>
+              <p
+                id="desc"
+                class="text-lg font-[Roboto] px-2 h-0 overflow-hidden pt-3"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                sequi libero, necessitatibus quis officia maiores quisquam
+                beatae dicta a aspernatur nulla ipsam illum eligendi in eos,
+                deserunt laborum eaque nesciunt totam reprehenderit. Aut iure
+                dignissimos quia ad! Molestiae possimus voluptatem tenetur
+                nobis. Similique aut, ipsam cum omnis voluptas earum! Ut quod in
+                et, eveniet dolores dolorum nostrum corporis quis maiores quas
+                laboriosam? Magnam odit iure nam atque nesciunt rem, quis, quos
+                incidunt dignissimos dolores consectetur laboriosam officia
+                doloremque, ut neque exercitationem? Perferendis reprehenderit
+                consequatur facere, molestiae reiciendis magni! Consectetur ex
+                minus incidunt quos ipsum recusandae modi nobis quidem quaerat
+                ipsam.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <a
+                href="#"
+                id="deliveryHeader"
+                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl"
+              >
+                <h3>KARGO & İADE KOŞULLARI</h3>
+              </a>
+              <p
+                id="delivery"
+                class="text-lg font-[Roboto] px-2 h-0 overflow-hidden pt-3"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                architecto obcaecati repudiandae deleniti eius aliquam
+                exercitationem natus, provident harum quo esse quaerat nulla,
+                consequuntur expedita mollitia voluptatem sed veniam? Nemo in
+                adipisci dolore totam facilis fugiat incidunt at, repellat
+                illum, culpa saepe ea? Neque similique dicta expedita velit?
+                Expedita, accusamus.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <a
+                href="#"
+                id="sizeHeader"
+                class="text-2xl bg-black bg-opacity-10 pl-3 py-1 pt-2 rounded-xl"
+              >
+                <h3>NUMARA / BEDEN NASIL ÖLÇÜLÜR?</h3>
+              </a>
+              <p
+                id="size"
+                class="text-lg font-[Roboto] px-2 h-0 overflow-hidden pt-3"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                quia, sapiente recusandae dolorem error quas doloribus nostrum!
+                Odio eius magnam saepe rem veniam nulla fugiat sed reprehenderit
+                quibusdam et, officiis esse molestiae eos dignissimos doloribus
+                beatae dolore aliquid quo perferendis. Nam, vitae distinctio
+                inventore, nemo corporis sunt, voluptatibus neque commodi
+                impedit voluptas deserunt aliquid fugiat vero quibusdam amet
+                soluta illum libero repudiandae incidunt enim. Nostrum
+                perspiciatis vero, deleniti magnam asperiores aliquid! Fuga
+                saepe eligendi ullam?
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <div
+                class="w-[calc(50%-16px)] bg-[#FEF2F2] p-3 rounded-xl text-lg"
+              >
+                <i class="fa-solid fa-truck-fast text-xl"></i>
+                <p class="font-[Roboto] font-semibold">Ücretsiz Kargo</p>
+                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                  >40$ ve üzeri yapacağınız siparişlerde kargo ücretsiz.</span
                 >
-                  <img
-                    src="/assets/coats-and-jackets.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="coats&jackets"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    MONT & CEKET
-                  </h2>
-                </a>
               </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
+              <div
+                class="w-[calc(50%-16px)] bg-[#F0F9FF] p-3 rounded-xl text-xl"
+              >
+                <i class="fa-solid fa-dolly text-xl"></i>
+                <p class="font-[Roboto] font-semibold">Kolay İade</p>
+                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                  >30 gün içerisinde sorunsuz bir şekilde ücretsiz iade.</span
                 >
-                  <img
-                    src="/assets/tshirt-and-hoodie.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="tshirt&hoodie"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    T-SHIRT & HOODIE
-                  </h2>
-                </a>
               </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
+              <div
+                class="w-[calc(50%-16px)] bg-[#F0FDF4] p-3 rounded-xl text-xl"
+              >
+                <i class="fa-solid fa-globe text-xl"></i>
+                <p class="font-[Roboto] font-semibold">Her Yere Teslimat</p>
+                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                  >Mevcut tüm bölgelere sorunsuz teslimat sağlıyoruz.</span
                 >
-                  <img
-                    src="/assets/jean.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="jean"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    JEAN
-                  </h2>
-                </a>
               </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
+              <div
+                class="w-[calc(50%-16px)] bg-[#FFFBEB] p-3 rounded-xl text-xl"
+              >
+                <i class="fa-solid fa-rotate-left text-xl"></i>
+                <p class="font-[Roboto] font-semibold">Geri Ödeme Politikası</p>
+                <span class="font-[Roboto] text-base text-opacity-70 text-black"
+                  >İptal edilen ürünlerin ücreti 30 gün içerisinde geri
+                  ödenir.</span
                 >
-                  <img
-                    src="/assets/shirts.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="shirts"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    GÖMLEK
-                  </h2>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
-                >
-                  <img
-                    src="/assets/dress.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="dress"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    ELBİSE
-                  </h2>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
-                >
-                  <img
-                    src="/assets/tracksuit.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="tracksuit"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    EŞOFMAN
-                  </h2>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="#"
-                  class="flex w-full relative overflow-hidden group rounded-2xl"
-                >
-                  <img
-                    src="/assets/accesories.jpg"
-                    class="rounded-2xl group-hover:scale-110 duration-200"
-                    alt="accesories"
-                  />
-                  <h2
-                    class="absolute max-md:text-xl text-3xl lg:text-5xl text-white uppercase bottom-3 w-full text-center bg-black bg-opacity-60 pt-2 pb-1"
-                  >
-                    AKSESUAR
-                  </h2>
-                </a>
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev w-16 h-16 px-14 text-white"></div>
-          <div class="swiper-button-next w-16 h-16 px-14 text-white"></div>
         </article>
       </section>
-      <section>
-        <article
-          class="my-20 w-full mx-auto flex justify-center flex-col gap-10 bg-orange-200 text-black py-20"
-        >
-          <h2
-            class="text-center text-4xl lg:text-6xl w-4/5 lg:w-1/2 mx-auto !leading-tight uppercase"
+      <section
+        class="container mx-auto border-t-2 border-black border-opacity-20"
+      >
+        <article class="w-full flex flex-col py-10 gap-10">
+          <div class="flex text-2xl gap-4 items-center">
+            <div class="flex pb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="flex gap-1 text-3xl">
+              <p>268</p>
+              <h2>YORUM</h2>
+            </div>
+          </div>
+          <div class="w-full flex gap-20 flex-wrap">
+            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/user.jpg"
+                  class="w-10 rounded-full object-cover"
+                />
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex flex-col">
+                    <p class="font-[Roboto] font-semibold">İbrahim Aydın</p>
+                    <p class="font-[Roboto] text-sm">26 Kasım 2023</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-[Roboto]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facere veritatis eos delectus velit ad modi dolorem architecto
+                  facilis, magnam vero eligendi eveniet aliquid illo nesciunt
+                  beatae in, saepe dicta voluptatem necessitatibus eum quod
+                  corrupti quo. Saepe, obcaecati dolor aperiam similique,
+                  impedit magnam aut et ducimus iusto excepturi nostrum officiis
+                  voluptatum.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/user.jpg"
+                  class="w-10 rounded-full object-cover"
+                />
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex flex-col">
+                    <p class="font-[Roboto] font-semibold">Buğra Adıgüzel</p>
+                    <p class="font-[Roboto] text-sm">23 Kasım 2023</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-[Roboto]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, eligendi! Libero dolore voluptate facilis
+                  suscipit nihil at quidem quas pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/user.jpg"
+                  class="w-10 rounded-full object-cover"
+                />
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex flex-col">
+                    <p class="font-[Roboto] font-semibold">Aşkın Selim</p>
+                    <p class="font-[Roboto] text-sm">15 Kasım 2023</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-[Roboto]">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Minima illo vel cum vitae excepturi alias optio eum, est
+                  perferendis, maiores odio voluptate molestiae voluptates
+                  recusandae repellendus quos tempore eveniet ea obcaecati. Ipsa
+                  aliquam aspernatur tenetur dolore animi qui esse deserunt
+                  distinctio possimus? Nulla, consectetur aliquam! Neque
+                  perspiciatis incidunt labore quidem ea, quis fugiat voluptatum
+                  illum tempora reprehenderit distinctio, blanditiis a animi,
+                  voluptates sapiente delectus! Sequi quibusdam quidem veniam in
+                  error, quae hic nostrum adipisci consequatur aut, perferendis
+                  sint, vitae natus sunt eius quis ducimus distinctio eligendi
+                  fugit at vel possimus modi. Iste et explicabo dicta nulla nisi
+                  sint voluptate voluptates.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 w-[calc(50%-80px)]">
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/user.jpg"
+                  class="w-10 rounded-full object-cover"
+                />
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex flex-col">
+                    <p class="font-[Roboto] font-semibold">İsmet Gümüş</p>
+                    <p class="font-[Roboto] text-sm">06 Kasım 2023</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="font-[Roboto]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore voluptatem corrupti eius aspernatur nemo totam
+                  consequatur eos. Iusto ratione explicabo eaque temporibus
+                  eligendi consequuntur voluptas hic rem sit veniam, quod, ullam
+                  officia delectus. Explicabo, provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="text-3xl border-2 border-black py-2 pt-3 rounded-2xl w-1/2 mx-auto mt-10 hover:text-white hover:bg-black duration-150"
           >
-            SON MODAYI <u>%15 İNDİRİMLE</u> TAKİP ETMEK İÇİN BÜLTENİMİZE ABONE
-            OL
-          </h2>
-          <div class="flex flex-col gap-5">
-            <input
-              type="text"
-              class="border-2 border-black rounded-md px-4 py-2 max-md:w-4/5 w-1/2 lg:w-1/4 mx-auto lg:text-3xl text-center uppercase"
-              placeholder="E-MAIL"
-            />
-            <a
-              href="#"
-              class="max-md:w-4/5 w-1/2 lg:w-1/4 mx-auto text-lg lg:text-3xl px-4 py-2 pt-3 text-center bg-black text-white rounded-md uppercase hover:opacity-80"
-              >BÜLTENE ABONE OL</a
-            >
-            <div class="flex justify-center gap-20">
-              <a href="#" class="text-xl hover:underline max-md:text-base"
-                >ABONELİĞİ İPTAL ET</a
-              >
-              <a href="#" class="text-xl hover:underline max-md:text-base"
-                >KOŞULLARI İNCELE</a
-              >
-            </div>
-          </div>
+            DAHA FAZLA YORUM GÖSTER
+          </button>
         </article>
       </section>
       <footer>
@@ -986,33 +976,16 @@
         </article>
       </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/global.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/vanilla-tilt.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
-        spaceBetween: 50,
+      const options = {
+        zoomWidth: 900,
+        offset: { vertical: 0, horizontal: 10 },
+        scale: 1,
+      };
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          500: {
-            slidesPerView: 2,
-          },
-
-          1024: {
-            slidesPerView: 3,
-          },
-
-          1280: {
-            slidesPerView: 4,
-          },
-        },
-      });
+      new ImageZoom(document.getElementById("img"), options);
     </script>
   </body>
 </html>
