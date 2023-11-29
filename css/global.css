@@ -14,6 +14,104 @@
   opacity: 100%;
 }
 
-.manLink:hover ~ div .manContainer {
-  display: flex;
+.headerStyle-1 > a {
+  font-family: "Roboto", sans-serif;
+  padding: 3px 0px 3px 0px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.headerStyle-1 > a:hover {
+  opacity: 1;
+  font-weight: 400;
+}
+
+.headerStyle-1 > a:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.headerStyle-1 > a:first-child:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .man:hover .manDropDown,
+  .women:hover .womenDropDown,
+  .kids:hover .kidsDropDown,
+  .spor:hover .sporDropDown,
+  .newSeason:hover .newSeasonDropDown,
+  .specialSale:hover .specialSaleDropDown {
+    display: flex;
+  }
+
+  .customUl:has(.man:hover) .women,
+  .customUl:has(.man:hover) .kids,
+  .customUl:has(.man:hover) .spor,
+  .customUl:has(.man:hover) .newSeason,
+  .customUl:has(.man:hover) .specialSale,
+  .customUl:has(.women:hover) .man,
+  .customUl:has(.women:hover) .kids,
+  .customUl:has(.women:hover) .spor,
+  .customUl:has(.women:hover) .newSeason,
+  .customUl:has(.women:hover) .specialSale,
+  .customUl:has(.kids:hover) .man,
+  .customUl:has(.kids:hover) .women,
+  .customUl:has(.kids:hover) .spor,
+  .customUl:has(.kids:hover) .newSeason,
+  .customUl:has(.kids:hover) .specialSale,
+  .customUl:has(.spor:hover) .man,
+  .customUl:has(.spor:hover) .women,
+  .customUl:has(.spor:hover) .kids,
+  .customUl:has(.spor:hover) .newSeason,
+  .customUl:has(.spor:hover) .specialSale,
+  .customUl:has(.newSeason:hover) .man,
+  .customUl:has(.newSeason:hover) .women,
+  .customUl:has(.newSeason:hover) .kids,
+  .customUl:has(.newSeason:hover) .spor,
+  .customUl:has(.newSeason:hover) .specialSale,
+  .customUl:has(.specialSale:hover) .man,
+  .customUl:has(.specialSale:hover) .women,
+  .customUl:has(.specialSale:hover) .kids,
+  .customUl:has(.specialSale:hover) .spor,
+  .customUl:has(.specialSale:hover) .newSeason {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .manSpan::before,
+  .womenSpan::before,
+  .kidsSpan::before,
+  .newSeasonSpan::before,
+  .sporSpan::before,
+  .specialSaleSpan::before {
+    transition: all 0.3s ease;
+    content: "";
+    width: 110%;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    opacity: 0;
+  }
+
+  .man:hover .manSpan::before,
+  .women:hover .womenSpan::before,
+  .kids:hover .kidsSpan::before,
+  .spor:hover .sporSpan::before,
+  .newSeason:hover .newSeasonSpan::before,
+  .specialSale:hover .specialSaleSpan::before {
+    content: "";
+    width: 110%;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    opacity: 1;
+  }
 }

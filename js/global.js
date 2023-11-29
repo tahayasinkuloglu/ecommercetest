@@ -10,6 +10,85 @@ const delivery = document.getElementById("delivery");
 const sizeHeader = document.getElementById("sizeHeader");
 const size = document.getElementById("size");
 const plus = document.querySelectorAll(".fa-plus");
+const man = document.getElementById("man");
+const man_con = document.getElementById("man_con");
+const back = document.getElementsByClassName("back");
+const back2 = document.getElementsByClassName("back2");
+const btnNav = document.getElementById("btnNav");
+const customUl = document.getElementsByClassName("customUl");
+const highlightsMenu = document.getElementById("highlightsMenu");
+const shoesMenu = document.getElementById("shoesMenu");
+const highlights = document.getElementById("highlights");
+const shoes = document.getElementById("shoes");
+const body = document.body;
+
+if (btnNav) {
+  btnNav.addEventListener("click", () => {
+    for (let i = 0; i < customUl.length; i++) {
+      if (customUl[i].classList.contains("max-lg:-left-full")) {
+        customUl[i].classList.remove("max-lg:-left-full");
+        customUl[i].classList.add("left-0");
+        body.style.overflow = "auto";
+      } else {
+        customUl[i].classList.remove("left-0");
+        customUl[i].classList.add("max-lg:-left-full");
+        body.style.overflow = "hidden";
+      }
+    }
+
+    if (btnNav.classList.contains("fa-bars")) {
+      btnNav.classList.remove("fa-bars");
+      btnNav.classList.add("fa-xmark");
+    } else {
+      btnNav.classList.remove("fa-xmark");
+      btnNav.classList.add("fa-bars");
+    }
+  });
+
+  // genel navbar aç kapa
+  man.addEventListener("click", () => {
+    man_con.classList.add("left-0");
+  });
+
+  // bir önceki kategoriye dönüş
+  for (let i = 0; i < back.length; i++) {
+    back[i].addEventListener("click", () => {
+      highlights.classList.remove("left-0");
+      shoes.classList.remove("left-0");
+    });
+  }
+
+  // ana kategoriye dönüş
+  for (let i = 0; i < back2.length; i++) {
+    back2[i].addEventListener("click", () => {
+      man_con.classList.remove("left-0");
+    });
+  }
+
+  highlightsMenu.addEventListener("click", () => {
+    highlights.classList.add("left-0");
+  });
+
+  shoesMenu.addEventListener("click", () => {
+    shoes.classList.add("left-0");
+  });
+}
+
+let scrollPos = window.scrollY;
+
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
+
+  if (scrollPos > currentScrollPos) {
+    document.getElementById("navBar3").style.top = "82px";
+    document.getElementById("navBar3").style.opacity = "1";
+  } else {
+    document.getElementById("navBar3").style.top = "-100px";
+    document.getElementById("navBar3").style.opacity = "0";
+  }
+
+  scrollPos = currentScrollPos;
+};
 
 if (descHeader) {
   descHeader.addEventListener("click", (e) => {
