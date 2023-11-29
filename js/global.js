@@ -109,11 +109,9 @@ if (btnNav) {
       if (customUl[i].classList.contains("max-lg:-left-full")) {
         customUl[i].classList.remove("max-lg:-left-full");
         customUl[i].classList.add("left-0");
-        body.style.overflow = "auto";
       } else {
         customUl[i].classList.remove("left-0");
         customUl[i].classList.add("max-lg:-left-full");
-        body.style.overflow = "hidden";
       }
     }
 
