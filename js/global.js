@@ -1,4 +1,3 @@
-const body = document.body;
 const navOpen = document.getElementById("navOpen");
 const navMenu = document.getElementById("navMenu");
 const navCon = document.getElementById("navCon");
@@ -366,22 +365,6 @@ if (btnNav) {
     });
   }
 }
-
-let scrollPos = window.scrollY;
-
-window.onscroll = function () {
-  let currentScrollPos = window.scrollY;
-
-  if (scrollPos > currentScrollPos) {
-    document.getElementById("navBar3").style.top = "82px";
-    document.getElementById("navBar3").style.opacity = "1";
-  } else {
-    document.getElementById("navBar3").style.top = "-100px";
-    document.getElementById("navBar3").style.opacity = "0";
-  }
-
-  scrollPos = currentScrollPos;
-};
 
 if (descHeader) {
   descHeader.addEventListener("click", (e) => {

@@ -23,22 +23,1449 @@
   </head>
   <body>
     <main>
-      <section class="c_header-1">
+      <!-- <section class="c_header-2">
         <nav
           class="mx-auto flex items-center justify-between px-10 max-md:px-5 w-full max-w-[1920px] relative"
         >
-          <!-- navbar menüyü açan buton -->
+          
           <i
-            class="fa-solid fa-bars text-2xl lg:hidden h-full w-5"
+            class="fa-solid fa-bars text-2xl lg:hidden h-full w-5 max-md:text-lg max-md:pt-1"
             id="btnNav"
           ></i>
-          <!-- logo -->
+          
+          <ul
+            class="flex justify-center customUl max-lg:flex-col max-lg:fixed max-lg:bg-white max-lg:text-[#111] max-lg:top-[61px] max-md:top-[56px] max-sm:top-[52px] max-lg:h-full max-lg:w-full max-lg:-left-full max-lg:justify-start duration-200 ease-linear"
+          >
+            
+            <li class="man">
+              
+              <a
+                href="#"
+                class="xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative manSpan transition-all duration-200 ease min-w-max"
+                  >ERKEK
+                </span>
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <a
+                id="man"
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+              >
+                <span
+                  class="relative manSpan transition-all duration-200 ease min-w-max"
+                  >ERKEK
+                </span>
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <div
+                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden manDropDown"
+              >
+                <div
+                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
+                >
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Öne Çıkanlar</a>
+                    <a href="#">En Çok Satanlar</a>
+                    <a href="#">Yeni Sezon</a>
+                    <a href="#">Özel İndirimler</a>
+                    <a href="#">Mevsimlik Ürünler</a>
+                    <a href="#">Mont & Kaban</a>
+                    <a href="#">Ceket</a>
+                    <a href="#">Sokak Stili</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Ayakkabı</a>
+                    <a href="#">Gündelik</a>
+                    <a href="#">Koşu & Yürüyüş</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Terlik & Sandalet</a>
+                    <a href="#">Bot</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Giyim</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">Üst</a>
+                    <a href="#">Alt</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Forma</a>
+                    <a href="#">Deniz</a>
+                    <a href="#">Kazak</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Aksesuar</a>
+                    <a href="#">Çanta & Cüzdan</a>
+                    <a href="#">Kemer</a>
+                    <a href="#">Küpe</a>
+                    <a href="#">Kolye</a>
+                    <a href="#">Bilezik</a>
+                    <a href="#">Gözlük</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Spor</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Koşu</a>
+                    <a href="#">Kamp & Doğa</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Yoga</a>
+                    <a href="#">Lisanslı Ürünler</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                id="man_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back2 bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ERKEK
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_man"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_man">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_man">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_man">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_man"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_man"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
+            </li>
+            
+            <li class="women">
+              
+              <a
+                id="women"
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+              >
+                <span
+                  class="relative womenSpan transition-all duration-200 ease min-w-max"
+                  >KADIN</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <a
+                href="#"
+                class="xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative womenSpan transition-all duration-200 ease min-w-max"
+                  >KADIN</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <div
+                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden womenDropDown"
+              >
+                <div
+                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
+                >
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Öne Çıkanlar</a>
+                    <a href="#">En Çok Satanlar</a>
+                    <a href="#">Özel İndirimler</a>
+                    <a href="#">Yeni Sezon</a>
+                    <a href="#">Mont & Kaban</a>
+                    <a href="#">Mevsimlik Ürünler</a>
+                    <a href="#">Sokak Stili</a>
+                    <a href="#">Ceket</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Ayakkabı</a>
+                    <a href="#">Gündelik</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Koşu & Yürüyüş</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Terlik & Sandalet</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Bot</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Giyim</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">Tayt</a>
+                    <a href="#">Spor Sütyeni</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Forma</a>
+                    <a href="#">Deniz</a>
+                    <a href="#">Kazak</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Aksesuar</a>
+                    <a href="#">Çanta & Cüzdan</a>
+                    <a href="#">Küpe</a>
+                    <a href="#">Kemer</a>
+                    <a href="#">Bilezik</a>
+                    <a href="#">Gözlük</a>
+                    <a href="#">Kolye</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Spor</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Koşu</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Kamp & Doğa</a>
+                    <a href="#">Lisanslı Ürünler</a>
+                    <a href="#">Yoga</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                id="women_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-4 pt-5 gap-2 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  KADIN
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_women"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_women">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_women">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_women">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_women"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_women"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
+            </li>
+           
+            <li class="kids">
+              
+              <a
+                id="kids"
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+              >
+                <span
+                  class="relative kidsSpan transition-all duration-200 ease min-w-max"
+                  >ÇOCUK</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <a
+                href="#"
+                class="xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative kidsSpan transition-all duration-200 ease min-w-max"
+                  >ÇOCUK</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <div
+                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden kidsDropDown"
+              >
+                <div
+                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
+                >
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Öne Çıkanlar</a>
+                    <a href="#">En Çok Satanlar</a>
+                    <a href="#">Yeni Sezon</a>
+                    <a href="#">Özel İndirimler</a>
+                    <a href="#">Mevsimlik Ürünler</a>
+                    <a href="#">Mont & Kaban</a>
+                    <a href="#">Ceket</a>
+                    <a href="#">Sokak Stili</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Ayakkabı</a>
+                    <a href="#">Gündelik</a>
+                    <a href="#">Koşu & Yürüyüş</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Terlik & Sandalet</a>
+                    <a href="#">Bot</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Kız Çocuk</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Alt</a>
+                    <a href="#">Üst</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Forma</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Kazak</a>
+                    <a href="#">Deniz</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Erkek Çocuk</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Alt</a>
+                    <a href="#">Üst</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Forma</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Kazak</a>
+                    <a href="#">Deniz</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Spor</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Koşu</a>
+                    <a href="#">Kamp & Doğa</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Yoga</a>
+                    <a href="#">Lisanslı Ürünler</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                id="kids_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-4 pt-5 gap-2 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÇOCUK
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_kids"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_kids">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_kids">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_kids">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_kids"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_kids"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
+            </li>
+           
+            <li class="spor">
+          
+              <a
+                id="spor"
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+              >
+                <span
+                  class="relative sporSpan transition-all duration-200 ease min-w-max"
+                  >SPOR</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+           
+              <a
+                href="#"
+                class="xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative sporSpan transition-all duration-200 ease min-w-max"
+                  >SPOR</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+             
+              <div
+                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden sporDropDown"
+              >
+                <div
+                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
+                >
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Öne Çıkanlar</a>
+                    <a href="#">En Çok Satanlar</a>
+                    <a href="#">Yeni Sezon</a>
+                    <a href="#">Mont & Kaban</a>
+                    <a href="#">Özel İndirimler</a>
+                    <a href="#">Ceket</a>
+                    <a href="#">Sokak Stili</a>
+                    <a href="#">Mevsimlik Ürünler</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Ayakkabı</a>
+                    <a href="#">Koşu & Yürüyüş</a>
+                    <a href="#">Gündelik</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Terlik & Sandalet</a>
+                    <a href="#">Bot</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Giyim</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Üst</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Alt</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Forma</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Deniz</a>
+                    <a href="#">Kazak</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Aksesuar</a>
+                    <a href="#">Çanta & Cüzdan</a>
+                    <a href="#">Kemer</a>
+                    <a href="#">Kolye</a>
+                    <a href="#">Küpe</a>
+                    <a href="#">Bilezik</a>
+                    <a href="#">Gözlük</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Spor</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Koşu</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Kamp & Doğa</a>
+                    <a href="#">Lisanslı Ürünler</a>
+                    <a href="#">Yoga</a>
+                    <a href="#">Dağcılık</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                id="spor_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-4 pt-5 gap-2 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_spor"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_spor">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_spor">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_spor">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_spor"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_spor"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
+            </li>
+            
+            <li class="newSeason">
+              
+              <a
+                id="newSeason"
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+              >
+                <span
+                  class="relative newSeasonSpan transition-all duration-200 ease min-w-max"
+                  >YENİ SEZON</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <a
+                href="#"
+                class="xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative newSeasonSpan transition-all duration-200 ease min-w-max"
+                  >YENİ SEZON</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <div
+                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden newSeasonDropDown"
+              >
+                <div
+                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
+                >
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Öne Çıkanlar</a>
+                    <a href="#">Yeni Sezon</a>
+                    <a href="#">En Çok Satanlar</a>
+                    <a href="#">Mevsimlik Ürünler</a>
+                    <a href="#">Özel İndirimler</a>
+                    <a href="#">Ceket</a>
+                    <a href="#">Mont & Kaban</a>
+                    <a href="#">Sokak Stili</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Ayakkabı</a>
+                    <a href="#">Gündelik</a>
+                    <a href="#">Koşu & Yürüyüş</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Terlik & Sandalet</a>
+                    <a href="#">Bot</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Giyim</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">Üst</a>
+                    <a href="#">Alt</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Forma</a>
+                    <a href="#">Deniz</a>
+                    <a href="#">Kazak</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Aksesuar</a>
+                    <a href="#">Çanta & Cüzdan</a>
+                    <a href="#">Kemer</a>
+                    <a href="#">Küpe</a>
+                    <a href="#">Kolye</a>
+                    <a href="#">Bilezik</a>
+                    <a href="#">Gözlük</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Spor</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Koşu</a>
+                    <a href="#">Kamp & Doğa</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Yoga</a>
+                    <a href="#">Lisanslı Ürünler</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                id="newSeason_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-4 pt-5 gap-2 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  YENİ SEZON
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_newSeason"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_newSeason"
+                  >AYAKKABI</a
+                >
+                <a href="#" class="py-5 pl-10" id="clothingMenu_newSeason"
+                  >GİYİM</a
+                >
+                <a href="#" class="py-5 pl-10" id="sporMenu_newSeason">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_newSeason"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_newSeason"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
+            </li>
+            
+            <li class="specialSale">
+              
+              <a
+                id="specialSale"
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+              >
+                <span
+                  class="relative specialSaleSpan transition-all duration-200 ease min-w-max"
+                  >ÖZEL İNDİRİMLER</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <a
+                href="#"
+                class="xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative specialSaleSpan transition-all duration-200 ease min-w-max"
+                  >ÖZEL İNDİRİMLER</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              
+              <div
+                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden specialSaleDropDown"
+              >
+                <div
+                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
+                >
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Öne Çıkanlar</a>
+                    <a href="#">En Çok Satanlar</a>
+                    <a href="#">Özel İndirimler</a>
+                    <a href="#">Yeni Sezon</a>
+                    <a href="#">Mont & Kaban</a>
+                    <a href="#">Mevsimlik Ürünler</a>
+                    <a href="#">Sokak Stili</a>
+                    <a href="#">Ceket</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Ayakkabı</a>
+                    <a href="#">Gündelik</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Koşu & Yürüyüş</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Bot</a>
+                    <a href="#">Terlik & Sandalet</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Giyim</a>
+                    <a href="#">T-Shirt & Hoodie</a>
+                    <a href="#">Üst</a>
+                    <a href="#">Ceket & Kaban</a>
+                    <a href="#">Pantolon</a>
+                    <a href="#">Alt</a>
+                    <a href="#">Eşofman Takımı</a>
+                    <a href="#">Jean</a>
+                    <a href="#">Deniz</a>
+                    <a href="#">Kazak</a>
+                    <a href="#">Forma</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Aksesuar</a>
+                    <a href="#">Kemer</a>
+                    <a href="#">Çanta & Cüzdan</a>
+                    <a href="#">Kolye</a>
+                    <a href="#">Küpe</a>
+                    <a href="#">Gözlük</a>
+                    <a href="#">Bilezik</a>
+                  </div>
+                  <div class="text-lg flex flex-col w-full headerStyle-1">
+                    <a href="#">Spor</a>
+                    <a href="#">Basketbol</a>
+                    <a href="#">Futbol</a>
+                    <a href="#">Maraton</a>
+                    <a href="#">Tenis</a>
+                    <a href="#">Kamp & Doğa</a>
+                    <a href="#">Koşu</a>
+                    <a href="#">Yoga</a>
+                    <a href="#">Dağcılık</a>
+                    <a href="#">Lisanslı Ürünler</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                id="specialSale_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-4 pt-5 gap-2 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖZEL İNDİRİMLER
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_specialSale"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_specialSale"
+                  >AYAKKABI</a
+                >
+                <a href="#" class="py-5 pl-10" id="clothingMenu_specialSale"
+                  >GİYİM</a
+                >
+                <a href="#" class="py-5 pl-10" id="sporMenu_specialSale"
+                  >SPOR</a
+                >
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_specialSale"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_specialSale"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖZEL İNDİRİMLER
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex pl-10 items-center py-3 pt-4 gap-2 back bg-gray-300"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
+            </li>
+          </ul>
+          
           <a href="/index.html" class="w-32 max-md:w-28">
             <img src="/assets/logo.png" class="invert" />
           </a>
-          <!-- navbar menü -->
+          
+          <div
+            class="flex items-center max-lg:gap-2 w-max min-[1200px]:w-1/3 justify-end max-lg:order-3"
+          >
+            <div class="relative">
+              <svg
+                class="w-[20px] h-[20px] text-gray-800 dark:text-white absolute top-1/2 -translate-y-1/2 left-2 max-lg:hidden"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <input
+                type="search"
+                class="outline-none text-white px-3 py-2 pl-10 bg-[#111] border-[1px] border-[#444] font-[Roboto] max-lg:hidden"
+              />
+            </div>
+            <div class="flex items-center max-lg:gap-2 max-md:gap-0">
+              <a href="#" class="py-5 px-3 max-xl:px-2 lg:hidden">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white lg:hidden"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="py-5 px-3 max-xl:px-2 group">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 14 18"
+                >
+                  <path
+                    d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="py-5 px-3 max-xl:px-2 group">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 21 19"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="py-5 px-3 max-xl:px-2 group">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section> -->
+      <section class="c_header-3 pt-5 max-lg:pb-5 header-3">
+        <nav
+          class="mx-auto flex items-center px-10 w-full max-w-[1920px] max-lg:flex-wrap max-lg:gap-y-3 max-lg:justify-between"
+        >
+        <i class="fa-solid fa-bars text-2xl lg:hidden h-full w-5" id="btnNav"></i>
+          <a href="/index.html" class="w-fit max-lg:w-1/3">
+            <img src="/assets/logo.png" class="invert" />
+          </a>
+          <div class="relative w-full lg:mx-32 max-lg:order-3">
+            <svg
+              class="w-[20px] h-[20px] text-gray-800 dark:text-white absolute top-1/2 -translate-y-1/2 left-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <input
+              type="search"
+              class="outline-none text-white px-3 py-2 pl-10 bg-[#111] border-[1px] border-[#444] font-[Roboto] w-full rounded-lg"
+              placeholder="Ürün ya da Kategori Ara"
+            />
+          </div>
+          <div class="flex items-center max-lg:gap-2 justify-end max-lg:w-1/2">
+            <div class="flex items-center max-lg:gap-2 max-sm:gap-0">
+              <a href="#" class="py-5 px-3 hidden">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white lg:hidden"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="py-5 px-3 group">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-4 max-sm:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 14 18"
+                >
+                  <path
+                    d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="py-5 px-3 group">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-4 max-sm:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 21 19"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="py-5 px-3 group">
+                <svg
+                  class="w-[22px] h-[22px] max-sm:w-4 max-sm:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div
+          id="navBar3"
+          class="fixed bg-[#111] text-white w-full duration-150 delay-300"
+        >
           <ul
-            class="flex justify-center customUl max-lg:flex-col max-lg:fixed max-lg:bg-white max-lg:text-[#111] max-lg:top-[61px] max-md:top-[56px] max-sm:top-[52px] max-lg:h-full max-lg:w-full max-lg:-left-full max-lg:justify-start duration-200 ease-linear"
+            class="flex justify-center customUl max-lg:flex-col max-lg:fixed max-lg:bg-white max-lg:text-[#111] max-lg:top-[155px] max-sm:top-[150px] max-lg:h-full max-lg:w-full max-lg:-left-full max-lg:justify-start duration-200 ease-linear"
           >
             <!-- erkek ürünleri -->
             <li class="man">
@@ -1264,1175 +2691,6 @@
                 <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
                 <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
                 <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
-              </div>
-            </li>
-          </ul>
-          <!-- arama, giriş yapma kayıt olma, sepet, favoriler -->
-          <div
-            class="flex items-center max-lg:gap-2 w-max min-[1200px]:w-1/3 justify-end max-lg:order-3"
-          >
-            <div class="relative">
-              <svg
-                class="w-[20px] h-[20px] text-gray-800 dark:text-white absolute top-1/2 -translate-y-1/2 left-2 max-lg:hidden"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <input
-                type="search"
-                class="outline-none text-white px-3 py-2 pl-10 bg-[#111] border-[1px] border-[#444] font-[Roboto] max-lg:hidden"
-              />
-            </div>
-            <div class="flex items-center max-lg:gap-2 max-md:gap-0">
-              <a href="#" class="py-5 px-3 max-md:px-2 lg:hidden">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white lg:hidden"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 max-md:px-2 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 14 18"
-                >
-                  <path
-                    d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 max-md:px-2 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 21 19"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 max-md:px-2 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </section>
-      <section class="c_header-2">
-        <nav
-          class="mx-auto flex items-center justify-between px-5 lg:px-10 w-full max-w-[1920px] max-[1200px]:gap-10"
-        >
-          <ul class="flex justify-start customUl max-xl:hidden w-1/3">
-            <li class="man">
-              <a href="#" class="px-3 py-5 flex min-[1450px]:text-2xl text-xl">
-                <span class="relative manSpan transition-all duration-200 ease"
-                  >ERKEK</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden manDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Sokak Stili</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="women">
-              <a href="#" class="px-3 py-5 flex min-[1450px]:text-2xl text-xl">
-                <span
-                  class="relative womenSpan transition-all duration-200 ease"
-                  >KADIN</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden womenDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Sokak Stili</a>
-                    <a href="#">Ceket</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Tayt</a>
-                    <a href="#">Spor Sütyeni</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                    <a href="#">Kolye</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                    <a href="#">Yoga</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="kids">
-              <a href="#" class="px-3 py-5 flex min-[1450px]:text-2xl text-xl">
-                <span class="relative kidsSpan transition-all duration-200 ease"
-                  >ÇOCUK</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden kidsDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Sokak Stili</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Kız Çocuk</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Kazak</a>
-                    <a href="#">Deniz</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Erkek Çocuk</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Kazak</a>
-                    <a href="#">Deniz</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="spor">
-              <a href="#" class="px-3 py-5 flex min-[1450px]:text-2xl text-xl">
-                <span class="relative sporSpan transition-all duration-200 ease"
-                  >SPOR</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden sporDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Sokak Stili</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Dağcılık</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="newSeason">
-              <a href="#" class="px-3 py-5 flex min-[1450px]:text-2xl text-xl">
-                <span
-                  class="relative newSeasonSpan transition-all duration-200 ease min-w-max"
-                  >YENİ SEZON</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden newSeasonDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Sokak Stili</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="specialSale">
-              <a href="#" class="px-3 py-5 flex min-[1450px]:text-2xl text-xl">
-                <span
-                  class="relative specialSaleSpan transition-all duration-200 ease min-w-max"
-                  >ÖZEL İNDİRİMLER</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden specialSaleDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Sokak Stili</a>
-                    <a href="#">Ceket</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Bot</a>
-                    <a href="#">Terlik & Sandalet</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                    <a href="#">Forma</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Gözlük</a>
-                    <a href="#">Bilezik</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <a href="/index.html" class="py-3 w-32 flex">
-            <img src="/assets/logo.png" class="invert object-cover" />
-          </a>
-          <div
-            class="flex items-center max-lg:gap-2 w-max min-[1200px]:w-1/3 justify-end"
-          >
-            <div class="relative">
-              <svg
-                class="w-[20px] h-[20px] text-gray-800 dark:text-white absolute top-1/2 -translate-y-1/2 left-2 max-lg:hidden"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <input
-                type="search"
-                class="outline-none text-white px-3 py-2 pl-10 bg-[#111] border-[1px] border-[#444] font-[Roboto] max-lg:hidden"
-              />
-            </div>
-            <div class="flex items-center max-lg:gap-2 max-sm:gap-0">
-              <a href="#" class="py-5 px-3 lg:hidden">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white lg:hidden"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 14 18"
-                >
-                  <path
-                    d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 21 19"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </section>
-      <section class="c_header-3 pt-5 max-lg:pb-5 header-3">
-        <nav
-          class="mx-auto flex items-center px-10 w-full max-w-[1920px] max-lg:flex-wrap max-lg:gap-y-3 max-lg:justify-between"
-        >
-          <a href="/index.html" class="w-fit max-lg:w-1/3">
-            <img src="/assets/logo.png" class="invert" />
-          </a>
-          <div class="relative w-full lg:mx-32 max-lg:order-3">
-            <svg
-              class="w-[20px] h-[20px] text-gray-800 dark:text-white absolute top-1/2 -translate-y-1/2 left-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 20 20"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
-                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-              />
-            </svg>
-            <input
-              type="search"
-              class="outline-none text-white px-3 py-2 pl-10 bg-[#111] border-[1px] border-[#444] font-[Roboto] w-full rounded-lg"
-              placeholder="Ürün ya da Kategori Ara"
-            />
-          </div>
-          <div class="flex items-center max-lg:gap-2 justify-end max-lg:w-1/2">
-            <div class="flex items-center max-lg:gap-2 max-sm:gap-0">
-              <a href="#" class="py-5 px-3 hidden">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white lg:hidden"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-4 max-sm:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 14 18"
-                >
-                  <path
-                    d="M7 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm2 1H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-4 max-sm:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 21 19"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="py-5 px-3 group">
-                <svg
-                  class="w-[22px] h-[22px] max-sm:w-4 max-sm:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </nav>
-        <div
-          id="navBar3"
-          class="fixed bg-[#111] text-white w-full duration-150 delay-300"
-        >
-          <ul class="flex justify-center customUl max-lg:hidden">
-            <li class="man">
-              <a href="#" class="px-10 py-5 flex text-2xl">
-                <span
-                  class="relative manSpan transition-all duration-200 ease min-w-max"
-                  >ERKEK</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden manDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Sokak Stili</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="women">
-              <a href="#" class="px-10 py-5 flex text-2xl">
-                <span
-                  class="relative womenSpan transition-all duration-200 ease min-w-max"
-                  >KADIN</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden womenDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Sokak Stili</a>
-                    <a href="#">Ceket</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Tayt</a>
-                    <a href="#">Spor Sütyeni</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                    <a href="#">Kolye</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                    <a href="#">Yoga</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="kids">
-              <a href="#" class="px-10 py-5 flex text-2xl">
-                <span
-                  class="relative kidsSpan transition-all duration-200 ease min-w-max"
-                  >ÇOCUK</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden kidsDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Sokak Stili</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Kız Çocuk</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Kazak</a>
-                    <a href="#">Deniz</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Erkek Çocuk</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Kazak</a>
-                    <a href="#">Deniz</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="spor">
-              <a href="#" class="px-10 py-5 flex text-2xl">
-                <span
-                  class="relative sporSpan transition-all duration-200 ease min-w-max"
-                  >SPOR</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden sporDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Sokak Stili</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Dağcılık</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="newSeason">
-              <a href="#" class="px-10 py-5 flex text-2xl">
-                <span
-                  class="relative newSeasonSpan transition-all duration-200 ease min-w-max"
-                  >YENİ SEZON</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden newSeasonDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Ceket</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Sokak Stili</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Terlik & Sandalet</a>
-                    <a href="#">Bot</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Forma</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Bilezik</a>
-                    <a href="#">Gözlük</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="specialSale">
-              <a href="#" class="px-10 py-5 flex text-2xl">
-                <span
-                  class="relative specialSaleSpan transition-all duration-200 ease min-w-max"
-                  >ÖZEL İNDİRİMLER</span
-                >
-              </a>
-              <div
-                class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden specialSaleDropDown"
-              >
-                <div
-                  class="flex left-1/2 -translate-x-1/2 relative w-full lg:px-10 xl:px-20 2xl:px-40 gap-5"
-                >
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Öne Çıkanlar</a>
-                    <a href="#">En Çok Satanlar</a>
-                    <a href="#">Özel İndirimler</a>
-                    <a href="#">Yeni Sezon</a>
-                    <a href="#">Mont & Kaban</a>
-                    <a href="#">Mevsimlik Ürünler</a>
-                    <a href="#">Sokak Stili</a>
-                    <a href="#">Ceket</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Ayakkabı</a>
-                    <a href="#">Gündelik</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Koşu & Yürüyüş</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Bot</a>
-                    <a href="#">Terlik & Sandalet</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Giyim</a>
-                    <a href="#">T-Shirt & Hoodie</a>
-                    <a href="#">Üst</a>
-                    <a href="#">Ceket & Kaban</a>
-                    <a href="#">Pantolon</a>
-                    <a href="#">Alt</a>
-                    <a href="#">Eşofman Takımı</a>
-                    <a href="#">Jean</a>
-                    <a href="#">Deniz</a>
-                    <a href="#">Kazak</a>
-                    <a href="#">Forma</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Aksesuar</a>
-                    <a href="#">Kemer</a>
-                    <a href="#">Çanta & Cüzdan</a>
-                    <a href="#">Kolye</a>
-                    <a href="#">Küpe</a>
-                    <a href="#">Gözlük</a>
-                    <a href="#">Bilezik</a>
-                  </div>
-                  <div class="text-lg flex flex-col w-full headerStyle-1">
-                    <a href="#">Spor</a>
-                    <a href="#">Basketbol</a>
-                    <a href="#">Futbol</a>
-                    <a href="#">Maraton</a>
-                    <a href="#">Tenis</a>
-                    <a href="#">Kamp & Doğa</a>
-                    <a href="#">Koşu</a>
-                    <a href="#">Yoga</a>
-                    <a href="#">Dağcılık</a>
-                    <a href="#">Lisanslı Ürünler</a>
-                  </div>
-                </div>
               </div>
             </li>
           </ul>
