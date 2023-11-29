@@ -50,7 +50,7 @@
   position: fixed;
   z-index: 50;
   width: 100%;
-  display: none;
+  display: none !important;
 }
 
 .c_header-3 {
@@ -59,7 +59,7 @@
   position: fixed;
   z-index: 50;
   width: 100%;
-  display: none;
+  display: none !important;
 }
 
 @media (min-width: 1024px) {

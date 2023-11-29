@@ -22,7 +22,7 @@ const women_container = document.getElementById("women_container");
 const kids_container = document.getElementById("kids_container");
 const spor_container = document.getElementById("spor_container");
 const newSeason_container = document.getElementById("newSeason_container");
-const specialSale_container = document.getElementById("newSeason_container");
+const specialSale_container = document.getElementById("specialSale_container");
 const back = document.getElementsByClassName("back");
 const back2 = document.getElementsByClassName("back2");
 const btnNav = document.getElementById("btnNav");
@@ -128,200 +128,243 @@ if (btnNav) {
   });
 
   // genel navbar aç kapa
-  man.addEventListener("click", () => {
-    man_container.classList.add("left-0");
-  });
-  women.addEventListener("click", () => {
-    women_container.classList.add("left-0");
-  });
-  kids.addEventListener("click", () => {
-    kids_container.classList.add("left-0");
-  });
-  spor.addEventListener("click", () => {
-    spor_container.classList.add("left-0");
-  });
-  newSeason.addEventListener("click", () => {
-    newSeason_container.classList.add("left-0");
-  });
-  specialSale.addEventListener("click", () => {
-    specialSale_container.classList.add("left-0");
-  });
+  if (man) {
+    man.addEventListener("click", () => {
+      man_container.classList.add("left-0");
+    });
+
+    highlightsMenu_man.addEventListener("click", () => {
+      highlights_man.classList.add("left-0");
+    });
+
+    shoesMenu_man.addEventListener("click", () => {
+      shoes_man.classList.add("left-0");
+    });
+
+    clothingMenu_man.addEventListener("click", () => {
+      clothing_man.classList.add("left-0");
+    });
+
+    sporMenu_man.addEventListener("click", () => {
+      spor_man.classList.add("left-0");
+    });
+
+    accesoriesMenu_man.addEventListener("click", () => {
+      accesories_man.classList.add("left-0");
+    });
+  }
+
+  if (women) {
+    women.addEventListener("click", () => {
+      women_container.classList.add("left-0");
+    });
+
+    highlightsMenu_women.addEventListener("click", () => {
+      highlights_women.classList.add("left-0");
+    });
+
+    shoesMenu_women.addEventListener("click", () => {
+      shoes_women.classList.add("left-0");
+    });
+
+    clothingMenu_women.addEventListener("click", () => {
+      clothing_women.classList.add("left-0");
+    });
+
+    sporMenu_women.addEventListener("click", () => {
+      spor_women.classList.add("left-0");
+    });
+
+    accesoriesMenu_women.addEventListener("click", () => {
+      accesories_women.classList.add("left-0");
+    });
+  }
+
+  if (kids) {
+    kids.addEventListener("click", () => {
+      kids_container.classList.add("left-0");
+    });
+
+    highlightsMenu_kids.addEventListener("click", () => {
+      highlights_kids.classList.add("left-0");
+    });
+
+    shoesMenu_kids.addEventListener("click", () => {
+      shoes_kids.classList.add("left-0");
+    });
+
+    clothingMenu_kids.addEventListener("click", () => {
+      clothing_kids.classList.add("left-0");
+    });
+
+    sporMenu_kids.addEventListener("click", () => {
+      spor_kids.classList.add("left-0");
+    });
+
+    accesoriesMenu_kids.addEventListener("click", () => {
+      accesories_kids.classList.add("left-0");
+    });
+  }
+
+  if (spor) {
+    spor.addEventListener("click", () => {
+      spor_container.classList.add("left-0");
+    });
+
+    highlightsMenu_spor.addEventListener("click", () => {
+      highlights_spor.classList.add("left-0");
+    });
+
+    shoesMenu_spor.addEventListener("click", () => {
+      shoes_spor.classList.add("left-0");
+    });
+
+    clothingMenu_spor.addEventListener("click", () => {
+      clothing_spor.classList.add("left-0");
+    });
+
+    sporMenu_spor.addEventListener("click", () => {
+      spor_spor.classList.add("left-0");
+    });
+
+    accesoriesMenu_spor.addEventListener("click", () => {
+      accesories_spor.classList.add("left-0");
+    });
+  }
+
+  if (newSeason) {
+    newSeason.addEventListener("click", () => {
+      newSeason_container.classList.add("left-0");
+    });
+
+    highlightsMenu_newSeason.addEventListener("click", () => {
+      highlights_newSeason.classList.add("left-0");
+    });
+
+    shoesMenu_newSeason.addEventListener("click", () => {
+      shoes_newSeason.classList.add("left-0");
+    });
+
+    clothingMenu_newSeason.addEventListener("click", () => {
+      clothing_newSeason.classList.add("left-0");
+    });
+
+    sporMenu_newSeason.addEventListener("click", () => {
+      spor_newSeason.classList.add("left-0");
+    });
+
+    accesoriesMenu_newSeason.addEventListener("click", () => {
+      accesories_newSeason.classList.add("left-0");
+    });
+  }
+
+  if (specialSale) {
+    specialSale.addEventListener("click", () => {
+      specialSale_container.classList.add("left-0");
+    });
+
+    highlightsMenu_specialSale.addEventListener("click", () => {
+      highlights_specialSale.classList.add("left-0");
+    });
+
+    shoesMenu_specialSale.addEventListener("click", () => {
+      shoes_specialSale.classList.add("left-0");
+    });
+
+    clothingMenu_specialSale.addEventListener("click", () => {
+      clothing_specialSale.classList.add("left-0");
+    });
+
+    sporMenu_specialSale.addEventListener("click", () => {
+      spor_specialSale.classList.add("left-0");
+    });
+
+    accesoriesMenu_specialSale.addEventListener("click", () => {
+      accesories_specialSale.classList.add("left-0");
+    });
+  }
 
   // bir önceki kategoriye dönüş
   for (let i = 0; i < back.length; i++) {
     back[i].addEventListener("click", () => {
-      highlights_man.classList.remove("left-0");
-      shoes_man.classList.remove("left-0");
-      clothing_man.classList.remove("left-0");
-      spor_man.classList.remove("left-0");
-      accesories_man.classList.remove("left-0");
-      highlights_women.classList.remove("left-0");
-      shoes_women.classList.remove("left-0");
-      clothing_women.classList.remove("left-0");
-      spor_women.classList.remove("left-0");
-      accesories_women.classList.remove("left-0");
-      highlights_kids.classList.remove("left-0");
-      shoes_kids.classList.remove("left-0");
-      clothing_kids.classList.remove("left-0");
-      spor_kids.classList.remove("left-0");
-      accesories_kids.classList.remove("left-0");
-      highlights_kids.classList.remove("left-0");
-      shoes_kids.classList.remove("left-0");
-      clothing_kids.classList.remove("left-0");
-      spor_kids.classList.remove("left-0");
-      accesories_kids.classList.remove("left-0");
-      accesories_spor.classList.remove("left-0");
-      highlights_spor.classList.remove("left-0");
-      shoes_spor.classList.remove("left-0");
-      clothing_spor.classList.remove("left-0");
-      spor_spor.classList.remove("left-0");
-      accesories_spor.classList.remove("left-0");
-      accesories_newSeason.classList.remove("left-0");
-      highlights_newSeason.classList.remove("left-0");
-      shoes_newSeason.classList.remove("left-0");
-      clothing_newSeason.classList.remove("left-0");
-      spor_newSeason.classList.remove("left-0");
-      accesories_newSeason.classList.remove("left-0");
-      accesories_specialSale.classList.remove("left-0");
-      highlights_specialSale.classList.remove("left-0");
-      shoes_specialSale.classList.remove("left-0");
-      clothing_specialSale.classList.remove("left-0");
-      spor_specialSale.classList.remove("left-0");
-      accesories_specialSale.classList.remove("left-0");
+      if (man) {
+        highlights_man.classList.remove("left-0");
+        shoes_man.classList.remove("left-0");
+        clothing_man.classList.remove("left-0");
+        spor_man.classList.remove("left-0");
+        accesories_man.classList.remove("left-0");
+      }
+
+      if (women) {
+        highlights_women.classList.remove("left-0");
+        shoes_women.classList.remove("left-0");
+        clothing_women.classList.remove("left-0");
+        spor_women.classList.remove("left-0");
+        accesories_women.classList.remove("left-0");
+      }
+
+      if (kids) {
+        highlights_kids.classList.remove("left-0");
+        shoes_kids.classList.remove("left-0");
+        clothing_kids.classList.remove("left-0");
+        spor_kids.classList.remove("left-0");
+        accesories_kids.classList.remove("left-0");
+      }
+
+      if (spor) {
+        highlights_spor.classList.remove("left-0");
+        shoes_spor.classList.remove("left-0");
+        clothing_spor.classList.remove("left-0");
+        spor_spor.classList.remove("left-0");
+        accesories_spor.classList.remove("left-0");
+      }
+
+      if (newSeason) {
+        highlights_newSeason.classList.remove("left-0");
+        shoes_newSeason.classList.remove("left-0");
+        clothing_newSeason.classList.remove("left-0");
+        spor_newSeason.classList.remove("left-0");
+        accesories_newSeason.classList.remove("left-0");
+      }
+
+      if (specialSale) {
+        highlights_specialSale.classList.remove("left-0");
+        shoes_specialSale.classList.remove("left-0");
+        clothing_specialSale.classList.remove("left-0");
+        spor_specialSale.classList.remove("left-0");
+        accesories_specialSale.classList.remove("left-0");
+      }
     });
   }
 
   // ana kategoriye dönüş
   for (let i = 0; i < back2.length; i++) {
     back2[i].addEventListener("click", () => {
-      man_container.classList.remove("left-0");
-      women_container.classList.remove("left-0");
-      kids_container.classList.remove("left-0");
-      spor_container.classList.remove("left-0");
-      newSeason_container.classList.remove("left-0");
-      specialSale_container.classList.remove("left-0");
+      if (man) {
+        man_container.classList.remove("left-0");
+      }
+
+      if (women) {
+        women_container.classList.remove("left-0");
+      }
+
+      if (kids) {
+        kids_container.classList.remove("left-0");
+      }
+
+      if (spor) {
+        spor_container.classList.remove("left-0");
+      }
+
+      if (newSeason) {
+        newSeason_container.classList.remove("left-0");
+      }
+
+      if (specialSale) {
+        specialSale_container.classList.remove("left-0");
+      }
     });
   }
-
-  highlightsMenu_man.addEventListener("click", () => {
-    highlights_man.classList.add("left-0");
-  });
-
-  shoesMenu_man.addEventListener("click", () => {
-    shoes_man.classList.add("left-0");
-  });
-
-  clothingMenu_man.addEventListener("click", () => {
-    clothing_man.classList.add("left-0");
-  });
-
-  sporMenu_man.addEventListener("click", () => {
-    spor_man.classList.add("left-0");
-  });
-
-  accesoriesMenu_man.addEventListener("click", () => {
-    accesories_man.classList.add("left-0");
-  });
-
-  highlightsMenu_women.addEventListener("click", () => {
-    highlights_women.classList.add("left-0");
-  });
-
-  shoesMenu_women.addEventListener("click", () => {
-    shoes_women.classList.add("left-0");
-  });
-
-  clothingMenu_women.addEventListener("click", () => {
-    clothing_women.classList.add("left-0");
-  });
-
-  sporMenu_women.addEventListener("click", () => {
-    spor_women.classList.add("left-0");
-  });
-
-  accesoriesMenu_women.addEventListener("click", () => {
-    accesories_women.classList.add("left-0");
-  });
-
-  highlightsMenu_kids.addEventListener("click", () => {
-    highlights_kids.classList.add("left-0");
-  });
-
-  shoesMenu_kids.addEventListener("click", () => {
-    shoes_kids.classList.add("left-0");
-  });
-
-  clothingMenu_kids.addEventListener("click", () => {
-    clothing_kids.classList.add("left-0");
-  });
-
-  sporMenu_kids.addEventListener("click", () => {
-    spor_kids.classList.add("left-0");
-  });
-
-  accesoriesMenu_kids.addEventListener("click", () => {
-    accesories_kids.classList.add("left-0");
-  });
-
-  highlightsMenu_spor.addEventListener("click", () => {
-    highlights_spor.classList.add("left-0");
-  });
-
-  shoesMenu_spor.addEventListener("click", () => {
-    shoes_spor.classList.add("left-0");
-  });
-
-  clothingMenu_spor.addEventListener("click", () => {
-    clothing_spor.classList.add("left-0");
-  });
-
-  sporMenu_spor.addEventListener("click", () => {
-    spor_spor.classList.add("left-0");
-  });
-
-  accesoriesMenu_spor.addEventListener("click", () => {
-    accesories_spor.classList.add("left-0");
-  });
-
-  highlightsMenu_newSeason.addEventListener("click", () => {
-    highlights_newSeason.classList.add("left-0");
-  });
-
-  shoesMenu_newSeason.addEventListener("click", () => {
-    shoes_newSeason.classList.add("left-0");
-  });
-
-  clothingMenu_newSeason.addEventListener("click", () => {
-    clothing_newSeason.classList.add("left-0");
-  });
-
-  sporMenu_newSeason.addEventListener("click", () => {
-    spor_newSeason.classList.add("left-0");
-  });
-
-  accesoriesMenu_newSeason.addEventListener("click", () => {
-    accesories_newSeason.classList.add("left-0");
-  });
-
-  highlightsMenu_specialSale.addEventListener("click", () => {
-    highlights_specialSale.classList.add("left-0");
-  });
-
-  shoesMenu_specialSale.addEventListener("click", () => {
-    shoes_specialSale.classList.add("left-0");
-  });
-
-  clothingMenu_specialSale.addEventListener("click", () => {
-    clothing_specialSale.classList.add("left-0");
-  });
-
-  sporMenu_specialSale.addEventListener("click", () => {
-    spor_specialSale.classList.add("left-0");
-  });
-
-  accesoriesMenu_specialSale.addEventListener("click", () => {
-    accesories_specialSale.classList.add("left-0");
-  });
 }
 
 let scrollPos = window.scrollY;
