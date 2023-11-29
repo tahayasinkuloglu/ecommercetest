@@ -23,21 +23,26 @@
   </head>
   <body>
     <main>
-      <section class="bg-[#111] text-white fixed z-50 w-full header-1">
+      <section class="c_header-1">
         <nav
-          class="mx-auto flex items-center justify-between px-10 w-full max-w-[1920px] relative"
+          class="mx-auto flex items-center justify-between px-10 max-md:px-5 w-full max-w-[1920px] relative"
         >
+          <!-- navbar menüyü açan buton -->
           <i
             class="fa-solid fa-bars text-2xl lg:hidden h-full w-5"
             id="btnNav"
           ></i>
-          <a href="/index.html" class="w-32">
+          <!-- logo -->
+          <a href="/index.html" class="w-32 max-md:w-28">
             <img src="/assets/logo.png" class="invert" />
           </a>
+          <!-- navbar menü -->
           <ul
-            class="flex justify-center customUl max-lg:flex-col max-lg:fixed max-lg:bg-[#111] max-lg:text-white max-lg:top-[61px] max-md:top-[56px] max-sm:top-[52px] max-lg:h-full max-lg:w-full max-lg:-left-full max-lg:justify-start duration-200 ease-linear"
+            class="flex justify-center customUl max-lg:flex-col max-lg:fixed max-lg:bg-white max-lg:text-[#111] max-lg:top-[61px] max-md:top-[56px] max-sm:top-[52px] max-lg:h-full max-lg:w-full max-lg:-left-full max-lg:justify-start duration-200 ease-linear"
           >
+            <!-- erkek ürünleri -->
             <li class="man">
+              <!-- desktop -->
               <a
                 href="#"
                 class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
@@ -48,10 +53,11 @@
                 </span>
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- mobile -->
               <a
                 id="man"
                 href="#"
-                class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
               >
                 <span
                   class="relative manSpan transition-all duration-200 ease min-w-max"
@@ -59,6 +65,7 @@
                 </span>
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- desktop -->
               <div
                 class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden manDropDown"
               >
@@ -123,65 +130,125 @@
                   </div>
                 </div>
               </div>
+              <!-- mobile -->
               <div
-                id="man_con"
-                class="absolute h-full w-full flex flex-col bg-[#111] text-white z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+                id="man_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
               >
                 <a
                   href="#"
-                  class="flex justify-center items-center py-5 gap-10 back2 bg-[#222]"
+                  class="flex justify-center items-center py-3 gap-5 back2 bg-gray-200"
                 >
                   <i class="fa-solid fa-chevron-left"></i>
                   ERKEK
                 </a>
-                <a href="#" class="py-10 pl-10" id="highlightsMenu"
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_man"
                   >ÖNE ÇIKANLAR</a
                 >
-                <a href="#" class="py-10 pl-10" id="shoesMenu">AYAKKABI</a>
-                <a href="#" class="py-10 pl-10">GİYİM</a>
-                <a href="#" class="py-10 pl-10">SPOR</a>
-                <a href="#" class="py-10 pl-10">AKSESUAR</a>
+                <a href="#" class="py-5 pl-10" id="shoesMenu_man">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_man">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_man">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_man"
+                  >AKSESUAR</a
+                >
               </div>
               <div
-                id="highlights"
-                class="absolute h-full w-full flex flex-col bg-[#111] text-white z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+                id="highlights_man"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
               >
                 <a
                   href="#"
-                  class="flex justify-center items-center py-5 gap-10 back bg-[#222]"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
                 >
                   <i class="fa-solid fa-chevron-left"></i>
                   ÖNE ÇIKANLAR
                 </a>
-                <a href="#" class="py-10 pl-10">EN ÇOK SATANLAR</a>
-                <a href="#" class="py-10 pl-10">YENİ SEZON</a>
-                <a href="#" class="py-10 pl-10">ÖZEL İNDİRİMLER</a>
-                <a href="#" class="py-10 pl-10">MEVSİMLİK ÜRÜNLER</a>
-                <a href="#" class="py-10 pl-10">KIŞLIK </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
               </div>
               <div
-                id="shoes"
-                class="first_2 absolute h-full w-full flex flex-col bg-[#111] text-white z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+                id="shoes_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
               >
                 <a
                   href="#"
-                  class="flex justify-center items-center py-5 gap-10 back bg-[#222]"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
                 >
                   <i class="fa-solid fa-chevron-left"></i>
                   AYAKKABI
                 </a>
-                <a href="#" class="py-10 pl-10">AYAKKABI KATEGORİSİ 1</a>
-                <a href="#" class="py-10 pl-10">AYAKKABI KATEGORİSİ 2</a>
-                <a href="#" class="py-10 pl-10">AYAKKABI KATEGORİSİ 3</a>
-                <a href="#" class="py-10 pl-10">AYAKKABI KATEGORİSİ 4</a>
-                <a href="#" class="py-10 pl-10">AYAKKABI KATEGORİSİ 5</a>
-                <a href="#" class="py-10 pl-10">AYAKKABI KATEGORİSİ 6</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_man"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
               </div>
             </li>
+            <!-- kadın ürünleri -->
             <li class="women">
+              <!-- mobile -->
               <a
+                id="women"
                 href="#"
-                class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
               >
                 <span
                   class="relative womenSpan transition-all duration-200 ease min-w-max"
@@ -189,6 +256,18 @@
                 >
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- desktop -->
+              <a
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative womenSpan transition-all duration-200 ease min-w-max"
+                  >KADIN</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              <!-- desktop -->
               <div
                 class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden womenDropDown"
               >
@@ -253,11 +332,125 @@
                   </div>
                 </div>
               </div>
+              <!-- mobile -->
+              <div
+                id="women_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  KADIN
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_women"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_women">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_women">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_women">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_women"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_women"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_women"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
             </li>
+            <!-- çocuk ürünleri -->
             <li class="kids">
+              <!-- mobile -->
               <a
+                id="kids"
                 href="#"
-                class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
               >
                 <span
                   class="relative kidsSpan transition-all duration-200 ease min-w-max"
@@ -265,6 +458,18 @@
                 >
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- desktop -->
+              <a
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative kidsSpan transition-all duration-200 ease min-w-max"
+                  >ÇOCUK</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              <!-- desktop -->
               <div
                 class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden kidsDropDown"
               >
@@ -333,11 +538,125 @@
                   </div>
                 </div>
               </div>
+              <!-- mobile -->
+              <div
+                id="kids_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÇOCUK
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_kids"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_kids">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_kids">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_kids">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_kids"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_kids"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_kids"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
             </li>
+            <!-- spor ürünleri -->
             <li class="spor">
+              <!-- mobile -->
               <a
+                id="spor"
                 href="#"
-                class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
               >
                 <span
                   class="relative sporSpan transition-all duration-200 ease min-w-max"
@@ -345,6 +664,18 @@
                 >
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- desktop -->
+              <a
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative sporSpan transition-all duration-200 ease min-w-max"
+                  >SPOR</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              <!-- desktop -->
               <div
                 class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden sporDropDown"
               >
@@ -409,11 +740,125 @@
                   </div>
                 </div>
               </div>
+              <!-- mobile -->
+              <div
+                id="spor_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_spor"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_spor">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_spor">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_spor">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_spor"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_spor"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_spor"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
             </li>
+            <!-- yeni sezon ürünleri -->
             <li class="newSeason">
+              <!-- mobile -->
               <a
+                id="newSeason"
                 href="#"
-                class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
               >
                 <span
                   class="relative newSeasonSpan transition-all duration-200 ease min-w-max"
@@ -421,6 +866,18 @@
                 >
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- desktop -->
+              <a
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative newSeasonSpan transition-all duration-200 ease min-w-max"
+                  >YENİ SEZON</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              <!-- desktop -->
               <div
                 class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden newSeasonDropDown"
               >
@@ -485,11 +942,129 @@
                   </div>
                 </div>
               </div>
+              <!-- mobile -->
+              <div
+                id="newSeason_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖZEL İNDİRİMLER
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_newSeason"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_newSeason"
+                  >AYAKKABI</a
+                >
+                <a href="#" class="py-5 pl-10" id="clothingMenu_newSeason"
+                  >GİYİM</a
+                >
+                <a href="#" class="py-5 pl-10" id="sporMenu_newSeason">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_newSeason"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_newSeason"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ÖNE ÇIKANLAR
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_newSeason"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
             </li>
+            <!-- özel indirime sahip ürünler -->
             <li class="specialSale">
+              <!-- mobile -->
               <a
+                id="specialSale"
                 href="#"
-                class="2xl:px-10 xl:px-5 px-2 py-5 max-lg:py-10 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:flex max-lg:items-center max-lg:justify-between lg:hidden"
               >
                 <span
                   class="relative specialSaleSpan transition-all duration-200 ease min-w-max"
@@ -497,6 +1072,18 @@
                 >
                 <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
+              <!-- desktop -->
+              <a
+                href="#"
+                class="2xl:px-10 xl:px-5 px-2 py-5 flex xl:text-2xl text-xl max-lg:pl-10 max-lg:items-center max-lg:justify-between max-lg:hidden"
+              >
+                <span
+                  class="relative specialSaleSpan transition-all duration-200 ease min-w-max"
+                  >ÖZEL İNDİRİMLER</span
+                >
+                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
+              </a>
+              <!-- desktop -->
               <div
                 class="bg-white text-[#111] absolute w-full h-max z-50 p-5 left-0 hidden specialSaleDropDown"
               >
@@ -561,8 +1148,120 @@
                   </div>
                 </div>
               </div>
+              <!-- mobile -->
+              <div
+                id="specialSale_container"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back2 bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  ERKEK
+                </a>
+                <a href="#" class="py-5 pl-10" id="highlightsMenu_specialSale"
+                  >ÖNE ÇIKANLAR</a
+                >
+                <a href="#" class="py-5 pl-10" id="shoesMenu_specialSale">AYAKKABI</a>
+                <a href="#" class="py-5 pl-10" id="clothingMenu_specialSale">GİYİM</a>
+                <a href="#" class="py-5 pl-10" id="sporMenu_specialSale">SPOR</a>
+                <a href="#" class="py-5 pl-10" id="accesoriesMenu_specialSale"
+                  >AKSESUAR</a
+                >
+              </div>
+              <div
+                id="highlights_specialSale"
+                class="absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 ease-linear lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                 ÖZEL İNDİRİMLER
+                </a>
+                <a href="#" class="py-3 pl-10">EN ÇOK SATANLAR</a>
+                <a href="#" class="py-3 pl-10">YENİ SEZON</a>
+                <a href="#" class="py-3 pl-10">ÖZEL İNDİRİMLER</a>
+                <a href="#" class="py-3 pl-10">MEVSİMLİK ÜRÜNLER</a>
+                <a href="#" class="py-3 pl-10">KIŞLIK </a>
+              </div>
+              <div
+                id="shoes_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AYAKKABI
+                </a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AYAKKABI KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="clothing_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  GİYİM
+                </a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">GİYİM KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="spor_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  SPOR
+                </a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">SPOR KATEGORİSİ 6</a>
+              </div>
+              <div
+                id="accesories_specialSale"
+                class="first_2 absolute h-full w-full flex flex-col bg-white text-[#111] z-10 top-0 -left-full text-xl duration-200 lg:hidden"
+              >
+                <a
+                  href="#"
+                  class="flex justify-center items-center py-3 gap-5 back bg-gray-200"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                  AKSESUAR
+                </a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 1</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 2</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 3</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 4</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 5</a>
+                <a href="#" class="py-3 pl-10">AKSESUAR KATEGORİSİ 6</a>
+              </div>
             </li>
           </ul>
+          <!-- arama, giriş yapma kayıt olma, sepet, favoriler -->
           <div
             class="flex items-center max-lg:gap-2 w-max min-[1200px]:w-1/3 justify-end max-lg:order-3"
           >
@@ -587,8 +1286,8 @@
                 class="outline-none text-white px-3 py-2 pl-10 bg-[#111] border-[1px] border-[#444] font-[Roboto] max-lg:hidden"
               />
             </div>
-            <div class="flex items-center max-lg:gap-2 max-sm:gap-0">
-              <a href="#" class="py-5 px-3 lg:hidden">
+            <div class="flex items-center max-lg:gap-2 max-md:gap-0">
+              <a href="#" class="py-5 px-3 max-md:px-2 lg:hidden">
                 <svg
                   class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white lg:hidden"
                   aria-hidden="true"
@@ -605,7 +1304,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="py-5 px-3 group">
+              <a href="#" class="py-5 px-3 max-md:px-2 group">
                 <svg
                   class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
                   aria-hidden="true"
@@ -618,7 +1317,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="py-5 px-3 group">
+              <a href="#" class="py-5 px-3 max-md:px-2 group">
                 <svg
                   class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
                   aria-hidden="true"
@@ -635,7 +1334,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="py-5 px-3 group">
+              <a href="#" class="py-5 px-3 max-md:px-2 group">
                 <svg
                   class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
                   aria-hidden="true"
@@ -656,7 +1355,7 @@
           </div>
         </nav>
       </section>
-      <section class="bg-[#111] text-white fixed z-50 w-full hidden header-2">
+      <section class="c_header-2">
         <nav
           class="mx-auto flex items-center justify-between px-5 lg:px-10 w-full max-w-[1920px] max-[1200px]:gap-10"
         >
@@ -1191,9 +1890,7 @@
           </div>
         </nav>
       </section>
-      <section
-        class="bg-[#111] text-white fixed z-50 w-full pt-5 max-lg:pb-5 hidden header-3"
-      >
+      <section class="c_header-3 pt-5 max-lg:pb-5 header-3">
         <nav
           class="mx-auto flex items-center px-10 w-full max-w-[1920px] max-lg:flex-wrap max-lg:gap-y-3 max-lg:justify-between"
         >

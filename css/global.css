@@ -36,6 +36,32 @@
   text-decoration: underline;
 }
 
+.c_header-1 {
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+
+.c_header-2 {
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  display: none;
+}
+
+.c_header-3 {
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .man:hover .manDropDown,
   .women:hover .womenDropDown,
