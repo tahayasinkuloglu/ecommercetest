@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>LOGIN</title>
+    <title>WISHLIST</title>
   </head>
   <body>
     <main>
@@ -1324,75 +1324,359 @@
         </nav>
       </section>
       <section
-        class="min-h-screen h-full py-16 items-center justify-center flex max-w-[1920px] mx-auto"
+        class="h-full w-full lg:pt-32 pt-20 lg:px-10 px-5 flex justify-between gap-5 lg:gap-20 max-w-[1920px] mx-auto max-lg:flex-col"
       >
         <article
-          class="flex max-xl:flex-col w-5/6 mx-auto gap-10 justify-between"
+          class="w-full lg:w-1/5 lg:min-w-max flex flex-col px-5 bg-gray-100 py-5 gap-10 rounded-xl h-max lg:sticky lg:top-28"
         >
-          <form action="" class="flex flex-col w-full gap-5 justify-between">
-            <h2 class="text-3xl max-lg:text-2xl font-[Roboto] font-semibold">
-              Üye Girişi
-            </h2>
-            <div class="flex flex-col w-full gap-2">
-              <input
-                class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
-                type="email"
-                placeholder="E-Posta"
+          <div class="flex items-center gap-3">
+            <div class="w-14">
+              <img src="../assets/user.jpg" class="rounded-full" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="font-[Roboto] font-semibold">Taha Yasin</p>
+              <a
+                href="#"
+                class="font-[Roboto] text-sm w-max text-black text-opacity-60"
+                >Çıkış Yap</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex lg:flex-col gap-3 w-full max-lg:overflow-auto max-lg:h-10"
+          >
+            <a
+              href="/pages/orders.html"
+              class="font-[Roboto] text-black text-opacity-60 hover:text-opacity-100"
+              >Siparişlerim
+            </a>
+            <a
+              href="/pages/notifications.html"
+              class="font-[Roboto] text-black text-opacity-60 hover:text-opacity-100"
+              >Bildirimlerim
+            </a>
+            <a
+              href="/pages/wishlist.html"
+              class="font-[Roboto] text-black lg:flex lg:items-center lg:justify-between font-semibold"
+              >Favorilerim
+              <i class="fa-solid fa-chevron-right max-lg:hidden"></i>
+            </a>
+            <a
+              href="/pages/collections.html"
+              class="font-[Roboto] text-black text-opacity-60 hover:text-opacity-100"
+              >Koleksiyonlarım</a
+            >
+            <a
+              href="/pages/address.html"
+              class="font-[Roboto] text-black text-opacity-60 hover:text-opacity-100"
+              >Adreslerim</a
+            >
+            <a
+              href="/pages/update-profile.html"
+              class="font-[Roboto] text-black text-opacity-60 hover:text-opacity-100 min-w-max"
+              >Kişisel Bilgilerim</a
+            >
+            <a
+              href="/pages/consents.html"
+              class="font-[Roboto] text-black text-opacity-60 hover:text-opacity-100 min-w-max"
+              >Kişisel İzinlerim</a
+            >
+          </div>
+        </article>
+        <article class="flex w-full flex-col py-5 gap-5">
+          <h2 class="font-[Roboto] font-semibold text-2xl">Favorilerim</h2>
+          <!-- <div class="font-[Roboto] text-sm">Favorileriniz Boş</div> -->
+          <div class="flex gap-10 flex-col">
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
               />
-              <div class="relative w-full">
-                <input
-                  class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
-                  type="password"
-                  placeholder="Şifre"
-                  id="inputPassword"
-                />
-                <i
-                  id="passwordBtn"
-                  class="fa-regular fa-eye-slash absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer"
-                ></i>
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
               </div>
             </div>
-            <a
-              href="#"
-              class="underline w-max font-[Roboto] text-opacity-60 text-black"
-              >Şifremi unuttum</a
-            >
-            <input
-              type="submit"
-              class="font-[Roboto] bg-black border-2 border-black text-white w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-black hover:bg-white duration-200 font-semibold"
-              value="Giriş Yap"
-            />
-          </form>
-          <div class="flex flex-col w-full gap-2 max-xl:gap-5 justify-between">
-            <h2 class="font-[Roboto] text-3xl max-lg:text-2xl font-semibold">
-              Yeni Üyelik
-            </h2>
-            <div class="flex flex-col gap-2">
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Siparişlerinizin durumunu kolayca öğrenebilirsiniz.
-              </p>
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Adres ve Kartınızı kaydederek alışverişinizi
-                hızlandırabilirsiniz.
-              </p>
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Ürünleriniz hakkında kolayca işlem yapabilirsiniz.
-              </p>
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Kampanya ve indirimlerimizden daha kolay faydalanabilirsiniz.
-              </p>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
             </div>
-            <a href="/pages/register.html" class="text-center font-[Roboto] bg-white text-black border-2 border-black w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-white hover:bg-black duration-200 font-semibold">
-              Üye Ol
-            </a>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-5 lg:gap-10">
+              <img
+                src="../assets/test-1.webp"
+                class="object-cover h-24 max-lg:h-36"
+              />
+              <div class="flex gap-10 max-lg:flex-col max-lg:w-full">
+                <div class="flex flex-col gap-2">
+                  <p class="font-[Roboto] text-sm">
+                    Gri Kareli Gömlek Pantolon Set
+                  </p>
+                  <p class="font-[Roboto] text-sm">Renk: Beyaz</p>
+                  <p class="font-[Roboto] text-sm">749₺</p>
+                </div>
+                <div class="flex items-end gap-2">
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-black text-white py-2 px-2 lg:px-6 border-2 border-black hover:text-black hover:bg-white duration-200 max-lg:w-full max-lg:text-center max-md:text-sm"
+                  >
+                    Sepete Ekle
+                  </a>
+                  <a
+                    href="#"
+                    class="font-[Roboto] rounded-full bg-white text-black py-2 px-2 lg:px-6 border-2 border-black hover:text-white hover:bg-black duration-200 max-lg:w-1/2 max-lg:text-center max-md:text-sm"
+                  >
+                    Sil
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>

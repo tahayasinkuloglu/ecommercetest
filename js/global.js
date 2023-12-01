@@ -102,6 +102,68 @@ const accesoriesMenu_specialSale = document.getElementById(
 const accesories_specialSale = document.getElementById(
   "accesories_specialSale"
 );
+const inputPassword = document.getElementById("inputPassword");
+const passwordBtn = document.getElementById("passwordBtn");
+const addCollection = document.getElementById("addCollection");
+const collection = document.getElementById("collection");
+const closeCollection = document.getElementById("closeCollection");
+const addAddress = document.getElementById("addAddress");
+const address = document.getElementById("address");
+const closeAddress = document.getElementById("closeAddress");
+
+if (addCollection) {
+  addCollection.addEventListener("click", () => {
+    if (collection.classList.contains("hidden")) {
+      collection.classList.remove("hidden");
+    }
+  });
+
+  closeCollection.addEventListener("click", () => {
+    if (!collection.classList.contains("hidden")) {
+      collection.classList.add("hidden");
+    }
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === collection) {
+      collection.classList.add("hidden");
+    }
+  });
+}
+
+if (addAddress) {
+  addAddress.addEventListener("click", () => {
+    if (address.classList.contains("hidden")) {
+      address.classList.remove("hidden");
+    }
+  });
+
+  closeAddress.addEventListener("click", () => {
+    if (!address.classList.contains("hidden")) {
+      address.classList.add("hidden");
+    }
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === address) {
+      address.classList.add("hidden");
+    }
+  });
+}
+
+if (passwordBtn) {
+  passwordBtn.addEventListener("click", () => {
+    if (inputPassword.type === "password") {
+      passwordBtn.classList.add("fa-eye");
+      passwordBtn.classList.remove("fa-eye-slash");
+      inputPassword.type = "text";
+    } else {
+      inputPassword.type = "password";
+      passwordBtn.classList.add("fa-eye-slash");
+      passwordBtn.classList.remove("fa-eye");
+    }
+  });
+}
 
 if (btnNav) {
   btnNav.addEventListener("click", () => {

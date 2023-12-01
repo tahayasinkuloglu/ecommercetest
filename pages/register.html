@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>LOGIN</title>
+    <title>REGISTER</title>
   </head>
   <body>
     <main>
@@ -1324,76 +1324,68 @@
         </nav>
       </section>
       <section
-        class="min-h-screen h-full py-16 items-center justify-center flex max-w-[1920px] mx-auto"
+        class="min-h-screen h-full py-20 items-center justify-center flex max-w-[1920px] mx-auto"
       >
-        <article
-          class="flex max-xl:flex-col w-5/6 mx-auto gap-10 justify-between"
-        >
+        <article class="flex xl:w-1/2 w-full mx-auto max-xl:px-10">
           <form action="" class="flex flex-col w-full gap-5 justify-between">
-            <h2 class="text-3xl max-lg:text-2xl font-[Roboto] font-semibold">
-              Üye Girişi
+            <h2>
+              <a
+                href="/pages/login.html"
+                class="text-3xl max-lg:text-2xl font-[Roboto] font-semibold flex items-center gap-2"
+              >
+                <i class="fa-solid fa-chevron-left text-2xl"></i>
+                Yeni Hesap
+              </a>
             </h2>
-            <div class="flex flex-col w-full gap-2">
+            <form action="" class="flex flex-col w-full gap-2">
+              <input
+                class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
+                type="text"
+                placeholder="Ad"
+              />
+              <input
+                class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
+                type="text"
+                placeholder="Soyad"
+              />
               <input
                 class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
                 type="email"
+                inputmode="email"
                 placeholder="E-Posta"
               />
-              <div class="relative w-full">
-                <input
-                  class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
-                  type="password"
-                  placeholder="Şifre"
-                  id="inputPassword"
-                />
-                <i
-                  id="passwordBtn"
-                  class="fa-regular fa-eye-slash absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer"
-                ></i>
-              </div>
-            </div>
-            <a
-              href="#"
-              class="underline w-max font-[Roboto] text-opacity-60 text-black"
-              >Şifremi unuttum</a
-            >
-            <input
-              type="submit"
-              class="font-[Roboto] bg-black border-2 border-black text-white w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-black hover:bg-white duration-200 font-semibold"
-              value="Giriş Yap"
-            />
+              <input
+                class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
+                type="number"
+                placeholder="Cep Telefonu"
+                inputmode="numeric"
+              />
+              <input
+                class="outline-none border-b-2 py-2 text-xl font-[Roboto] placeholder:text-base w-full"
+                type="date"
+                placeholder="Doğum Tarihi"
+              />
+              <p class="font-[Roboto] text-sm opacity-50 text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                sequi a enim quos aut dolorum tempore soluta sunt, veritatis
+                laudantium. Voluptate, quaerat porro sit et ipsum, officia
+                necessitatibus pariatur fugit labore, doloribus adipisci nihil?
+                Sapiente excepturi, iusto doloribus, nisi assumenda molestiae
+                autem facere quod reprehenderit tenetur ex. Deleniti, sed
+                numquam! Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Porro dignissimos recusandae eveniet, molestias possimus
+                neque voluptas totam explicabo facere quia quas vero illum odio,
+                obcaecati quae harum, ab iste laborum sed. Qui blanditiis ipsa
+                nam fugit! Nisi alias soluta eveniet, est libero quos sint
+                accusamus a dignissimos error iure deserunt?
+              </p>
+              <input
+                type="submit"
+                class="font-[Roboto] bg-black border-2 border-black text-white w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-black hover:bg-white duration-200 font-semibold"
+                value="Üye Ol"
+              />
+            </form>
           </form>
-          <div class="flex flex-col w-full gap-2 max-xl:gap-5 justify-between">
-            <h2 class="font-[Roboto] text-3xl max-lg:text-2xl font-semibold">
-              Yeni Üyelik
-            </h2>
-            <div class="flex flex-col gap-2">
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Siparişlerinizin durumunu kolayca öğrenebilirsiniz.
-              </p>
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Adres ve Kartınızı kaydederek alışverişinizi
-                hızlandırabilirsiniz.
-              </p>
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Ürünleriniz hakkında kolayca işlem yapabilirsiniz.
-              </p>
-              <p
-                class="font-[Roboto] text-base max-lg:text-sm text-black text-opacity-60"
-              >
-                • Kampanya ve indirimlerimizden daha kolay faydalanabilirsiniz.
-              </p>
-            </div>
-            <a href="/pages/register.html" class="text-center font-[Roboto] bg-white text-black border-2 border-black w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-white hover:bg-black duration-200 font-semibold">
-              Üye Ol
-            </a>
-          </div>
         </article>
       </section>
     </main>
