@@ -46,7 +46,6 @@
                   class="relative manSpan transition-all duration-200 ease min-w-max"
                   >ERKEK
                 </span>
-                <i class="fa-solid fa-chevron-right lg:hidden max-lg:pr-10"></i>
               </a>
               <a
                 id="man"
@@ -1328,14 +1327,15 @@
         </nav>
       </section>
       <section>
-        <div class="flex py-32 max-xl:flex-col">
-          <article class="h-full xl:sticky xl:top-32">
+        <!-- KATEGORİ SAYFASI 1 -->
+        <!-- <div class="flex py-28 flex-col">
+          <article class="h-full sticky top-20">
             <a
               href="#"
-              class="flex items-center gap-2 p-4 bg-gray-300 w-full rounded-r-xl customFilterToggle"
+              class="flex items-center gap-2 p-4 bg-gray-300 w-max rounded-r-full customFilterToggle fixed top-1/2 -translate-y-1/2 -left-[92px] hover:left-0 duration-200"
             >
-              <i class="fa-solid fa-arrow-up-wide-short text-xl"></i>
-              <p class="font-[Roboto] font-bold text-lg">Filtrele</p>
+              <p class="font-[Roboto] font-bold text-2xl">Filtrele</p>
+              <i class="fa-solid fa-arrow-up-wide-short text-2xl"></i>
             </a>
             <div
               id="customFilterMenu"
@@ -1346,12 +1346,12 @@
                 class="font-[Roboto] font-lg font-semibold py-3 px-5 block text-right customFilterToggle"
                 >KAPAT</a
               >
-              <div class="border-b-2 border-t-2 p-3">
+              <div class="border-b-2 border-t-2 px-3 py-1">
                 <div
-                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer py-3"
                 >
                   <p class="customFilterHeader">Ürünleri Sırala</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down customChevronDown"></i>
                 </div>
                 <ul class="customFilter h-0 overflow-hidden">
                   <li>Artan Fiyata Göre</li>
@@ -1361,12 +1361,12 @@
                   <li>İndirimli Ürünler</li>
                 </ul>
               </div>
-              <div class="border-b-2 p-3">
+              <div class="border-b-2 px-3 py-1">
                 <div
-                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer py-3"
                 >
                   <p class="customFilterHeader">Cinsiyet</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down customChevronDown"></i>
                 </div>
                 <ul class="customFilter h-0 overflow-hidden">
                   <li>
@@ -1387,12 +1387,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="border-b-2 p-3">
+              <div class="border-b-2 px-3 py-1">
                 <div
-                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer py-3"
                 >
                   <p class="customFilterHeader">BEDEN</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down customChevronDown"></i>
                 </div>
                 <ul
                   class="customFilter h-0 overflow-hidden gap-1 flex flex-wrap customSize w-full"
@@ -1412,12 +1412,12 @@
                   <li class="w-1/6 border-2 text-center">XL</li>
                 </ul>
               </div>
-              <div class="border-b-2 p-3">
+              <div class="border-b-2 px-3 py-1">
                 <div
-                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer py-3"
                 >
                   <p class="customFilterHeader">Fiyat</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down customChevronDown"></i>
                 </div>
                 <ul class="customFilter h-0 overflow-hidden flex">
                   <li>
@@ -1440,12 +1440,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="border-b-2 p-3">
+              <div class="border-b-2 px-3 py-1">
                 <div
-                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer py-3"
                 >
                   <p class="customFilterHeader">RENK</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down customChevronDown"></i>
                 </div>
                 <ul
                   class="customFilter h-0 overflow-hidden gap-1 flex flex-wrap customSize w-full"
@@ -1465,12 +1465,12 @@
                   <li class="w-1/6 h-10 rounded-lg border-2 bg-red-300"></li>
                 </ul>
               </div>
-              <div class="border-b-2 p-3">
+              <div class="border-b-2 px-3 py-1">
                 <div
-                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer py-3"
                 >
                   <p class="customFilterHeader">Marka</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down customChevronDown"></i>
                 </div>
                 <ul class="customFilter h-0 overflow-hidden">
                   <li>
@@ -1498,115 +1498,1376 @@
                 >SEÇİMLERİMİ UYGULA</a
               >
             </div>
-            <!-- <div class="bg-gray-200 z-50 h-full w-max top-0 flex flex-col fixed overflow-scroll">
-              <div>
-                <h4 class="font-[Roboto] font-bold text-xl customFilter">
-                  ÜRÜNLERİ SIRALA
-                </h4>
-                <ul>
-                  <li>Yüksek Fiyat</li>
-                  <li>Düşük Fiyat</li>
-                  <li>En Çok Satılanlar</li>
-                  <li>Yeni Ürünler</li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="font-[Roboto] font-semibold text-xl customFilter">
-                  Cinsiyet
-                </h4>
-                <ul>
-                  <li>Erkek</li>
-                  <li>Kadın</li>
-                  <li>Çocuk</li>
-                  <li>Unisex</li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="font-[Roboto] font-semibold text-xl customFilter">
-                  Ürün Kategorisi
-                </h4>
-                <ul>
-                  <li>Giyim</li>
-                  <li>Ayakkabı</li>
-                  <li>Aksesuar</li>
-                  <li>Spor</li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="font-[Roboto] font-semibold text-xl mb-1">Beden</h4>
-                <ul class="flex flex-wrap customSize gap-2">
-                  <li>36</li>
-                  <li>37</li>
-                  <li>38</li>
-                  <li>39</li>
-                  <li>40</li>
-                  <li>41</li>
-                  <li>42</li>
-                  <li>43</li>
-                  <li>44</li>
-                  <li>45</li>
-                  <li>XS</li>
-                  <li>S</li>
-                  <li>M</li>
-                  <li>L</li>
-                  <li>XL</li>
-                </ul>
-              </div>
-              <div>
-                <h4
-                  class="font-[Roboto] font-semibold text-xl customFilter mb-1"
-                >
-                  Fiyat
-                </h4>
-                <ul class="flex gap-5">
-                  <input
-                    class="outline-none border-[1px] border-black border-opacity-50 w-1/3 font-[Roboto] px-2"
-                    type="number"
-                    name="min"
-                    id=""
-                    placeholder="En Az"
-                  />
-                  <input
-                    class="outline-none border-[1px] border-black border-opacity-50 w-1/3 font-[Roboto] px-2"
-                    type="number"
-                    name="max"
-                    id=""
-                    placeholder="En Fazla"
-                  />
-                </ul>
-              </div>
-              <div>
-                <h4 class="font-[Roboto] font-semibold text-xl mb-1">
-                  Renk Seçimi
-                </h4>
-                <ul class="flex flex-wrap customColor gap-2 w-2/3">
-                  <li class="bg-red-500"></li>
-                  <li class="bg-blue-500"></li>
-                  <li class="bg-green-500"></li>
-                  <li class="bg-yellow-500"></li>
-                  <li class="bg-pink-500"></li>
-                  <li class="bg-black"></li>
-                  <li class="bg-white border-[1px] border-black"></li>
-                  <li class="bg-slate-500"></li>
-                  <li class="bg-orange-500"></li>
-                  <li class="bg-red-500"></li>
-                </ul>
-              </div>
-              <div>
-                <input
-                  class="font-[Roboto] border-2 border-black rounded-full px-4 py-1 bg-black text-white cursor-pointer"
-                  type="button"
-                  value="Kaydet"
-                />
-                <input
-                  class="font-[Roboto] border-2 border-black rounded-full px-4 py-1 bg-white text-black cursor-pointer"
-                  type="button"
-                  value="Temizle"
-                />
-              </div>
-            </div> -->
           </article>
           <article class="w-full px-0 lg:px-10">
+            <div class="flex flex-wrap gap-2 lg:gap-5">
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                      >
+                        NIKE AIR MAX
+                      </a>
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        78
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      40$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">50$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >20%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-2.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE AIR FORCE</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm pb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        102
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      34$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">49$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="/pages/product-detail.html">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-3.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="/pages/product-detail.html"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE COURT VISION</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        268
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
+                      60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl h-full object-cover"
+                    src="../assets/nike-4.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE DUNK LOW</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        52
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      45$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">65$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                      >
+                        NIKE AIR MAX
+                      </a>
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        78
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      40$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">50$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >20%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-2.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE AIR FORCE</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        102
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      34$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">49$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="/pages/product-detail.html">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-3.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="/pages/product-detail.html"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE COURT VISION</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        268
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
+                      60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl h-full object-cover"
+                    src="../assets/nike-4.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE DUNK LOW</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        52
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      45$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">65$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                      >
+                        NIKE AIR MAX
+                      </a>
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        78
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      40$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">50$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >20%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-2.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE AIR FORCE</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm pb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        102
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      34$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">49$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="/pages/product-detail.html">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-3.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="/pages/product-detail.html"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE COURT VISION</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        268
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
+                      60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl h-full object-cover"
+                    src="../assets/nike-4.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE DUNK LOW</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        52
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      45$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">65$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                      >
+                        NIKE AIR MAX
+                      </a>
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        78
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      40$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">50$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >20%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-2.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE AIR FORCE</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        102
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      34$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">49$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="/pages/product-detail.html">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-3.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="/pages/product-detail.html"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE COURT VISION</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        268
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
+                      60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl h-full object-cover"
+                    src="../assets/nike-4.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE DUNK LOW</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        52
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      45$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">65$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                      >
+                        NIKE AIR MAX
+                      </a>
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        78
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      40$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">50$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >20%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-2.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE AIR FORCE</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm pb-1">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        102
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      34$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">49$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="/pages/product-detail.html">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-3.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="/pages/product-detail.html"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE COURT VISION</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        268
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
+                      60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl h-full object-cover"
+                    src="../assets/nike-4.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE DUNK LOW</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        52
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      45$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">65$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                      >
+                        NIKE AIR MAX
+                      </a>
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        78
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      40$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">50$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >20%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-2.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE AIR FORCE</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        102
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      34$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">49$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="/pages/product-detail.html">
+                  <img
+                    class="rounded-t-xl"
+                    src="../assets/nike-3.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="/pages/product-detail.html"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE COURT VISION</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        268
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
+                      60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-t-xl h-full object-cover"
+                    src="../assets/nike-4.webp"
+                    alt="nike-4gc1"
+                  />
+                </a>
+                <div
+                  class="flex flex-col py-2 lg:py-3 gap-5 px-2 lg:px-5 justify-between h-full"
+                >
+                  <div class="flex flex-col">
+                    <h2>
+                      <a
+                        href="#"
+                        class="hover:underline h-full text-[clamp(1rem,2.5vw,1.6rem)]"
+                        >NIKE DUNK LOW</a
+                      >
+                    </h2>
+                    <div class="flex items-center text-sm">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <p class="text-[clamp(0.9rem,2vw,1.2rem)] pt-1 pl-1">
+                        52
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[clamp(1rem,2.5vw,1.6rem)] flex items-center gap-2"
+                    >
+                      45$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]">65$</del>
+                      <span
+                        class="bg-red-500 text-white text-[clamp(0.9rem,2vw,1.2rem)] px-1"
+                        >30%</span
+                      >
+                    </p>
+                    <div class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-heart-circle-plus text-[clamp(0.9rem,2vw,1.2rem)] hover:text-red-600 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div> -->
+        <!-- KATEGORİ SAYFASI 2 -->
+        <div class="flex py-28 max-lg:flex-col">
+          <article id="filterContainer" class="max-md:flex-wrap flex lg:flex-col max-lg:w-full gap-2 lg:gap-4 px-2 lg:px-10 w-1/3 xl:w-1/6 bg-gray-100 h-full max-lg:pb-2 max-lg:pt-5 lg:py-5 rounded-xl lg:sticky lg:top-[155px]">
+            <div class="w-full max-md:w-[calc(50%-4px)]">
+              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+                <p class="font-[Roboto] text-base">Kategori</p>
+                <i class="fa-solid fa-chevron-down customChevronDown"></i>
+              </div>
+              <ul class="h-0 overflow-hidden customFilter customFilter_2">
+                <li class="text-base flex gap-1">
+                  <input type="checkbox" name="" id="product_shoes">
+                  <label for="product_shoes">Ayakkabı</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="product_slippers">
+                  <label for="product_slippers">Terlik</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="product_boots">
+                  <label for="product_boots">Bot</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="product_sandals">
+                  <label for="product_sandals">Sandalet</label>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full max-md:w-[calc(50%-4px)]">
+              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+                <p class="font-[Roboto] text-base">Beden</p>
+                <i class="fa-solid fa-chevron-down customChevronDown"></i>
+              </div>
+              <ul class="h-0 overflow-hidden customFilter customFilter_2">
+                <li class="text-base flex gap-1">
+                  <input type="checkbox" name="" id="size_39">
+                  <label for="size_39">39</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="size_40">
+                  <label for="size_40">40</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="size_41">
+                  <label for="size_41">41</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="size_42">
+                  <label for="size_42">42</label>
+                </li>
+                <li class="text-base">
+                  <input type="checkbox" name="" id="size_43">
+                  <label for="size_43">43</label>
+                </li>
+                <div>
+                  <ul id="moreColor" class="h-0 overflow-hidden customFilter_2">
+                    <li class="text-base flex gap-1">
+                      <input type="checkbox" name="" id="size_44">
+                      <label for="size_44">44</label>
+                    </li>
+                    <li class="text-base">
+                      <input type="checkbox" name="" id="size_45">
+                      <label for="size_45">45</label>
+                    </li>
+                    <li class="text-base">
+                      <input type="checkbox" name="" id="size_46">
+                      <label for="size_46">46</label>
+                    </li>
+                    <li class="text-base">
+                      <input type="checkbox" name="" id="size_47">
+                      <label for="size_47">47</label>
+                    </li>
+                  </ul>
+                  <p id="moreColorBtn" class="font-[Roboto] text-sm mb-1 cursor-pointer moreColorBtn font-bold">Daha fazla göster +</p>
+                </div>
+              </ul>
+            </div>
+            <div class="w-full max-md:w-[calc(50%-4px)]">
+              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+                <p class="font-[Roboto] text-base">Renk</p>
+                <i class="fa-solid fa-chevron-down customChevronDown"></i>
+              </div>
+              <ul class="h-0 overflow-hidden customFilter customFilter_2 flex flex-wrap">
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-red-500"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-500"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-900"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-black"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-white"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-orange-300"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-orange-700"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-green-500"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-slate-600"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-gray-400"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-yellow-400"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-950"></li>
+                  <li class="w-1/5 h-10 rounded-lg border-2 bg-red-300"></li>
+              </ul>
+            </div>
+            <div class="w-full max-md:w-[calc(50%-4px)]">
+              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+                <p class="font-[Roboto] text-base">Fiyat</p>
+                <i class="fa-solid fa-chevron-down customChevronDown"></i>
+              </div>
+              <div class="h-0 overflow-hidden flex justify-between gap-4 customFilter">
+                <div class="w-1/2 relative">
+                  <input class="w-full outline-none border-b-[1px] border-black font-[Roboto] bg-transparent pr-5" type="number" placeholder="Min" value="0">
+                  <span class="absolute top-0 right-1">₺</span>
+                </div>
+                <div class="w-1/2 relative">
+                  <input class="w-full outline-none border-b-[1px] border-black font-[Roboto] bg-transparent pr-5" type="number" placeholder="Max" value="5000">
+                  <span class="absolute top-0 right-1">₺</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="w-full px-0 lg:px-5">
+            <div class="flex gap-5">
+              <button id="showFilter" onclick="showFilter()" class="font-[Roboto] text-xl py-2 max-lg:hidden">
+                <i class="fa-solid fa-filter text-xl"></i>
+                Filtreleri Gizle
+              </button>
+              <p class="font-[Roboto] text-xl py-2">24 Ürün</p>
+            </div>
             <div class="flex flex-wrap gap-2 lg:gap-5">
               <div
                 class="flex flex-col w-[calc(50%-5px)] md:w-[calc(33%-0.3rem)] lg:w-[calc(33%-12px)] min-[1400px]:w-[calc(25%-15px)] rounded-xl shadow-md"

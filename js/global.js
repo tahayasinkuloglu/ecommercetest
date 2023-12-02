@@ -118,6 +118,22 @@ const customFilterMenu = document.getElementById("customFilterMenu");
 const navbar = document.getElementById("navBar3");
 const saveFilterBtn = document.getElementById("saveFilter");
 let prevScrollPos = window.scrollY;
+const moreColorBtn = document.getElementById("moreColorBtn");
+const filterContainer = document.getElementById("filterContainer");
+const customChevronDown = document.getElementsByClassName("customChevronDown");
+
+moreColorBtn?.addEventListener("click", () => {
+  const moreColor = document.getElementById("moreColor");
+  if (moreColorBtn.innerText == "Daha fazla göster +") {
+    moreColorBtn.innerText = "Daha az göster -";
+    moreColor.classList.remove("h-0");
+    moreColor.classList.remove("overflow-hidden");
+  } else {
+    moreColorBtn.innerText = "Daha fazla göster +";
+    moreColor.classList.add("h-0");
+    moreColor.classList.add("overflow-hidden");
+  }
+});
 
 if (btnNav) {
   btnNav.addEventListener("click", () => {
@@ -456,9 +472,17 @@ if (headerBtn) {
   for (let i = 0; i < headerBtn.length; i++) {
     headerBtn[i].addEventListener("click", () => {
       const releatedCustomFilter = customFilter[i];
-
       releatedCustomFilter.classList.toggle("h-0");
       releatedCustomFilter.classList.toggle("overflow-hidden");
+
+      const down = customChevronDown[i];
+      if (down.classList.contains("fa-chevron-down")) {
+        down.classList.remove("fa-chevron-down");
+        down.classList.add("fa-chevron-up");
+      } else {
+        down.classList.remove("fa-chevron-up");
+        down.classList.add("fa-chevron-down");
+      }
     });
   }
 }
@@ -532,3 +556,16 @@ function toggleNavbar() {
 }
 
 window.onscroll = toggleNavbar;
+
+function showFilter() {
+  const showFilter = document.getElementById("showFilter");
+  if (filterContainer.classList.contains("lg:hidden")) {
+    filterContainer.classList.remove("lg:hidden");
+    filterContainer.classList.add("lg:sticky");
+    showFilter.innerText = "Filtreleri Gizle";
+  } else {
+    filterContainer.classList.remove("lg:sticky");
+    filterContainer.classList.add("lg:hidden");
+    showFilter.innerText = "Filtreleri Göster";
+  }
+}

@@ -81,6 +81,14 @@ label {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.customFilter_2 > li {
+  font-family: "Roboto", "sans-serif";
+  font-size: 14px;
+  padding: 2px 0px 2px 0px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .customFilter + ul > li:hover {
   color: rgba(0, 0, 0, 1);
 }
