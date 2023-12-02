@@ -64,30 +64,21 @@ input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.customSize > li {
+label {
   font-family: "Roboto", "sans-serif";
-  width: 17%;
-  text-align: center;
-  padding: 0.25rem 0 0.25rem 0;
-  font-size: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.customSize > li:hover {
-  cursor: pointer;
-}
-
-.customColor > li {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.customFilter + ul > li {
-  color: rgba(0, 0, 0, 0.7);
-  cursor: pointer;
+.customFilterHeader {
   font-family: "Roboto", "sans-serif";
-  width: max-content;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.customFilter > li {
+  font-family: "Roboto", "sans-serif";
+  padding: 6px 0px 6px 0px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .customFilter + ul > li:hover {

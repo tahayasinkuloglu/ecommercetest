@@ -110,60 +110,14 @@ const closeCollection = document.getElementById("closeCollection");
 const addAddress = document.getElementById("addAddress");
 const address = document.getElementById("address");
 const closeAddress = document.getElementById("closeAddress");
-
-if (addCollection) {
-  addCollection.addEventListener("click", () => {
-    if (collection.classList.contains("hidden")) {
-      collection.classList.remove("hidden");
-    }
-  });
-
-  closeCollection.addEventListener("click", () => {
-    if (!collection.classList.contains("hidden")) {
-      collection.classList.add("hidden");
-    }
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === collection) {
-      collection.classList.add("hidden");
-    }
-  });
-}
-
-if (addAddress) {
-  addAddress.addEventListener("click", () => {
-    if (address.classList.contains("hidden")) {
-      address.classList.remove("hidden");
-    }
-  });
-
-  closeAddress.addEventListener("click", () => {
-    if (!address.classList.contains("hidden")) {
-      address.classList.add("hidden");
-    }
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === address) {
-      address.classList.add("hidden");
-    }
-  });
-}
-
-if (passwordBtn) {
-  passwordBtn.addEventListener("click", () => {
-    if (inputPassword.type === "password") {
-      passwordBtn.classList.add("fa-eye");
-      passwordBtn.classList.remove("fa-eye-slash");
-      inputPassword.type = "text";
-    } else {
-      inputPassword.type = "password";
-      passwordBtn.classList.add("fa-eye-slash");
-      passwordBtn.classList.remove("fa-eye");
-    }
-  });
-}
+const headerBtn = document.getElementsByClassName("headerBtn");
+const customFilter = document.getElementsByClassName("customFilter");
+const customFilterToggle =
+  document.getElementsByClassName("customFilterToggle");
+const customFilterMenu = document.getElementById("customFilterMenu");
+const navbar = document.getElementById("navBar3");
+const saveFilterBtn = document.getElementById("saveFilter");
+let prevScrollPos = window.scrollY;
 
 if (btnNav) {
   btnNav.addEventListener("click", () => {
@@ -426,65 +380,155 @@ if (btnNav) {
   }
 }
 
-if (descHeader) {
-  descHeader.addEventListener("click", (e) => {
-    e.preventDefault();
-    desc.classList.toggle("h-full");
-  });
+descHeader?.addEventListener("click", (e) => {
+  e.preventDefault();
+  desc.classList.toggle("h-full");
+});
+
+deliveryHeader?.addEventListener("click", (e) => {
+  e.preventDefault();
+  delivery.classList.toggle("h-full");
+});
+
+sizeHeader?.addEventListener("click", (e) => {
+  e.preventDefault();
+  size.classList.toggle("h-full");
+  size.classList.toggle("opacity-100");
+});
+
+navOpen?.addEventListener("click", () => {
+  if (navMenu.classList.contains("-left-full")) {
+    navMenu.classList.remove("-left-full");
+    navOpen.classList.remove("fa-bars");
+    shop.classList.remove("fa-xmark");
+    navMenu.classList.add("left-0");
+    navOpen.classList.add("fa-xmark");
+    shopMenu.classList.add("-right-full");
+    shopMenu.classList.remove("right-0");
+    shop.classList.add("fa-bag-shopping");
+  } else {
+    navMenu.classList.remove("left-0");
+    navOpen.classList.remove("fa-xmark");
+    navMenu.classList.add("-left-full");
+    navOpen.classList.add("fa-bars");
+  }
+});
+
+shop?.addEventListener("click", () => {
+  if (shopMenu.classList.contains("-right-full")) {
+    shopMenu.classList.remove("-right-full");
+    shopMenu.classList.add("right-0");
+    shop.classList.remove("fa-bag-shopping");
+    shop.classList.add("fa-xmark");
+    navMenu.classList.add("-left-full");
+    navMenu.classList.remove("left-0");
+    navCon.classList.remove("bg-white");
+    navOpen.classList.remove("fa-xmark");
+    navOpen.classList.add("fa-bars");
+  } else {
+    shopMenu.classList.remove("right-0");
+    shopMenu.classList.add("-right-full");
+    shop.classList.add("fa-bag-shopping");
+    shop.classList.remove("fa-xmark");
+  }
+});
+
+if (customFilterMenu) {
+  for (let i = 0; i < customFilterToggle.length; i++) {
+    customFilterToggle[i].addEventListener("click", (e) => {
+      e.preventDefault();
+      if (customFilterMenu.classList.contains("hidden")) {
+        customFilterMenu.classList.remove("hidden");
+        customFilterMenu.classList.add("fixed");
+      } else {
+        customFilterMenu.classList.remove("fixed");
+        customFilterMenu.classList.add("hidden");
+      }
+    });
+  }
 }
 
-if (deliveryHeader) {
-  deliveryHeader.addEventListener("click", (e) => {
-    e.preventDefault();
-    delivery.classList.toggle("h-full");
-  });
+saveFilterBtn?.addEventListener("click", (e) => {
+  e.preventDefault();
+});
+
+if (headerBtn) {
+  for (let i = 0; i < headerBtn.length; i++) {
+    headerBtn[i].addEventListener("click", () => {
+      const releatedCustomFilter = customFilter[i];
+
+      releatedCustomFilter.classList.toggle("h-0");
+      releatedCustomFilter.classList.toggle("overflow-hidden");
+    });
+  }
 }
 
-if (sizeHeader) {
-  sizeHeader.addEventListener("click", (e) => {
-    e.preventDefault();
-    size.classList.toggle("h-full");
-    size.classList.toggle("opacity-100");
+if (addCollection) {
+  addCollection.addEventListener("click", () => {
+    if (collection.classList.contains("hidden")) {
+      collection.classList.remove("hidden");
+    }
   });
-}
 
-if (navOpen) {
-  navOpen.addEventListener("click", () => {
-    if (navMenu.classList.contains("-left-full")) {
-      navMenu.classList.remove("-left-full");
-      navOpen.classList.remove("fa-bars");
-      shop.classList.remove("fa-xmark");
-      navMenu.classList.add("left-0");
-      navOpen.classList.add("fa-xmark");
-      shopMenu.classList.add("-right-full");
-      shopMenu.classList.remove("right-0");
-      shop.classList.add("fa-bag-shopping");
-    } else {
-      navMenu.classList.remove("left-0");
-      navOpen.classList.remove("fa-xmark");
-      navMenu.classList.add("-left-full");
-      navOpen.classList.add("fa-bars");
+  closeCollection.addEventListener("click", () => {
+    if (!collection.classList.contains("hidden")) {
+      collection.classList.add("hidden");
+    }
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === collection) {
+      collection.classList.add("hidden");
     }
   });
 }
 
-if (shop) {
-  shop.addEventListener("click", () => {
-    if (shopMenu.classList.contains("-right-full")) {
-      shopMenu.classList.remove("-right-full");
-      shopMenu.classList.add("right-0");
-      shop.classList.remove("fa-bag-shopping");
-      shop.classList.add("fa-xmark");
-      navMenu.classList.add("-left-full");
-      navMenu.classList.remove("left-0");
-      navCon.classList.remove("bg-white");
-      navOpen.classList.remove("fa-xmark");
-      navOpen.classList.add("fa-bars");
-    } else {
-      shopMenu.classList.remove("right-0");
-      shopMenu.classList.add("-right-full");
-      shop.classList.add("fa-bag-shopping");
-      shop.classList.remove("fa-xmark");
+if (addAddress) {
+  addAddress.addEventListener("click", () => {
+    if (address.classList.contains("hidden")) {
+      address.classList.remove("hidden");
+    }
+  });
+
+  closeAddress.addEventListener("click", () => {
+    if (!address.classList.contains("hidden")) {
+      address.classList.add("hidden");
+    }
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === address) {
+      address.classList.add("hidden");
     }
   });
 }
+
+if (passwordBtn) {
+  passwordBtn.addEventListener("click", () => {
+    if (inputPassword.type === "password") {
+      passwordBtn.classList.add("fa-eye");
+      passwordBtn.classList.remove("fa-eye-slash");
+      inputPassword.type = "text";
+    } else {
+      inputPassword.type = "password";
+      passwordBtn.classList.add("fa-eye-slash");
+      passwordBtn.classList.remove("fa-eye");
+    }
+  });
+}
+
+function toggleNavbar() {
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("navBar3").style.top = "82px";
+    document.getElementById("navBar3").style.opacity = "1";
+  } else {
+    document.getElementById("navBar3").style.top = "-100px";
+    document.getElementById("navBar3").style.opacity = "0";
+  }
+
+  prevScrollPos = currentScrollPos;
+}
+
+window.onscroll = toggleNavbar;

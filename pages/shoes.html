@@ -1328,11 +1328,177 @@
         </nav>
       </section>
       <section>
-        <div class="flex py-32">
-          <article
-            class="max-xl:hidden h-full sticky top-0 p-5 bg-gray-50 rounded-xl"
-          >
-            <div class="flex flex-col gap-7 bg-pink-400 top-0 h-full">
+        <div class="flex py-32 max-xl:flex-col">
+          <article class="h-full xl:sticky xl:top-32">
+            <a
+              href="#"
+              class="flex items-center gap-2 p-4 bg-gray-300 w-full rounded-r-xl customFilterToggle"
+            >
+              <i class="fa-solid fa-arrow-up-wide-short text-xl"></i>
+              <p class="font-[Roboto] font-bold text-lg">Filtrele</p>
+            </a>
+            <div
+              id="customFilterMenu"
+              class="hidden bg-white min-w-max max-w-max h-full bottom-0 pt-20 overflow-y-auto shadow-xl overscroll-y-contain"
+            >
+              <a
+                href="#"
+                class="font-[Roboto] font-lg font-semibold py-3 px-5 block text-right customFilterToggle"
+                >KAPAT</a
+              >
+              <div class="border-b-2 border-t-2 p-3">
+                <div
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                >
+                  <p class="customFilterHeader">Ürünleri Sırala</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="customFilter h-0 overflow-hidden">
+                  <li>Artan Fiyata Göre</li>
+                  <li>Azalan Fiyata Göre</li>
+                  <li>En Çok Satılan</li>
+                  <li>Yeni Ürünler</li>
+                  <li>İndirimli Ürünler</li>
+                </ul>
+              </div>
+              <div class="border-b-2 p-3">
+                <div
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                >
+                  <p class="customFilterHeader">Cinsiyet</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="customFilter h-0 overflow-hidden">
+                  <li>
+                    <input type="checkbox" name="" id="filterMan" />
+                    <label for="filterMan" class="w-full">ERKEK</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="filterWomen" />
+                    <label for="filterWomen" class="w-full">KADIN</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="filterKids" />
+                    <label for="filterKids" class="w-full">ÇOCUK</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="filterUnisex" />
+                    <label for="filterUnisex" class="w-full">UNISEX</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="border-b-2 p-3">
+                <div
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                >
+                  <p class="customFilterHeader">BEDEN</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul
+                  class="customFilter h-0 overflow-hidden gap-1 flex flex-wrap customSize w-full"
+                >
+                  <li class="w-1/6 border-2 text-center">36</li>
+                  <li class="w-1/6 border-2 text-center">37</li>
+                  <li class="w-1/6 border-2 text-center">38</li>
+                  <li class="w-1/6 border-2 text-center">39</li>
+                  <li class="w-1/6 border-2 text-center">40</li>
+                  <li class="w-1/6 border-2 text-center">41</li>
+                  <li class="w-1/6 border-2 text-center">42</li>
+                  <li class="w-1/6 border-2 text-center">43</li>
+                  <li class="w-1/6 border-2 text-center">XS</li>
+                  <li class="w-1/6 border-2 text-center">S</li>
+                  <li class="w-1/6 border-2 text-center">M</li>
+                  <li class="w-1/6 border-2 text-center">L</li>
+                  <li class="w-1/6 border-2 text-center">XL</li>
+                </ul>
+              </div>
+              <div class="border-b-2 p-3">
+                <div
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                >
+                  <p class="customFilterHeader">Fiyat</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="customFilter h-0 overflow-hidden flex">
+                  <li>
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      class="outline-none border-2 w-4/5 py-2 px-1"
+                      placeholder="En Az"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      class="outline-none border-2 w-4/5 py-2 px-1"
+                      placeholder="En Fazla"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="border-b-2 p-3">
+                <div
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                >
+                  <p class="customFilterHeader">RENK</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul
+                  class="customFilter h-0 overflow-hidden gap-1 flex flex-wrap customSize w-full"
+                >
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-red-500"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-blue-500"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-blue-900"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-black"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-white"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-orange-300"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-orange-700"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-green-500"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-slate-600"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-gray-400"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-yellow-400"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-blue-950"></li>
+                  <li class="w-1/6 h-10 rounded-lg border-2 bg-red-300"></li>
+                </ul>
+              </div>
+              <div class="border-b-2 p-3">
+                <div
+                  class="flex items-center justify-between gap-20 headerBtn cursor-pointer"
+                >
+                  <p class="customFilterHeader">Marka</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="customFilter h-0 overflow-hidden">
+                  <li>
+                    <input type="checkbox" name="" id="adidas" />
+                    <label for="adidas" class="w-full">Adidas</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="nike" />
+                    <label for="nike" class="w-full">Nike</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="puma" />
+                    <label for="puma" class="w-full">Puma</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="lumberjack" />
+                    <label for="lumberjack" class="w-full">Lumberjack</label>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#"
+                class="font-[Roboto] font-bold bg-black block text-white text-center py-3 bottom-0 sticky"
+                id="saveFilter"
+                >SEÇİMLERİMİ UYGULA</a
+              >
+            </div>
+            <!-- <div class="bg-gray-200 z-50 h-full w-max top-0 flex flex-col fixed overflow-scroll">
               <div>
                 <h4 class="font-[Roboto] font-bold text-xl customFilter">
                   ÜRÜNLERİ SIRALA
@@ -1438,7 +1604,7 @@
                   value="Temizle"
                 />
               </div>
-            </div>
+            </div> -->
           </article>
           <article class="w-full px-0 lg:px-10">
             <div class="flex flex-wrap gap-2 lg:gap-5">
@@ -1538,7 +1704,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1585,7 +1751,7 @@
                     <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
                       60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1638,7 +1804,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1692,7 +1858,7 @@
                         >20%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1745,7 +1911,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1792,7 +1958,7 @@
                     <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
                       60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1845,7 +2011,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1952,7 +2118,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -1999,7 +2165,7 @@
                     <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
                       60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2052,7 +2218,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2106,7 +2272,7 @@
                         >20%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2159,7 +2325,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2206,7 +2372,7 @@
                     <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
                       60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2259,7 +2425,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2366,7 +2532,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2413,7 +2579,7 @@
                     <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
                       60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2466,7 +2632,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2520,7 +2686,7 @@
                         >20%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2573,7 +2739,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2620,7 +2786,7 @@
                     <p class="text-[clamp(1rem,2.5vw,1.6rem)]">
                       60$ <del class="text-[clamp(0.9rem,2vw,1.2rem)]"></del>
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
@@ -2673,7 +2839,7 @@
                         >30%</span
                       >
                     </p>
-                    <div class="flex items-center gap-1 gap-3">
+                    <div class="flex items-center gap-3">
                       <i
                         class="fa-solid fa-cart-plus text-[clamp(0.9rem,2vw,1.2rem)] cursor-pointer"
                       ></i>
