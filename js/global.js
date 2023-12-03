@@ -131,55 +131,12 @@ const imgArray = [
   "../assets/nike-3.webp",
 ];
 
-// let pressed = false;
-// let startY;
-// let y;
-
-// imgSliderContainer.addEventListener("mousedown", (e) => {
-//   pressed = true;
-//   startY = e.offsetY - imgSlider.offsetTop;
-//   imgSliderContainer.style.cursor = "grabbing";
-// });
-
-// imgSliderContainer.addEventListener("mouseenter", () => {
-//   imgSliderContainer.style.cursor = "grab";
-// });
-
-// imgSliderContainer.addEventListener("mouselave", () => {
-//   imgSliderContainer.style.cursor = "default";
-// });
-
-// imgSliderContainer.addEventListener("mouseup", () => {
-//   pressed = false;
-// });
-
-// imgSliderContainer.addEventListener("mousemove", (e) => {
-//   if (!pressed) return;
-//   e.preventDefault();
-
-//   y = e.offsetY;
-
-//   imgSlider.style.top = `${y - startY}px`;
-// });
-
-// function checkboundary() {
-//   let outer = imgSliderContainer.getBoundingClientRect();
-//   let inner = imgSlider.getBoundingClientRect();
-
-//   if (parseInt(imgSlider.style.top) > 0) {
-//     imgSlider.style.top = "0px";
-//   } else {
-//     imgSlider.style.top = `-${inner.height - outer.height}px`;
-//   }
-// }
-// checkboundary();
-
 for (const item of imgArray) {
   const img = document.createElement("img");
   img.src = item;
   img.classList.add("customImg");
   img.setAttribute("onmouseover", "imgFunction(this)");
-  imgSlider.appendChild(img);
+  imgSlider?.appendChild(img);
 }
 
 moreColorBtn?.addEventListener("click", () => {
