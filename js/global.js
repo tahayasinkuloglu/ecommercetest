@@ -3,12 +3,6 @@ const navMenu = document.getElementById("navMenu");
 const navCon = document.getElementById("navCon");
 const shop = document.getElementById("shop");
 const shopMenu = document.getElementById("shopMenu");
-const descHeader = document.getElementById("descHeader");
-const desc = document.getElementById("desc");
-const deliveryHeader = document.getElementById("deliveryHeader");
-const delivery = document.getElementById("delivery");
-const sizeHeader = document.getElementById("sizeHeader");
-const size = document.getElementById("size");
 const plus = document.querySelectorAll(".fa-plus");
 const man = document.getElementById("man");
 const women = document.getElementById("women");
@@ -121,6 +115,72 @@ let prevScrollPos = window.scrollY;
 const moreColorBtn = document.getElementById("moreColorBtn");
 const filterContainer = document.getElementById("filterContainer");
 const customChevronDown = document.getElementsByClassName("customChevronDown");
+const imgSliderContainer = document.getElementById("imgSliderContainer");
+const imgSlider = document.getElementById("imgSlider");
+
+const imgArray = [
+  "../assets/nike-2.webp",
+  "../assets/nike-3.webp",
+  "../assets/nike-4.webp",
+  "../assets/nike-5.webp",
+  "../assets/nike-6.webp",
+  "../assets/nike-5.webp",
+  "../assets/nike-4.webp",
+  "../assets/nike-3.webp",
+  "../assets/nike-2.webp",
+  "../assets/nike-3.webp",
+];
+
+// let pressed = false;
+// let startY;
+// let y;
+
+// imgSliderContainer.addEventListener("mousedown", (e) => {
+//   pressed = true;
+//   startY = e.offsetY - imgSlider.offsetTop;
+//   imgSliderContainer.style.cursor = "grabbing";
+// });
+
+// imgSliderContainer.addEventListener("mouseenter", () => {
+//   imgSliderContainer.style.cursor = "grab";
+// });
+
+// imgSliderContainer.addEventListener("mouselave", () => {
+//   imgSliderContainer.style.cursor = "default";
+// });
+
+// imgSliderContainer.addEventListener("mouseup", () => {
+//   pressed = false;
+// });
+
+// imgSliderContainer.addEventListener("mousemove", (e) => {
+//   if (!pressed) return;
+//   e.preventDefault();
+
+//   y = e.offsetY;
+
+//   imgSlider.style.top = `${y - startY}px`;
+// });
+
+// function checkboundary() {
+//   let outer = imgSliderContainer.getBoundingClientRect();
+//   let inner = imgSlider.getBoundingClientRect();
+
+//   if (parseInt(imgSlider.style.top) > 0) {
+//     imgSlider.style.top = "0px";
+//   } else {
+//     imgSlider.style.top = `-${inner.height - outer.height}px`;
+//   }
+// }
+// checkboundary();
+
+for (const item of imgArray) {
+  const img = document.createElement("img");
+  img.src = item;
+  img.classList.add("customImg");
+  img.setAttribute("onmouseover", "imgFunction(this)");
+  imgSlider.appendChild(img);
+}
 
 moreColorBtn?.addEventListener("click", () => {
   const moreColor = document.getElementById("moreColor");
@@ -396,22 +456,6 @@ if (btnNav) {
   }
 }
 
-descHeader?.addEventListener("click", (e) => {
-  e.preventDefault();
-  desc.classList.toggle("h-full");
-});
-
-deliveryHeader?.addEventListener("click", (e) => {
-  e.preventDefault();
-  delivery.classList.toggle("h-full");
-});
-
-sizeHeader?.addEventListener("click", (e) => {
-  e.preventDefault();
-  size.classList.toggle("h-full");
-  size.classList.toggle("opacity-100");
-});
-
 navOpen?.addEventListener("click", () => {
   if (navMenu.classList.contains("-left-full")) {
     navMenu.classList.remove("-left-full");
@@ -541,6 +585,24 @@ if (passwordBtn) {
   });
 }
 
+function showFilter() {
+  const showFilter = document.getElementById("showFilter");
+  if (filterContainer.classList.contains("lg:hidden")) {
+    filterContainer.classList.remove("lg:hidden");
+    filterContainer.classList.add("lg:sticky");
+    showFilter.innerText = "Filtreleri Gizle";
+  } else {
+    filterContainer.classList.remove("lg:sticky");
+    filterContainer.classList.add("lg:hidden");
+    showFilter.innerText = "Filtreleri Göster";
+  }
+}
+
+function imgFunction(img) {
+  const mainImg = document.getElementById("imgBox");
+  mainImg.src = img.src;
+}
+
 function toggleNavbar() {
   const currentScrollPos = window.scrollY;
 
@@ -556,16 +618,3 @@ function toggleNavbar() {
 }
 
 window.onscroll = toggleNavbar;
-
-function showFilter() {
-  const showFilter = document.getElementById("showFilter");
-  if (filterContainer.classList.contains("lg:hidden")) {
-    filterContainer.classList.remove("lg:hidden");
-    filterContainer.classList.add("lg:sticky");
-    showFilter.innerText = "Filtreleri Gizle";
-  } else {
-    filterContainer.classList.remove("lg:sticky");
-    filterContainer.classList.add("lg:hidden");
-    showFilter.innerText = "Filtreleri Göster";
-  }
-}
