@@ -115,29 +115,6 @@ let prevScrollPos = window.scrollY;
 const moreColorBtn = document.getElementById("moreColorBtn");
 const filterContainer = document.getElementById("filterContainer");
 const customChevronDown = document.getElementsByClassName("customChevronDown");
-const imgSliderContainer = document.getElementById("imgSliderContainer");
-const imgSlider = document.getElementById("imgSlider");
-
-const imgArray = [
-  "../assets/nike-2.webp",
-  "../assets/nike-3.webp",
-  "../assets/nike-4.webp",
-  "../assets/nike-5.webp",
-  "../assets/nike-6.webp",
-  "../assets/nike-5.webp",
-  "../assets/nike-4.webp",
-  "../assets/nike-3.webp",
-  "../assets/nike-2.webp",
-  "../assets/nike-3.webp",
-];
-
-for (const item of imgArray) {
-  const img = document.createElement("img");
-  img.src = item;
-  img.classList.add("customImg");
-  img.setAttribute("onmouseover", "imgFunction(this)");
-  imgSlider?.appendChild(img);
-}
 
 moreColorBtn?.addEventListener("click", () => {
   const moreColor = document.getElementById("moreColor");
@@ -560,18 +537,18 @@ function imgFunction(img) {
   mainImg.src = img.src;
 }
 
-function toggleNavbar() {
-  const currentScrollPos = window.scrollY;
+// function toggleNavbar() {
+//   const currentScrollPos = window.scrollY;
 
-  if (prevScrollPos > currentScrollPos) {
-    document.getElementById("navBar3").style.top = "82px";
-    document.getElementById("navBar3").style.opacity = "1";
-  } else {
-    document.getElementById("navBar3").style.top = "-100px";
-    document.getElementById("navBar3").style.opacity = "0";
-  }
+//   if (prevScrollPos > currentScrollPos) {
+//     document.getElementById("navBar3").style.top = "82px";
+//     document.getElementById("navBar3").style.opacity = "1";
+//   } else {
+//     document.getElementById("navBar3").style.top = "-100px";
+//     document.getElementById("navBar3").style.opacity = "0";
+//   }
 
-  prevScrollPos = currentScrollPos;
-}
+//   prevScrollPos = currentScrollPos;
+// }
 
-window.onscroll = toggleNavbar;
+// window.onscroll = toggleNavbar;
