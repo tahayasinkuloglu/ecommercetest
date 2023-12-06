@@ -115,6 +115,11 @@ let prevScrollPos = window.scrollY;
 const moreColorBtn = document.getElementById("moreColorBtn");
 const filterContainer = document.getElementById("filterContainer");
 const customChevronDown = document.getElementsByClassName("customChevronDown");
+const openShopBag = document.getElementById("openShopBag");
+const closeShopBag = document.getElementById("closeShopBag");
+const shopBag = document.getElementById("shopBag");
+const overlay = document.getElementById("overlay");
+const bodyElement = document.body;
 
 moreColorBtn?.addEventListener("click", () => {
   const moreColor = document.getElementById("moreColor");
@@ -536,6 +541,33 @@ function imgFunction(img) {
   const mainImg = document.getElementById("imgBox");
   mainImg.src = img.src;
 }
+
+openShopBag?.addEventListener("click", () => {
+  shopBag.classList.remove("-right-full");
+  shopBag.classList.add("right-0");
+  overlay.style.display = "block";
+  bodyElement.style.overflow = "hidden";
+});
+
+closeShopBag?.addEventListener("click", () => {
+  shopBag.classList.remove("right-0");
+  shopBag.classList.add("-right-full");
+  overlay.style.display = "none";
+  bodyElement.style.overflow = "auto";
+});
+
+document.addEventListener("click", (e) => {
+  if (
+    !shopBag.contains(e.target) &&
+    e.target !== openShopBag &&
+    !e.target.closest("#shopBagSvg")
+  ) {
+    shopBag.classList.remove("right-0");
+    shopBag.classList.add("-right-full");
+    overlay.style.display = "none";
+    bodyElement.style.overflow = "auto";
+  }
+});
 
 // function toggleNavbar() {
 //   const currentScrollPos = window.scrollY;
