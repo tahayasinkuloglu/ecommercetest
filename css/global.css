@@ -501,6 +501,11 @@ input[type="checkbox"].customProductsInfo + label {
     font-size: 16px;
     padding: 5px;
   }
+
+  .orderTable tr th,
+  .orderTable tr td {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -517,6 +522,12 @@ input[type="checkbox"].customProductsInfo + label {
     left: 96%;
     padding-right: 5px;
     top: -10px;
+  }
+
+  .orderTable tr th,
+  .orderTable tr td {
+    padding: 6px;
+    font-size: 14px;
   }
 }
 
