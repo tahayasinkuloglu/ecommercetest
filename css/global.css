@@ -18,7 +18,11 @@
 
 .customFooter a {
   opacity: 80%;
-  font-size: 1.125rem;
+  font-size: 18px;
+}
+
+.customFooter label {
+  font-family: "Bebas Neue", "sans-serif";
 }
 
 .customFooter a:hover {
@@ -196,11 +200,11 @@ input[type="checkbox"].customProductsInfo + label {
   height: 100%;
 }
 
-.mySwiper3 .swiper-slide {
+.swiperOpacity .swiper-slide {
   opacity: 0.4;
 }
 
-.mySwiper3 .swiper-slide-thumb-active {
+.swiperOpacity .swiper-slide-thumb-active {
   opacity: 1;
 }
 
@@ -469,6 +473,98 @@ input[type="checkbox"].customProductsInfo + label {
   left: 32px;
 }
 
+.customSB {
+  position: absolute !important;
+  padding: 30px;
+  margin: 0px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0000005b;
+  border-radius: 50%;
+}
+
+.customSB::after {
+  font-size: 24px !important;
+  color: #fff;
+}
+
+.customPagination .swiper-pagination-bullet {
+  background-color: rgb(197, 197, 197) !important;
+  padding: 1px 50px !important;
+  border-radius: 0px;
+}
+
+.customPagination .swiper-pagination-bullet-active {
+  background-color: rgb(230, 230, 230) !important;
+  border-radius: 0px;
+}
+
+.customBtn2 {
+  font-family: "Roboto", "sans-serif";
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.customBtn2:hover {
+  color: #fff;
+}
+
+.customBtn2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  transition: top 0.3s ease;
+}
+
+.customBtn2:hover::after {
+  top: 0;
+}
+
+.customPagination2 .swiper-pagination-bullet {
+  font-size: 20px !important;
+  position: relative !important;
+  font-family: "Roboto", "sans-serif";
+  margin: 0px 20px !important;
+  z-index: 1;
+  color: #fff;
+}
+
+.customPagination2 .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-45%);
+  padding: 14px;
+  z-index: -1;
+}
+
+.customSearch {
+  outline: none;
+  color: #fff;
+  padding: 8px 12px 8px 40px;
+  background-color: #111;
+  border: 1px solid #444;
+  font-family: "Roboto", "sans-serif";
+}
+
 @media (max-width: 1280px) {
   .blog-section .section-content .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -571,6 +667,30 @@ input[type="checkbox"].customProductsInfo + label {
   .orderTable tr td {
     padding: 6px;
     font-size: 14px;
+  }
+
+  .footerHidden {
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .customFooter:has(input[type="checkbox"]:checked) .footerHidden {
+    max-height: 250px;
+  }
+
+  .customFooter:has(input[type="checkbox"]:checked) .fa-chevron-down {
+    transform: rotate(-180deg);
+  }
+
+  .customBtn2 {
+    font-size: 24px;
+  }
+
+  .customPagination2 .swiper-pagination-bullet {
+    font-size: 20px !important;
+    margin: 0px 14px !important;
   }
 }
 

@@ -558,7 +558,7 @@ closeShopBag?.addEventListener("click", () => {
 
 document.addEventListener("click", (e) => {
   if (
-    !shopBag.contains(e.target) &&
+    !shopBag?.contains(e.target) &&
     e.target !== openShopBag &&
     !e.target.closest("#shopBagSvg")
   ) {
