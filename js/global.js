@@ -120,6 +120,18 @@ const closeShopBag = document.getElementById("closeShopBag");
 const shopBag = document.getElementById("shopBag");
 const overlay = document.getElementById("overlay");
 const bodyElement = document.body;
+const searchBtnOpen = document.getElementById("searchBtnOpen");
+const searchInput = document.getElementById("searchInput");
+
+searchBtnOpen?.addEventListener("click", (e) => {
+  if (!searchInput.classList.contains("customSearchActive")) {
+    searchInput.classList.add("customSearchActive");
+    searchBtnOpen.classList.add("customSearchAbsolute");
+  } else {
+    searchInput.classList.remove("customSearchActive");
+    searchBtnOpen.classList.remove("customSearchAbsolute");
+  }
+});
 
 moreColorBtn?.addEventListener("click", () => {
   const moreColor = document.getElementById("moreColor");
@@ -568,6 +580,14 @@ document.addEventListener("click", (e) => {
     bodyElement.style.overflow = "auto";
   }
 });
+
+function openCard(item) {
+  let x = document.getElementsByClassName("card");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(item).style.display = "flex";
+}
 
 // function toggleNavbar() {
 //   const currentScrollPos = window.scrollY;

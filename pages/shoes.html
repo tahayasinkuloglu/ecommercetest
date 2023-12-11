@@ -2748,113 +2748,178 @@
         </div> -->
         <!-- KATEGORİ SAYFASI 2 -->
         <div class="flex max-lg:py-16 py-28 max-lg:flex-col">
-          <article id="filterContainer" class="max-md:flex-wrap flex lg:flex-col max-lg:w-full gap-2 lg:gap-4 px-2 lg:px-10 w-1/3 xl:w-1/6 bg-gray-100 h-full max-lg:pb-2 max-lg:pt-5 lg:py-5 rounded-xl lg:sticky lg:top-[155px]">
+          <article
+            id="filterContainer"
+            class="overscroll-y-contain overflow-y-auto max-md:flex-wrap flex lg:flex-col max-lg:w-full gap-2 lg:gap-4 px-2 lg:px-10 w-1/3 xl:w-1/6 bg-gray-100 h-full max-h-[70vh] max-lg:pb-2 max-lg:pt-5 lg:py-5 rounded-xl lg:sticky lg:top-[155px]"
+          >
             <div class="w-full max-md:w-[calc(50%-4px)]">
-              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+              <div
+                class="flex justify-between headerBtn cursor-pointer mb-5 items-center"
+              >
                 <p class="font-[Roboto] text-base">Kategori</p>
-                <i class="fa-solid fa-chevron-down customChevronDown"></i>
+                <i class="fa-solid fa-chevron-up customChevronDown"></i>
               </div>
-              <ul class="h-0 overflow-hidden customFilter customFilter_2">
-                <li class="text-base flex gap-1">
-                  <input type="checkbox" name="" id="product_shoes">
-                  <label for="product_shoes">Ayakkabı</label>
+              <ul class="customFilter customFilter_2">
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="product_shoes"  class="hidden"/>
+                  <label for="product_shoes" class="cursor-pointer select-none customProductsCheckboxes">Ayakkabı</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="product_slippers">
-                  <label for="product_slippers">Terlik</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="product_slippers"  class="hidden"/>
+                  <label for="product_slippers" class="cursor-pointer select-none customProductsCheckboxes">Terlik</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="product_boots">
-                  <label for="product_boots">Bot</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="product_boots"  class="hidden"/>
+                  <label for="product_boots" class="cursor-pointer select-none customProductsCheckboxes">Bot</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="product_sandals">
-                  <label for="product_sandals">Sandalet</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="product_sandals"  class="hidden"/>
+                  <label for="product_sandals" class="cursor-pointer select-none customProductsCheckboxes">Sandalet</label>
                 </li>
               </ul>
             </div>
             <div class="w-full max-md:w-[calc(50%-4px)]">
-              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+              <div
+                class="flex justify-between headerBtn cursor-pointer mb-5 items-center"
+              >
                 <p class="font-[Roboto] text-base">Beden</p>
                 <i class="fa-solid fa-chevron-down customChevronDown"></i>
               </div>
               <ul class="h-0 overflow-hidden customFilter customFilter_2">
-                <li class="text-base flex gap-1">
-                  <input type="checkbox" name="" id="size_39">
-                  <label for="size_39">39</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="size_39"  class="hidden"/>
+                  <label for="size_39" class="cursor-pointer select-none customProductsCheckboxes">39</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="size_40">
-                  <label for="size_40">40</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="size_40"  class="hidden"/>
+                  <label for="size_40" class="cursor-pointer select-none customProductsCheckboxes">40</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="size_41">
-                  <label for="size_41">41</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="size_41"  class="hidden"/>
+                  <label for="size_41" class="cursor-pointer select-none customProductsCheckboxes">41</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="size_42">
-                  <label for="size_42">42</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="size_42"  class="hidden"/>
+                  <label for="size_42" class="cursor-pointer select-none customProductsCheckboxes">42</label>
                 </li>
-                <li class="text-base">
-                  <input type="checkbox" name="" id="size_43">
-                  <label for="size_43">43</label>
+                <li class="text-base flex gap-1 customContainer">
+                  <input type="checkbox" name="" id="size_43"  class="hidden"/>
+                  <label for="size_43" class="cursor-pointer select-none customProductsCheckboxes">43</label>
                 </li>
                 <div>
                   <ul id="moreColor" class="h-0 overflow-hidden customFilter_2">
-                    <li class="text-base flex gap-1">
-                      <input type="checkbox" name="" id="size_44">
-                      <label for="size_44">44</label>
+                    <li class="text-base flex gap-1 customContainer">
+                      <input type="checkbox" name="" id="size_44"  class="hidden"/>
+                      <label for="size_44" class="cursor-pointer select-none customProductsCheckboxes">44</label>
                     </li>
-                    <li class="text-base">
-                      <input type="checkbox" name="" id="size_45">
-                      <label for="size_45">45</label>
+                    <li class="text-base flex gap-1 customContainer">
+                      <input type="checkbox" name="" id="size_45"  class="hidden"/>
+                      <label for="size_45" class="cursor-pointer select-none customProductsCheckboxes">45</label>
                     </li>
-                    <li class="text-base">
-                      <input type="checkbox" name="" id="size_46">
-                      <label for="size_46">46</label>
+                    <li class="text-base flex gap-1 customContainer">
+                      <input type="checkbox" name="" id="size_46"  class="hidden"/>
+                      <label for="size_46" class="cursor-pointer select-none customProductsCheckboxes">46</label>
                     </li>
-                    <li class="text-base">
-                      <input type="checkbox" name="" id="size_47">
-                      <label for="size_47">47</label>
+                    <li class="text-base flex gap-1 customContainer">
+                      <input type="checkbox" name="" id="size_47"  class="hidden"/>
+                      <label for="size_47" class="cursor-pointer select-none customProductsCheckboxes">47</label>
                     </li>
                   </ul>
-                  <p id="moreColorBtn" class="font-[Roboto] text-sm mb-1 cursor-pointer moreColorBtn font-bold">Daha fazla göster +</p>
+                  <p
+                    id="moreColorBtn"
+                    class="font-[Roboto] text-sm mb-1 cursor-pointer moreColorBtn font-bold"
+                  >
+                    Daha fazla göster +
+                  </p>
                 </div>
               </ul>
             </div>
             <div class="w-full max-md:w-[calc(50%-4px)]">
-              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+              <div
+                class="flex justify-between headerBtn cursor-pointer mb-5 items-center"
+              >
                 <p class="font-[Roboto] text-base">Renk</p>
                 <i class="fa-solid fa-chevron-down customChevronDown"></i>
               </div>
-              <ul class="h-0 overflow-hidden customFilter customFilter_2 flex flex-wrap">
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-red-500"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-500"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-900"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-black"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-white"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-orange-300"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-orange-700"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-green-500"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-slate-600"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-gray-400"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-yellow-400"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-950"></li>
-                  <li class="w-1/5 h-10 rounded-lg border-2 bg-red-300"></li>
+              <ul
+                class="h-0 overflow-hidden customFilter customFilter_2 flex flex-wrap"
+              >
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-red-500">
+                  <input id="red-500" type="checkbox" class="hidden colorInput">
+                  <label for="red-500" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-500">
+                  <input id="blue-500" type="checkbox" class="hidden colorInput">
+                  <label for="blue-500" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-900">
+                  <input id="blue-900" type="checkbox" class="hidden colorInput">
+                  <label for="blue-900" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-black">
+                  <input id="black" type="checkbox" class="hidden colorInput">
+                  <label for="black" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-orange-300">
+                  <input id="orange-300" type="checkbox" class="hidden colorInput">
+                  <label for="orange-300" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-orange-700">
+                  <input id="orange-700" type="checkbox" class="hidden colorInput">
+                  <label for="orange-700" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-green-500">
+                  <input id="green-500" type="checkbox" class="hidden colorInput">
+                  <label for="green-500" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-slate-600">
+                  <input id="salte-600" type="checkbox" class="hidden colorInput">
+                  <label for="salte-600" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-gray-400">
+                  <input id="gray-400" type="checkbox" class="hidden colorInput">
+                  <label for="gray-400" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-yellow-400">
+                  <input id="yellow-400" type="checkbox" class="hidden colorInput">
+                  <label for="yellow-400" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-blue-950">
+                  <input id="blue-950" type="checkbox" class="hidden colorInput">
+                  <label for="blue-950" class="w-full h-full flex colorLabel"></label>
+                </li>
+                <li class="w-1/5 h-10 rounded-lg border-2 bg-red-300">
+                  <input id="red-300" type="checkbox" class="hidden colorInput">
+                  <label for="red-300" class="w-full h-full flex colorLabel"></label>
+                </li>
               </ul>
             </div>
             <div class="w-full max-md:w-[calc(50%-4px)]">
-              <div class="flex justify-between headerBtn cursor-pointer mb-5 items-center">
+              <div
+                class="flex justify-between headerBtn cursor-pointer mb-5 items-center"
+              >
                 <p class="font-[Roboto] text-base">Fiyat</p>
                 <i class="fa-solid fa-chevron-down customChevronDown"></i>
               </div>
-              <div class="h-0 overflow-hidden flex justify-between gap-4 customFilter">
+              <div
+                class="h-0 overflow-hidden flex justify-between gap-4 customFilter"
+              >
                 <div class="w-1/2 relative">
-                  <input class="w-full outline-none border-b-[1px] border-black font-[Roboto] bg-transparent pr-5" type="number" placeholder="Min" value="0">
+                  <input
+                    class="w-full outline-none border-b-[1px] border-black font-[Roboto] bg-transparent pr-5"
+                    type="number"
+                    placeholder="Min"
+                    value="0"
+                  />
                   <span class="absolute top-0 right-1">₺</span>
                 </div>
                 <div class="w-1/2 relative">
-                  <input class="w-full outline-none border-b-[1px] border-black font-[Roboto] bg-transparent pr-5" type="number" placeholder="Max" value="5000">
+                  <input
+                    class="w-full outline-none border-b-[1px] border-black font-[Roboto] bg-transparent pr-5"
+                    type="number"
+                    placeholder="Max"
+                    value="5000"
+                  />
                   <span class="absolute top-0 right-1">₺</span>
                 </div>
               </div>
@@ -2863,7 +2928,11 @@
           <article class="w-full px-0 lg:px-5">
             <div class="flex items-center gap-2">
               <i class="fa-solid fa-filter text-xl"></i>
-              <button id="showFilter" onclick="showFilter()" class="font-[Roboto] text-xl py-2 max-lg:hidden">
+              <button
+                id="showFilter"
+                onclick="showFilter()"
+                class="font-[Roboto] text-xl py-2 max-lg:hidden"
+              >
                 Filtreleri Gizle
               </button>
               <p class="font-[Roboto] text-xl py-2 max-lg:pl-5">24 Ürün</p>

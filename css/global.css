@@ -117,15 +117,18 @@ input[type="radio"].customProductSize + label {
   padding: 10px 20px;
 }
 
-.customBag::-webkit-scrollbar {
+.customBag::-webkit-scrollbar,
+#filterContainer::-webkit-scrollbar {
   width: 10px;
 }
 
-.customBag::-webkit-scrollbar-track {
-  background: white; /* color of the tracking area */
+.customBag::-webkit-scrollbar-track,
+#filterContainer::-webkit-scrollbar-track {
+  background: white;
 }
 
-.customBag::-webkit-scrollbar-thumb {
+.customBag::-webkit-scrollbar-thumb,
+#filterContainer::-webkit-scrollbar-thumb {
   background-color: rgb(214, 214, 214);
   border-radius: 10px;
 }
@@ -563,6 +566,90 @@ input[type="checkbox"].customProductsInfo + label {
   background-color: #111;
   border: 1px solid #444;
   font-family: "Roboto", "sans-serif";
+  display: none;
+}
+
+.customSearchActive {
+  display: inline-block !important;
+}
+
+.customSearchAbsolute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px;
+}
+
+.customProductsCheckboxes {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.customProductsCheckboxes::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  margin-right: 6px;
+  border: 0.05em solid #000;
+}
+
+.customContainer input[type="checkbox"]:checked + label::before {
+  content: "\002714";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+}
+
+input[type="checkbox"].colorInput:checked + .colorLabel::before {
+  content: "\002714";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.customBox {
+  position: relative;
+}
+
+.customBox input {
+  font-family: "Roboto", "sans-serif";
+  width: 100%;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.customBox span {
+  font-family: "Roboto", "sans-serif";
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: .2s
+}
+
+.customBox input:valid ~ span,
+.customBox input:focus ~ span {
+  transform: translate(20px,-6px);
+  font-size: 10px;
+  padding: 0px 5px;
+  background: #fff;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  color: #000000b9;
 }
 
 @media (max-width: 1280px) {
