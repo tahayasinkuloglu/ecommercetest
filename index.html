@@ -1286,8 +1286,9 @@
                 />
               </svg>
             </a>
-            <a href="#" class="py-5 px-3 max-md:px-2 group">
+            <a id="openShopBag" href="#" class="py-5 px-3 max-md:px-2 group">
               <svg
+                id="shopBagSvg"
                 class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-gray-800 dark:text-white group-hover:text-gray-400 duration-200"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
@@ -5310,7 +5311,275 @@
           </article>
         </section>
       </div> -->
-
+      <div
+        id="shopBag"
+        class="duration-200 fixed z-50 top-0 -right-full bg-white shadow-lg p-7 pt-0 flex flex-col gap-10 overflow-y-auto h-full overscroll-contain customBag max-md:w-full"
+      >
+        <div class="flex justify-between items-center h-max sticky top-0 bg-white py-5">
+          <div class="flex gap-1">
+            <h4 class="font-[Roboto] font-[500]">Sepetim</h4>
+            <span class="font-[Roboto]">(4)</span>
+          </div>
+          <div
+            id="closeShopBag"
+            class="flex items-center gap-1 bg-black text-white px-2 py-1 cursor-pointer text-lg"
+          >
+            <p class="font-[Roboto]">Kapat</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 md:gap-5">
+          <div class="w-[100px] md:w-[200px]">
+            <a href="../pages/product-detail.html">
+              <img
+                src="../assets/nike-3.webp"
+                class="object-cover max-w-full"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col justify-between w-full gap-2">
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+              </div>
+              <div>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+            <div class="flex gap-4 text-xl">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <button
+          class="font-[Roboto] w-full bg-black text-white py-3 rounded-full font-[500] mt-7"
+        >
+          Ödeme Sayfasına Git
+        </button>
+      </div>
+      <div class="overlay" id="overlay"></div>
       <footer>
         <article class="flex flex-col gap-5 mt-10">
           <div
