@@ -122,6 +122,82 @@ const overlay = document.getElementById("overlay");
 const bodyElement = document.body;
 const searchBtnOpen = document.getElementById("searchBtnOpen");
 const searchInput = document.getElementById("searchInput");
+const favIcon = document.getElementsByClassName("favIcon");
+const addBag = document.getElementsByClassName("addBag");
+const productModal = document.getElementsByClassName("product-modal");
+
+if (addBag) {
+  for (let i = 0; i < addBag.length; i++) {
+    addBag[i]?.addEventListener("click", () => {
+      const newContent = `
+      <div class="flex justify-between items-center">
+          <p class="font-[Roboto] font-[500] text-xl">Sepete Eklendi</p>
+          <i id="closeModal" class="fa-solid fa-xmark text-xl cursor-pointer"></i>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-5 my-3">
+            <div class="w-[150px] sm:w-[200px]">
+              <a href="../pages/product-detail.html">
+                <img
+                  src="../assets/nike-2.webp"
+                  class="object-cover max-w-full"
+                />
+              </a>
+            </div>
+            <div class="flex h-full w-full">
+              <div class="flex flex-col h-full w-full gap-1">
+                <h4 class="font-[Roboto] font-[500] capitalize">
+                  Nike Court Vision
+                </h4>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Erkek Ayakkabısı
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Açık Turuncu, Beyaz
+                </p>
+                <p class="font-[Roboto] text-black text-opacity-60 font-[500]">
+                  Numara / Beden 41
+                </p>
+                <p class="font-[Roboto] font-[500]">₺2.350,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <a href="/pages/cart.html" class="font-[Roboto] w-full bg-black text-white text-center rounded-md py-1 px-2">Sepeti Görüntüle</a>
+          <a href="/pages/buy.html" class="font-[Roboto] w-full bg-black text-white text-center rounded-md py-1">Satın Al</a>
+        </div>`;
+      productModal[i].innerHTML = newContent;
+      productModal[i].classList.remove("hidden");
+      productModal[i].classList.add("fixed");
+      const closeModal = document.getElementById("closeModal");
+
+      closeModal?.addEventListener("click", () => {
+        productModal[i].classList.add("hidden");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!productModal[i]?.contains(e.target) && e.target !== addBag[i] && !e.target.closest("#addBagText")) {
+          productModal[i].classList.add("hidden");
+        }
+      });
+    });
+  }
+}
+
+if (favIcon) {
+  for (let i = 0; i < favIcon.length; i++) {
+    favIcon[i]?.addEventListener("click", () => {
+      if (favIcon[i].classList.contains("text-gray-400")) {
+        favIcon[i].classList.remove("text-gray-400");
+        favIcon[i].classList.add("text-red-600");
+      } else {
+        favIcon[i].classList.remove("text-red-600");
+        favIcon[i].classList.add("text-gray-400");
+      }
+    });
+  }
+}
 
 searchBtnOpen?.addEventListener("click", (e) => {
   if (!searchInput.classList.contains("customSearchActive")) {

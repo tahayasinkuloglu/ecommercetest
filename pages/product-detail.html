@@ -1244,14 +1244,14 @@
                 fill="none"
                 viewBox="0 0 20 20"
               >
-              <path
-              id="searchBtnOpenPath"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1"
-              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-            />
+                <path
+                  id="searchBtnOpenPath"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
               </svg>
               <input id="searchInput" type="search" class="customSearch" />
             </div>
@@ -1540,25 +1540,34 @@
               </div>
               <p>TAHMİNİ TESLİMAT: 5 ARALIK</p>
             </div>
-            <div class="flex gap-3 relative h-full justify-between">
-              <button
-                class="lg:w-1/2 bg-black text-white px-3 py-2 rounded-2xl lg:hover:bg-opacity-70 max-lg:fixed max-lg:z-20 max-lg:bottom-0 max-lg:left-0 max-lg:rounded-none max-lg:w-1/2"
+            <div
+              class="flex gap-3 relative h-full justify-between items-center"
+            >
+              <a
+                href="#"
+                class="addBag h-max text-center lg:w-1/2 bg-black text-white px-3 py-2 rounded-2xl lg:hover:bg-opacity-70 max-lg:fixed max-lg:z-20 max-lg:bottom-0 max-lg:left-0 max-lg:rounded-none max-lg:w-1/2"
               >
-                <p class="text-[clamp(1.4rem,1.5vw,1.5rem)]">SEPETE EKLE</p>
-              </button>
-              <button
-                class="lg:w-1/2 bg-orange-500 text-white px-3 py-2 rounded-2xl lg:hover:bg-opacity-70 max-lg:fixed max-lg:z-20 max-lg:bottom-0 max-lg:right-0 max-lg:rounded-none max-lg:w-1/2"
+                <p id="addBagText" class="text-[clamp(1.4rem,1.5vw,1.5rem)]">SEPETE EKLE</p>
+              </a>
+              <a
+                href="/pages/cart.html"
+                class="h-max lg:w-1/2 text-center bg-orange-500 text-white px-3 py-2 rounded-2xl lg:hover:bg-opacity-70 max-lg:fixed max-lg:z-20 max-lg:bottom-0 max-lg:right-0 max-lg:rounded-none max-lg:w-1/2"
               >
                 <p class="text-[clamp(1.4rem,1.5vw,1.5rem)]">HEMEN SATIN AL</p>
-              </button>
-              <button
-                class="w-max border-2 border-black border-opacity-20 text-black px-3 py-2 rounded-2xl hover:border-opacity-100"
+              </a>
+              <a
+                href="#"
+                class="h-max w-max max-lg:border-2 max-lg:border-black max-lg:rounded-lg"
               >
-                <p class="text-[clamp(1.3rem,1.5vw,1.5rem)]">
-                  <i class="fa-regular fa-heart max-lg:hidden"></i>
-                  <p class="text-[clamp(1.3rem,1.5vw,1.5rem)] lg:hidden">FAVORİLERİME EKLE</p>
-                </p>
-              </button>
+                <div class="text-[clamp(1.3rem,1.5vw,1.5rem)] max-lg:px-2">
+                  <i
+                    class="fa-solid fa-heart max-lg:hidden text-gray-400 favIcon text-3xl"
+                  ></i>
+                  <p class="text-[clamp(1.3rem,1.5vw,1.5rem)] lg:hidden">
+                    FAVORİLERİME EKLE
+                  </p>
+                </div>
+              </a>
             </div>
             <div class="flex flex-col gap-2">
               <div class="flex flex-col productDetails">
@@ -1917,7 +1926,9 @@
         id="shopBag"
         class="duration-200 fixed z-50 top-0 -right-full bg-white shadow-lg p-7 pt-0 flex flex-col gap-10 overflow-y-auto h-full overscroll-contain customBag max-md:w-full"
       >
-        <div class="flex justify-between items-center h-max sticky top-0 bg-white py-5">
+        <div
+          class="flex justify-between items-center h-max sticky top-0 bg-white py-5"
+        >
           <div class="flex gap-1">
             <h4 class="font-[Roboto] font-[500]">Sepetim</h4>
             <span class="font-[Roboto]">(4)</span>
@@ -1960,7 +1971,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -1995,7 +2008,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -2030,7 +2045,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -2065,7 +2082,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -2100,7 +2119,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -2135,7 +2156,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -2170,7 +2193,9 @@
               </div>
             </div>
             <div class="flex gap-4 text-xl">
-              <i class="fa-regular fa-heart"></i>
+              <i
+                class="fa-solid fa-heart favIcon text-gray-400 cursor-pointer"
+              ></i>
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
@@ -2180,6 +2205,8 @@
         >
           Ödeme Sayfasına Git
         </button>
+      </div>
+      <div class="product-modal hidden top-24 right-2 z-30 bg-white border-[1px] border-black p-1">
       </div>
       <div class="overlay" id="overlay"></div>
       <footer>
