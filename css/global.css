@@ -638,18 +638,81 @@ input[type="checkbox"].colorInput:checked + .colorLabel::before {
   padding: 10px;
   pointer-events: none;
   text-transform: uppercase;
-  transition: .2s
+  transition: 0.2s;
 }
 
 .customBox input:valid ~ span,
 .customBox input:focus ~ span {
-  transform: translate(20px,-6px);
+  transform: translate(20px, -6px);
   font-size: 10px;
   padding: 0px 5px;
   background: #fff;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   color: #000000b9;
+}
+
+.entryPromo {
+  height: 0;
+  overflow: hidden;
+}
+
+.promoContainer .sub-promo:has(input[type="checkbox"]:checked) + .entryPromo {
+  height: auto;
+}
+
+.promoContainer
+  .sub-promo:has(input[type="checkbox"]:checked)
+  .fa-chevron-down {
+  transform: rotate(-180deg);
+}
+
+.rating-stars label {
+  transition: all 0.2s ease;
+  float: right;
+  padding: 4px;
+}
+
+.rating-stars input:not(:checked) ~ label:hover,
+.rating-stars input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+
+.rating-stars input:checked ~ label {
+  color: #fd4;
+}
+
+.rating-stars input#rate-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 5px #952;
+}
+
+#rate-1:checked ~ form header::before {
+  content: "Hiç memnun kalmadım";
+}
+
+.rating-stars:has(input[type="radio"]#rate-1:checked) + form header::before {
+  content: "Hiç memnun kalmadım";
+}
+.rating-stars:has(input[type="radio"]#rate-2:checked) + form header::before {
+  content: "Beğenmedim";
+}
+.rating-stars:has(input[type="radio"]#rate-3:checked) + form header::before {
+  content: "İdare Eder";
+}
+.rating-stars:has(input[type="radio"]#rate-4:checked) + form header::before {
+  content: "Beğendim";
+}
+.rating-stars:has(input[type="radio"]#rate-5:checked) + form header::before {
+  content: "Çok Beğendim";
+}
+
+.rating-container form {
+  display: none;
+}
+
+.rating-stars:has(input:checked) + form  {
+  display: block;
 }
 
 @media (max-width: 1280px) {

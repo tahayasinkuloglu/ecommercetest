@@ -1308,7 +1308,7 @@
         <article
           class="flex max-xl:flex-col w-5/6 mx-auto gap-10 justify-between"
         >
-          <form action="" class="flex flex-col w-full gap-5 justify-between">
+          <div class="flex flex-col w-full gap-5 justify-between">
             <h2 class="text-3xl max-lg:text-2xl font-[Roboto] font-semibold">
               Üye Girişi
             </h2>
@@ -1319,12 +1319,12 @@
                 placeholder="E-Posta"
               />
             </div>
-            <input
-              type="submit"
-              class="font-[Roboto] bg-black border-2 border-black text-white w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-black hover:bg-white duration-200 font-semibold"
-              value="Giriş Yap"
-            />
-          </form>
+            <a
+              href="/pages/login-code.html"
+              class="text-center font-[Roboto] bg-black border-2 border-black text-white w-1/2 max-sm:w-2/3 mx-auto rounded-full py-3 max-sm:py-2 text-lg max-sm:text-base cursor-pointer hover:text-black hover:bg-white duration-200 font-semibold"
+              >Giriş Yap</a
+            >
+          </div>
           <div class="flex flex-col w-full gap-2 max-xl:gap-5 justify-between">
             <h2 class="font-[Roboto] text-3xl max-lg:text-2xl font-semibold">
               Yeni Üyelik
@@ -1620,11 +1620,12 @@
             </div>
           </div>
         </div>
-        <button
-          class="font-[Roboto] w-full bg-black text-white py-3 rounded-full font-[500] mt-7"
+        <a
+        href="/pages/cart.html"
+          class="text-center font-[Roboto] w-full bg-black text-white py-3 rounded-full font-[500] mt-7"
         >
           Ödeme Sayfasına Git
-        </button>
+        </a>
       </div>
       <div class="overlay" id="overlay"></div>
     </main>
