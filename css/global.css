@@ -615,6 +615,14 @@ input[type="checkbox"].colorInput:checked + .colorLabel::before {
   position: relative;
 }
 
+#tesst::placeholder {
+  color: white;
+}
+
+#tesst:focus::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .customBox input {
   font-family: "Roboto", "sans-serif";
   width: 100%;

@@ -1238,7 +1238,7 @@
             <div class="px-3 max-md:px-2 group cursor-pointer relative">
               <svg
                 id="searchBtnOpen"
-                class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-white dark:text-white group-hover:text-gray-400 duration-200 transition-colors"
+                class="w-[22px] h-[22px] max-md:w-5 max-md:h-5 text-white dark:text-white group-hover:text-gray-400 duration-200 transition-colors"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -1257,7 +1257,7 @@
             </div>
             <a href="/pages/login.html" class="py-5 px-3 max-md:px-2 group">
               <svg
-                class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-white dark:text-white group-hover:text-gray-400 duration-200"
+                class="w-[22px] h-[22px] max-md:w-5 max-md:h-5 text-white dark:text-white group-hover:text-gray-400 duration-200"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -1268,7 +1268,10 @@
                 />
               </svg>
             </a>
-            <a href="/pages/wishlist.html" class="py-5 px-3 max-md:px-2 group">
+            <a
+              href="/pages/wishlist.html"
+              class="py-5 px-3 max-md:hidden group"
+            >
               <svg
                 class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-white dark:text-white group-hover:text-gray-400 duration-200"
                 aria-hidden="true"
@@ -1288,7 +1291,7 @@
             <a id="openShopBag" href="#" class="py-5 px-3 max-md:px-2 group">
               <svg
                 id="shopBagSvg"
-                class="w-[22px] h-[22px] max-sm:w-3 max-sm:h-3 max-md:w-4 max-md:h-4 text-white dark:text-white group-hover:text-gray-400 duration-200"
+                class="w-[22px] h-[22px] max-md:w-5 max-md:h-5 text-white dark:text-white group-hover:text-gray-400 duration-200"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -1316,18 +1319,22 @@
             <div class="flex gap-5 w-full max-sm:flex-col">
               <button
                 class="w-full font-[Roboto] font-[600] border-2 border-black p-4 rounded-lg"
-                onclick="openCard('BankaKarti')"
-              >
-                Kredi veya Banka Kartı
-              </button>
-              <button
-                class="w-full font-[Roboto] font-[600] border-2 border-black p-4 rounded-lg"
                 onclick="openCard('KapidaOdeme')"
               >
                 Kapıda Ödeme
               </button>
+              <button
+                class="w-full font-[Roboto] font-[600] border-2 border-black p-4 rounded-lg"
+                onclick="openCard('BankaKarti')"
+              >
+                Kredi veya Banka Kartı
+              </button>
             </div>
-            <div id="BankaKarti" class="card flex flex-col gap-5 w-full">
+            <div
+              id="BankaKarti"
+              class="card flex flex-col gap-5 w-full"
+              style="display: none"
+            >
               <input
                 type="number"
                 class="font-[Roboto] border-[1px] border-black border-opacity-20 rounded-md p-3"
@@ -1339,7 +1346,11 @@
                 placeholder="Kart numarası"
               />
               <div class="flex gap-1 w-full">
-                <select name="" id="" class="w-full text-xl border-[1px] border-black border-opacity-20 rounded-md p-3">
+                <select
+                  name=""
+                  id=""
+                  class="w-full text-xl border-[1px] border-black border-opacity-20 rounded-md p-3"
+                >
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -1353,7 +1364,11 @@
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
-                <select name="" id="" class="w-full text-xl border-[1px] border-black border-opacity-20 rounded-md p-3">
+                <select
+                  name=""
+                  id=""
+                  class="w-full text-xl border-[1px] border-black border-opacity-20 rounded-md p-3"
+                >
                   <option value="2023">2023</option>
                   <option value="2024">2024</option>
                   <option value="2025">2025</option>
@@ -1373,35 +1388,76 @@
                   placeholder="CVV"
                 />
               </div>
-              <div>
+              <div class="flex flex-col">
                 <div class="flex gap-2">
-                  <input type="checkbox" name="" id="bilgilendirme">
-                  <label for="bilgilendirme" class="text-lg">Ön Bilgilendirme Formu'nu okudum ve onaylıyorum</label>
+                  <input type="checkbox" name="" id="bilgilendirme" />
+                  <label for="bilgilendirme" class="text-lg max-md:text-base">
+                    <button
+                      onclick="sozlesme1()"
+                      class="font-[Roboto] text-blue-600"
+                    >
+                      Ön Bilgilendirme Formu</button
+                    >'nu okudum ve onaylıyorum</label
+                  >
                 </div>
                 <div class="flex gap-2">
-                  <input type="checkbox" name="" id="sozlesme">
-                  <label for="sozlesme" class="text-lg">Satış Sözleşmesi'ni okudum ve onaylıyorum</label>
+                  <input type="checkbox" name="" id="sozlesme" />
+                  <label for="sozlesme" class="text-lg max-md:text-base">
+                    <button
+                      onclick="sozlesme2()"
+                      class="font-[Roboto] text-blue-600"
+                    >
+                      Satış Sözleşmesi</button
+                    >'ni okudum ve onaylıyorum</label
+                  >
                 </div>
+                <a
+                  href="#"
+                  class="text-white bg-black rounded-full px-7 py-3 font-[Roboto] font-[500] w-max mx-auto mt-5"
+                >
+                  Sipariş Ver
+                </a>
               </div>
             </div>
-            <div
-              id="KapidaOdeme"
-              class="card flex flex-col gap-2"
-              style="display: none"
-            >
+            <div id="KapidaOdeme" class="card flex flex-col gap-2">
               <h2 class="font-[Roboto] font-[500] text-center text-xl">
-                Lorem Ipsum Dolor
+                IBAN: TR5646156435216584651564
               </h2>
               <p class="font-[Roboto]">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
                 aliquid aliquam facere eaque ad. Animi iste nulla necessitatibus
                 excepturi omnis dignissimos quos blanditiis vel tempora!
               </p>
-              <a
-                href="#"
-                class="text-white bg-black rounded-full px-7 py-3 font-[Roboto] font-[500] w-max mx-auto mt-5"
-                >Sipariş Ver</a
-              >
+              <div class="flex flex-col mt-5">
+                <div class="flex gap-2">
+                  <input type="checkbox" name="" id="bilgilendirme1" />
+                  <label for="bilgilendirme1" class="text-lg max-md:text-base">
+                    <button
+                      onclick="sozlesme1()"
+                      class="font-[Roboto] text-blue-600"
+                    >
+                      Ön Bilgilendirme Formu</button
+                    >'nu okudum ve onaylıyorum</label
+                  >
+                </div>
+                <div class="flex gap-2">
+                  <input type="checkbox" name="" id="sozlesme1" />
+                  <label for="sozlesme1" class="text-lg max-md:text-base">
+                    <button
+                      onclick="sozlesme2()"
+                      class="font-[Roboto] text-blue-600"
+                    >
+                      Satış Sözleşmesi</button
+                    >'ni okudum ve onaylıyorum</label
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="text-white bg-black rounded-full px-7 py-3 font-[Roboto] font-[500] w-max mx-auto mt-5"
+                >
+                  Sipariş Ver
+                </a>
+              </div>
             </div>
           </div>
           <div
@@ -1418,12 +1474,12 @@
                 <div class="font-[Roboto] font-[500]">₺9.800,00</div>
               </div>
               <div class="flex justify-between">
-                <p class="font-[Roboto] font-[500]">Kargo</p>
-                <div class="font-[Roboto] font-[500]">Ücretsiz</div>
-              </div>
-              <div class="flex justify-between">
                 <p class="font-[Roboto] font-[500]">KDV</p>
                 <div class="font-[Roboto] font-[500]">₺75</div>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-[Roboto] font-[500]">Kargo</p>
+                <div class="font-[Roboto] font-[500]">Ücretsiz</div>
               </div>
               <div
                 class="flex justify-between border-t-2 border-black my-4 py-2"
@@ -1432,36 +1488,6 @@
                 <div class="font-[Roboto] font-[500]">₺9.875,00</div>
               </div>
               <div class="flex flex-col gap-2">
-                <div class="flex flex-col gap-2 promoContainer">
-                  <div
-                    class="flex justify-between items-center sub-promo select-none"
-                  >
-                    <label
-                      for="promo"
-                      class="font-[500] cursor-pointer text-sm sdfg"
-                      >Hediye kartı veya Promosyon Kodu</label
-                    >
-                    <input type="checkbox" name="" id="promo" class="hidden" />
-                    <i class="fa-solid fa-chevron-down text-sm"></i>
-                  </div>
-                  <div class="flex gap-5 mb-5 entryPromo">
-                    <input
-                      type="text"
-                      class="w-full border-[1px] border-black border-opacity-50 outline-none font-[Roboto] font-[500] text-center py-1 uppercase"
-                    />
-                    <a
-                      href="#"
-                      class="font-[Roboto] text-white bg-black px-2 py-1 w-1/3 text-center"
-                      >UYGULA</a
-                    >
-                  </div>
-                </div>
-                <a
-                  href="/pages/login-guest.html"
-                  class="text-center font-[Roboto] w-full bg-black text-white py-3 rounded-full font-[500]"
-                >
-                  Sepeti Onayla
-                </a>
                 <div class="flex flex-col mt-2">
                   <h2 class="font-[Roboto] font-[600] mb-2">
                     Yardıma mı ihtiyacınız var?
@@ -1756,11 +1782,318 @@
           </div>
         </div>
         <a
-        href="/pages/cart.html"
+          href="/pages/cart.html"
           class="text-center font-[Roboto] w-full bg-black text-white py-3 rounded-full font-[500] mt-7"
         >
           Ödeme Sayfasına Git
         </a>
+      </div>
+      <div
+        id="sozlesme-1"
+        class="hidden left-1/2 w-3/4 h-4/5 top-24 shadow-lg z-40 -translate-x-1/2 font-[Roboto] bg-white text-black p-5 overflow-y-auto overscroll-y-contain"
+      >
+        <button
+          class="bg-black text-white px-5 py-2 font-[Roboto] font-[500] mb-5"
+          onclick="close1()"
+        >
+          KAPAT
+        </button>
+        <p class="font-[Roboto]">
+          1.KONU İşbu Satış Sözleşmesi Ön Bilgi Formu’nun konusu, SATICI' nın,
+          SİPARİŞ VEREN/ALICI' ya satışını yaptığı, aşağıda nitelikleri ve satış
+          fiyatı belirtilen ürün/ürünlerin satışı ve teslimi ile ilgili olarak
+          6502 sayılı Tüketicilerin Korunması Hakkındaki Kanun - Mesafeli
+          Sözleşmeler Yönetmeliği (RG:27.11.2014/29188) hükümleri gereğince
+          tarafların hak ve yükümlülüklerini kapsamaktadır. İş bu ön
+          bilgilendirme formunu kabul etmekle ALICI, sözleşme konusu siparişi
+          onayladığı takdirde sipariş konusu bedeli ve varsa kargo ücreti, vergi
+          gibi belirtilen ek ücretleri ödeme yükümlülüğü altına gireceğini ve bu
+          konuda bilgilendirildiğini peşinen kabul eder. 2. SATICI BİLGİLERİ
+          Ünvanı : {_saticiunvan_} Adres : {_saticiadres_} Telefon :
+          {_saticitelefon_} Faks : {_saticifax_} Eposta : {_saticimail_} 3.
+          ALICI BİLGİLERİ(Bundan sonra ALICI olarak anılacaktır.) Teslim
+          edilecek kişi : {_aliciad_} {_alicisoyad_} Teslimat Adresi :
+          {_teslimatadresi_} Telefon : {_alicitelefon_} Eposta/kullanıcı adı :
+          {_alicimail_} 4. SÖZLEŞME KONUSU ÜRÜN/ÜRÜNLER BİLGİLERİ 4.1 Malın /
+          Ürün/Ürünlerin / Hizmetin temel özellikleri (türü, miktarı,
+          marka/modeli, rengi, adedi) SATICI’ya ait internet sitesinde yer
+          almaktadır. Ürünün temel özelliklerini kampanya süresince
+          inceleyebilirsiniz. Kampanya tarihine kadar geçerlidir. 4.2 Listelenen
+          ve sitede ilan edilen fiyatlar satış fiyatıdır. İlan edilen fiyatlar
+          ve vaatler güncelleme yapılana ve değiştirilene kadar geçerlidir.
+          Süreli olarak ilan edilen fiyatlar ise belirtilen süre sonuna kadar
+          geçerlidir. 4.3 Sözleşme konusu mal ya da hizmetin tüm vergiler dâhil
+          satış fiyatı aşağıdaki tabloda gösterilmiştir. {_urunbilgileri_} Kargo
+          Tutarı : {_kargo_} Ödeme Şekli ve Planı : {_odemesekli_}
+          {_odemetablosu_} Teslimat Adresi : {_teslimatadresi_} Fatura Adresi :
+          {_faturaadresi_} Sipariş Tarihi : {_tarih_} 5. GENEL HÜKÜMLER 5.1.
+          ALICI, SATICI’ya ait internet sitesinde sözleşme konusu ürünün temel
+          nitelikleri, satış fiyatı ve ödeme şekli ile teslimata ilişkin ön
+          bilgileri okuyup, bilgi sahibi olduğunu, elektronik ortamda gerekli
+          teyidi verdiğini kabul, beyan ve taahhüt eder. ALICININ; Ön
+          Bilgilendirmeyi elektronik ortamda teyit etmesi, mesafeli satış
+          sözleşmesinin kurulmasından evvel, SATICI tarafından ALICI' ya
+          verilmesi gereken adresi, siparişi verilen ürünlere ait temel
+          özellikleri, ürünlerin vergiler dâhil fiyatını, ödeme ve teslimat
+          bilgilerini de doğru ve eksiksiz olarak edindiğini kabul, beyan ve
+          taahhüt eder. 5.2. Sözleşme konusu her bir ürün, 30 günlük yasal
+          süreyi aşmamak kaydı ile ALICI' nın yerleşim yeri uzaklığına bağlı
+          olarak internet sitesindeki ön bilgiler kısmında belirtilen süre
+          zarfında ALICI veya ALICI’ nın gösterdiği adresteki kişi ve/veya
+          kuruluşa teslim edilir. Bu süre içinde ürünün ALICI’ya teslim
+          edilememesi durumunda, ALICI’nın sözleşmeyi feshetme hakkı saklıdır.
+          5.3. SATICI, sözleşme konusu ürünü eksiksiz, siparişte belirtilen
+          niteliklere uygun ve varsa garanti belgeleri, kullanım kılavuzları ile
+          teslim etmeyi, her türlü ayıptan arî olarak yasal mevzuat gereklerine
+          sağlam, standartlara uygun bir şekilde işin gereği olan bilgi ve
+          belgeler ile işi doğruluk ve dürüstlük esasları dâhilinde ifa etmeyi,
+          hizmet kalitesini koruyup yükseltmeyi, işin ifası sırasında gerekli
+          dikkat ve özeni göstermeyi, ihtiyat ve öngörü ile hareket etmeyi
+          kabul, beyan ve taahhüt eder. 5.4. SATICI, sözleşmeden doğan ifa
+          yükümlülüğünün süresi dolmadan ALICI’yı bilgilendirmek ve açıkça
+          onayını almak suretiyle eşit kalite ve fiyatta farklı bir ürün tedarik
+          edebilir. 5.5. SATICI, sipariş konusu ürün veya hizmetin yerine
+          getirilmesinin imkânsızlaşması halinde sözleşme konusu
+          yükümlülüklerini yerine getiremezse, bu durumu, öğrendiği tarihten
+          itibaren 3 gün içinde yazılı olarak tüketiciye bildireceğini, 14
+          günlük süre içinde toplam bedeli ALICI’ya iade edeceğini kabul, beyan
+          ve taahhüt eder. 5.6. ALICI, sözleşme konusu ürünün teslimatı için
+          işbu Ön Bilgilendirme Formunu elektronik ortamda teyit edeceğini,
+          herhangi bir nedenle sözleşme konusu ürün bedelinin ödenmemesi ve/veya
+          banka kayıtlarında iptal edilmesi halinde, SATICI’ nın sözleşme konusu
+          ürünü teslim yükümlülüğünün sona ereceğini kabul, beyan ve taahhüt
+          eder. 5.7. ALICI, Sözleşme konusu ürünün ALICI veya ALICI’nın
+          gösterdiği adresteki kişi ve/veya kuruluşa tesliminden sonra ALICI'ya
+          ait kredi kartının yetkisiz kişilerce haksız kullanılması sonucunda
+          sözleşme konusu ürün bedelinin ilgili banka veya finans kuruluşu
+          tarafından SATICI'ya ödenmemesi halinde, ALICI Sözleşme konusu ürünü 3
+          gün içerisinde nakliye gideri SATICI’ya ait olacak şekilde SATICI’ya
+          iade edeceğini kabul, beyan ve taahhüt eder. 5.8. SATICI, tarafların
+          iradesi dışında gelişen, önceden öngörülemeyen ve tarafların
+          borçlarını yerine getirmesini engelleyici ve/veya geciktirici hallerin
+          oluşması gibi mücbir sebepler halleri nedeni ile sözleşme konusu ürünü
+          süresi içinde teslim edemez ise, durumu ALICI' ya bildireceğini kabul,
+          beyan ve taahhüt eder. ALICI da siparişin iptal edilmesini, sözleşme
+          konusu ürünün varsa emsali ile değiştirilmesini ve/veya teslimat
+          süresinin engelleyici durumun ortadan kalkmasına kadar ertelenmesini
+          SATICI’ dan talep etme hakkına haizdir. ALICI tarafından siparişin
+          iptal edilmesi halinde ALICI’ nın nakit ile yaptığı ödemelerde, ürün
+          tutarı 14 gün içinde kendisine nakden ve defaten ödenir. ALICI’ nın
+          kredi kartı ile yaptığı ödemelerde ise, ürün tutarı, siparişin ALICI
+          tarafından iptal edilmesinden sonra 14 gün içerisinde ilgili bankaya
+          iade edilir. ALICI, SATICI tarafından kredi kartına iade edilen
+          tutarın banka tarafından ALICI hesabına yansıtılmasına ilişkin
+          ortalama sürecin 2 ile 3 haftayı bulabileceğini, bu tutarın bankaya
+          iadesinden sonra ALICI’ nın hesaplarına yansıması halinin tamamen
+          banka işlem süreci ile ilgili olduğundan, ALICI, olası gecikmeler için
+          SATICI’ yı sorumlu tutamayacağını kabul, beyan ve taahhüt eder. 6.
+          FATURA BİLGİLERİ Ad/Soyad/Unvan : {_aliciad_} {_alicisoyad_} Adres :
+          {_teslimatadresi_} Telefon : {_alicitelefon_} Eposta/kullanıcı adı :
+          {_alicimail_} Fatura teslim : Fatura sipariş teslimatı sırasında
+          fatura adresine sipariş ile birlikte teslim edilecektir. 7. CAYMA
+          HAKKI 7.1. ALICI; mal satışına ilişkin mesafeli sözleşmelerde, ürünün
+          kendisine veya gösterdiği adresteki kişi/kuruluşa teslim tarihinden
+          itibaren 14 (on dört) gün içerisinde, SATICI’ya bildirmek şartıyla
+          hiçbir hukuki ve cezai sorumluluk üstlenmeksizin ve hiçbir gerekçe
+          göstermeksizin malı reddederek sözleşmeden cayma hakkını kullanabilir.
+          Hizmet sunumuna ilişkin mesafeli sözleşmelerde ise, bu süre
+          sözleşmenin imzalandığı tarihten itibaren başlar. Cayma hakkı süresi
+          sona ermeden önce, tüketicinin onayı ile hizmetin ifasına başlanan
+          hizmet sözleşmelerinde cayma hakkı kullanılamaz. Cayma hakkının
+          kullanımından kaynaklanan masraflar SATICI’ ya aittir. ALICI, iş bu
+          sözleşmeyi kabul etmekle, cayma hakkı konusunda bilgilendirildiğini
+          peşinen kabul eder. 7.2. Cayma hakkının kullanılması için 14 (ondört)
+          günlük süre içinde SATICI' ya iadeli taahhütlü posta, faks veya eposta
+          ile yazılı bildirimde bulunulması ve ürünün işbu sözleşmede düzenlenen
+          düzenlenen "Cayma Hakkı Kullanılamayacak Ürünler" hükümleri
+          çerçevesinde kullanılmamış olması şarttır. Bu hakkın kullanılması
+          halinde, 7.2.1 3. kişiye veya ALICI’ ya teslim edilen ürünün faturası,
+          (İade edilmek istenen ürünün faturası kurumsal ise, geri iade ederken
+          kurumun düzenlemiş olduğu iade faturası ile birlikte gönderilmesi
+          gerekmektedir. Faturası kurumlar adına düzenlenen sipariş iadeleri
+          İADE FATURASI kesilmediği takdirde tamamlanamayacaktır.) 7.2.2. İade
+          formu, 7.2.3. İade edilecek ürünlerin kutusu, ambalajı, varsa standart
+          aksesuarları ile birlikte eksiksiz ve hasarsız olarak teslim edilmesi
+          gerekmektedir. 7.2.4. SATICI, cayma bildiriminin kendisine
+          ulaşmasından itibaren en geç 10 günlük süre içerisinde toplam bedeli
+          ve ALICI’ yı borç altına sokan belgeleri ALICI’ ya iade etmek ve 20
+          günlük süre içerisinde malı iade almakla yükümlüdür. 7.2.5. ALICI’ nın
+          kusurundan kaynaklanan bir nedenle malın değerinde bir azalma olursa
+          veya iade imkânsızlaşırsa ALICI kusuru oranında SATICI’ nın
+          zararlarını tazmin etmekle yükümlüdür. Ancak cayma hakkı süresi içinde
+          malın veya ürünün usulüne uygun kullanılmasın sebebiyle meydana gelen
+          değişiklik ve bozulmalardan ALICI sorumlu değildir. 7.2.6. Cayma
+          hakkının kullanılması nedeniyle SATICI tarafından düzenlenen kampanya
+          limit tutarının altına düşülmesi halinde kampanya kapsamında
+          faydalanılan indirim miktarı iptal edilir. 8. CAYMA HAKKI
+          KULLANILAMAYACAK ÜRÜNLER 8.1. a) Fiyatı finansal piyasalardaki
+          dalgalanmalara bağlı olarak değişen ve satıcı veya sağlayıcının
+          kontrolünde olmayan mal veya hizmetlere ilişkin sözleşmeler. b)
+          Tüketicinin istekleri veya kişisel ihtiyaçları doğrultusunda
+          hazırlanan mallara ilişkin sözleşmeler. c) Çabuk bozulabilen veya son
+          kullanma tarihi geçebilecek malların teslimine ilişkin sözleşmeler. ç)
+          Tesliminden sonra ambalaj, bant, mühür, paket gibi koruyucu unsurları
+          açılmış olan mallardan; iadesi sağlık ve hijyen açısından uygun
+          olmayanların teslimine ilişkin sözleşmeler. d) Tesliminden sonra başka
+          ürünlerle karışan ve doğası gereği ayrıştırılması mümkün olmayan
+          mallara ilişkin sözleşmeler. e) Malın tesliminden sonra ambalaj, bant,
+          mühür, paket gibi koruyucu unsurları açılmış olması halinde maddi
+          ortamda sunulan kitap, dijital içerik ve bilgisayar sarf
+          malzemelerine, veri kaydedebilme ve veri depolama cihazlarına ilişkin
+          sözleşmeler. f) Abonelik sözleşmesi kapsamında sağlananlar dışında,
+          gazete ve dergi gibi süreli yayınların teslimine ilişkin sözleşmeler.
+          g) Belirli bir tarihte veya dönemde yapılması gereken, konaklama, eşya
+          taşıma, araba kiralama, yiyecek-içecek tedariki ve eğlence veya
+          dinlenme amacıyla yapılan boş zamanın değerlendirilmesine ilişkin
+          sözleşmeler. ğ) Elektronik ortamda anında ifa edilen hizmetler veya
+          tüketiciye anında teslim edilen gayrimaddi mallara ilişkin
+          sözleşmeler. h) Cayma hakkı süresi sona ermeden önce, tüketicinin
+          onayı ile ifasına başlanan hizmetlere ilişkin sözleşmeler. Kozmetik ve
+          kişisel bakım ürünleri, iç giyim ürünleri, mayo, bikini, kitap,
+          kopyalanabilir yazılım ve programlar, DVD, VCD, CD ve kasetler ile
+          kırtasiye sarf malzemeleri (toner, kartuş, şerit vb.) iade
+          edilebilmesi için ambalajlarının açılmamış, denenmemiş, bozulmamış ve
+          kullanılmamış olmaları gerekir. 8.2. SATICI şikâyet ve itirazları
+          konusunda başvurularını, aşağıdaki kanunda belirtilen parasal sınırlar
+          dâhilinde tüketicinin yerleşim yerinin bulunduğu veya tüketici
+          işleminin yapıldığı yerdeki tüketici sorunları hakem heyetine veya
+          tüketici mahkemesine yapabilir. Parasal sınıra ilişkin bilgiler
+          aşağıdadır: 28/05/2014 tarihinden itibaren geçerli olmak üzere: a)
+          6502 sayılı Tüketicinin Korunması Hakkında Kanun’un 68. Maddesi gereği
+          değeri 2.000,00 (ikibin) TL’nin altında olan uyuşmazlıklarda ilçe
+          tüketici hakem heyetlerine, b) Değeri 3.000,00(üçbin)TL’ nin altında
+          bulunan uyuşmazlıklarda il tüketici hakem heyetlerine, c) Büyükşehir
+          statüsünde bulunan illerde ise değeri 2.000,00 (ikibin) TL ile
+          3.000,00(üçbin)TL’ arasındaki uyuşmazlıklarda il tüketici hakem
+          heyetlerine başvuru yapılmaktadır. İşbu Sözleşme ticari amaçlarla
+          yapılmaktadır. SATICI: {_sirketadi_} ALICI: {_aliciad_} {_alicisoyad_}
+          TARİH: {_tarih_}
+        </p>
+      </div>
+      <div
+        id="sozlesme-2"
+        class="hidden left-1/2 w-3/4 h-4/5 top-24 shadow-lg z-40 -translate-x-1/2 font-[Roboto] bg-white text-black p-5 overflow-y-auto overscroll-y-contain"
+      >
+        <button
+          class="bg-black text-white px-5 py-2 font-[Roboto] font-[500] mb-5"
+          onclick="close2()"
+        >
+          KAPAT
+        </button>
+        <p class="font-[Roboto]">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+          numquam fuga tenetur, illum voluptatibus, qui perferendis dolores
+          nesciunt blanditiis at ea! Aspernatur, at, odit a laboriosam quae
+          error velit, atque nobis consequatur rem et unde? Voluptates ducimus,
+          repudiandae debitis, repellat iure amet cupiditate rem placeat itaque
+          dolore magni modi, quas similique. Molestias id repudiandae facilis
+          porro odio quo accusantium cumque soluta eaque, minima quia quos iure
+          quisquam iste delectus ex sint aliquam laboriosam dignissimos. Officia
+          optio dolorum commodi explicabo natus eos iusto, enim voluptatem sunt
+          eveniet earum fugit quibusdam voluptatum possimus ipsam aut adipisci
+          corporis cupiditate ea. Voluptate corporis est facilis in, quos
+          architecto asperiores non nam voluptates totam ad? Quidem consectetur
+          est dolores repudiandae ducimus! Labore earum laudantium doloribus?
+          Quo eos et corrupti facere harum saepe labore iste voluptatem cum
+          architecto quod, molestias a, reprehenderit sit asperiores, fuga amet
+          quia tempore adipisci ea eum atque! Sunt facere, eum quia, facilis
+          nihil ipsam debitis recusandae nobis adipisci quaerat quos quis.
+          Voluptates illo recusandae assumenda provident quibusdam maxime quia
+          sint voluptatem exercitationem dolorem, veniam excepturi ad quidem
+          perspiciatis odio nesciunt quam! Recusandae nesciunt fugit, pariatur
+          odit id blanditiis quo soluta quidem. Ab, magni aperiam tempore quidem
+          excepturi sequi repellat soluta? Inventore obcaecati provident hic
+          nulla quidem sed quae cupiditate aperiam odit assumenda? Eius
+          doloribus fugiat possimus pariatur neque provident nisi quis quo
+          dolore. Nihil quasi quis non consectetur recusandae nostrum sit modi
+          perspiciatis itaque ex soluta eaque quibusdam mollitia, asperiores id
+          quam suscipit possimus. Facilis quidem sequi nobis unde aliquam quas
+          harum quod quibusdam ipsum temporibus atque non, repellat nesciunt
+          iste rem numquam blanditiis officia praesentium a quis perferendis
+          consequatur itaque in neque. Laudantium fuga, animi ad, eius sapiente
+          a quo deserunt ea voluptatum sequi doloribus, minus reiciendis.
+          Debitis cum quos quae ut deleniti voluptas laborum optio, eaque porro
+          non libero harum quia cupiditate, nobis exercitationem possimus,
+          adipisci sint? Nobis animi dolor ex totam a quo obcaecati sequi earum
+          vitae, inventore reiciendis eos, iusto magnam asperiores eum
+          consectetur maiores? Voluptatum, aliquam repellat consectetur esse
+          quam alias, error itaque ipsum similique, totam vel blanditiis
+          corporis dolorem nulla architecto aliquid culpa tempore distinctio!
+          Laboriosam asperiores molestias ipsum illum aliquid, eligendi, dicta
+          molestiae quam est quisquam ut? Praesentium eligendi impedit quo modi
+          dolorum. Neque cupiditate sit aperiam quos quisquam? Magnam, nihil
+          temporibus? Quae expedita vitae accusamus eligendi, quasi reiciendis
+          dicta iste incidunt deserunt. Magni officia porro sapiente, aliquid
+          cumque modi? Ea illo optio delectus voluptatem. Aperiam facilis
+          accusamus magnam aut voluptates labore totam repellat neque sequi
+          facere culpa pariatur temporibus, recusandae molestiae dicta at quis.
+          Tenetur quasi voluptate, tempora unde eum error accusantium in nisi
+          delectus aliquid. Quam rem aliquid quibusdam aspernatur doloremque,
+          incidunt sint consectetur quaerat eum esse temporibus animi id quas
+          error, vero nisi! Quo molestiae dicta eos odio sunt asperiores in,
+          laudantium illum itaque officiis voluptatum velit est quos blanditiis
+          veritatis facere ut repellat reiciendis tempora deserunt fugiat,
+          praesentium iure officia at? Dolorem, quas eum quibusdam hic quisquam
+          culpa architecto consequuntur corrupti adipisci non similique enim
+          illum corporis eligendi iste, voluptate minus tempore libero
+          exercitationem perspiciatis! Unde nisi in, magnam distinctio labore
+          optio esse necessitatibus, voluptates autem totam consequuntur. Eum
+          laudantium neque dolorum quisquam, delectus, vitae ad quidem omnis
+          repellat tempora doloremque ut officiis ipsum provident facilis
+          dolores porro temporibus rem! Eos, iste perspiciatis? Pariatur cum
+          quaerat animi perferendis earum reprehenderit amet at. Consectetur
+          voluptatem nesciunt quisquam quidem deserunt minima facere culpa
+          aperiam dolore accusamus unde omnis laborum repellat dicta consequatur
+          aut, quod, tempora magnam exercitationem quis vero? Error saepe qui
+          unde quasi sed aliquid accusamus sit ratione magnam repudiandae
+          deleniti omnis provident ipsam nostrum laboriosam molestiae dolore
+          dignissimos eos, iure facere. Corrupti ut quidem inventore nihil
+          architecto dignissimos obcaecati, ea nesciunt officia ipsa facilis
+          saepe aut vitae expedita, temporibus alias beatae minus porro
+          accusantium doloribus iure in? Dolorum natus, nihil nemo libero et
+          soluta velit minus delectus, dolorem praesentium fugiat doloremque
+          vitae rerum voluptatibus vero impedit eligendi voluptatum quam
+          molestias. Quibusdam dicta similique deleniti porro accusantium velit
+          dolorem. Aliquam, nihil? Pariatur non quae sapiente aliquid. Excepturi
+          iusto aut ipsa? Non optio aut, obcaecati laudantium, numquam porro
+          quam corporis temporibus magni quas fugiat at aliquid amet ipsa autem
+          nemo consequuntur veniam. Fuga vel, quia voluptatum praesentium autem
+          perspiciatis rerum quaerat eveniet possimus velit deserunt harum hic,
+          dolorem dicta! Doloremque temporibus aperiam optio quasi, totam error
+          culpa impedit quod velit ab illum ad ullam incidunt aliquam quis sit
+          architecto necessitatibus officia! Aperiam officiis ipsa neque dolor
+          recusandae voluptas mollitia nostrum quaerat debitis laudantium nemo
+          et eius aliquam architecto, necessitatibus explicabo aut asperiores,
+          facere consectetur corrupti. Dolore expedita voluptatibus sequi
+          tempora magnam repudiandae eveniet non, iure aspernatur officiis,
+          provident amet vitae culpa dolor ratione, dolores blanditiis quae modi
+          nihil eligendi architecto sunt eos maiores et. Hic repellendus eius
+          asperiores nulla perspiciatis praesentium, aut eos tempora iure
+          maxime, dignissimos quod! Iure nesciunt minima fugiat ea reiciendis
+          quo aliquid. Odio cum eos temporibus laudantium molestias beatae optio
+          eaque officia necessitatibus cupiditate? Cum quae dolore aliquid!
+          Consectetur, voluptatem. Soluta quo eum aspernatur laboriosam incidunt
+          ea. Qui provident facilis, maiores sint laudantium enim, laboriosam
+          necessitatibus nostrum at exercitationem perferendis molestias
+          excepturi? Saepe cum quam ducimus laboriosam iusto, ut quae, quaerat
+          iure exercitationem minima quo. Quisquam nisi iste quo iusto
+          necessitatibus soluta commodi quibusdam consectetur? Laudantium alias
+          perspiciatis veritatis numquam reprehenderit tempore modi, magni vel
+          ad ducimus maxime reiciendis ipsam quia odio deleniti accusamus dolore
+          laboriosam saepe sunt eveniet velit. Aut nam tempore accusantium
+          dolorum voluptate. Magni, minus iusto? Doloremque aspernatur assumenda
+          quibusdam quaerat excepturi quia, corrupti tempora? Nemo nesciunt
+          ipsum accusamus reprehenderit? Veritatis corrupti sunt voluptate iste
+          velit consequatur molestias cumque minus numquam est, dolor molestiae
+          rem totam dolorum ad! Sed neque laboriosam unde, deserunt sint
+          suscipit aliquam harum accusantium provident! Dignissimos ipsum amet
+          praesentium magnam cum animi qui obcaecati veniam, odit suscipit
+          minima corporis dicta doloribus debitis mollitia deleniti quis
+          architecto blanditiis nam iure unde voluptate excepturi error!
+          Corrupti temporibus facilis quaerat molestiae nam accusantium
+          accusamus quo illo, tenetur eius officiis, quos magnam odit cum culpa
+          nesciunt. Suscipit sed fugiat eum fuga quod repellat autem sit.
+        </p>
       </div>
       <div class="overlay" id="overlay"></div>
       <footer>
@@ -1845,9 +2178,37 @@
             <a href="#" class="hover:underline">ÇEREZ POLİTİKASI</a>
             <a href="#" class="hover:underline">YASAL BİLGİLER</a>
           </div>
+          <div class="font-[Roboto] font-[500] text-center bg-black text-white">
+            Webnearly ©2023 Tüm hakkı saklıdır.
+          </div>
         </article>
       </footer>
     </main>
     <script src="../js/global.js"></script>
+    <script>
+      function sozlesme1() {
+        const sozlesme = document.getElementById("sozlesme-1");
+        sozlesme.classList.remove("hidden");
+        sozlesme.classList.add("fixed");
+      }
+
+      function close1() {
+        const sozlesme = document.getElementById("sozlesme-1");
+        sozlesme.classList.remove("fixed");
+        sozlesme.classList.add("hidden");
+      }
+
+      function sozlesme2() {
+        const sozlesme = document.getElementById("sozlesme-2");
+        sozlesme.classList.remove("hidden");
+        sozlesme.classList.add("fixed");
+      }
+
+      function close2() {
+        const sozlesme = document.getElementById("sozlesme-2");
+        sozlesme.classList.remove("fixed");
+        sozlesme.classList.add("hidden");
+      }
+    </script>
   </body>
 </html>
