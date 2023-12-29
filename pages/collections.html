@@ -1365,13 +1365,12 @@
         </article>
         <article class="flex w-full lg:w-2/3 flex-col py-5 gap-5 overflow-auto">
           <h2 class="font-[Roboto] font-semibold text-2xl">Koleksiyonlarım</h2>
-          <div class="border-[1px] w-2/3 rounded-md p-5 flex flex-col gap-4">
+          <div class="border-[1px] w-2/3 max-xl:w-full rounded-md p-5 flex flex-col gap-4">
             <div class="flex justify-between">
               <p class="font-[Roboto] font-[500]">Koleksiyonum</p>
               <button id="deleteModal" onclick="deleteModal()">
                 <i class="fa-solid fa-xmark"></i>
               </button>
-
               <div id="modalContainer" class="hidden z-40 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-white text-black font-[Roboto] border-[1px] rounded-md p-10 shadow-xl">
                 <div class="flex flex-col gap-2">
                   <p class="font-[Roboto] text-lg font-[500]">Koleksiyonu Sil</p>
@@ -1383,13 +1382,13 @@
                 </div>
               </div>
             </div>
-            <div class="flex items-center">
-              <div class="flex gap-2 w-1/2">
+            <div class="flex items-center max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-5">
+              <div class="flex gap-2 w-1/2 max-md:w-full">
                 <img src="../assets/nike-2.webp" class="w-20 rounded-md">
                 <img src="../assets/nike-3.webp" class="w-20 rounded-md">
                 <img src="../assets/nike-4.webp" class="w-20 rounded-md">
               </div>
-              <div class="flex w-1/2 justify-end gap-2">
+              <div class="flex w-1/2 justify-end gap-2 max-[600px]:justify-start max-[600px]:w-full">
                 <button class="font-[Roboto] border-[1px] rounded-full w-max h-max px-4 py-2">Paylaş</button>
                 <a href="/pages/myCollections.html" class="font-[Roboto] border-[1px] rounded-full w-max h-max px-4 py-2 text-red-500 border-red-500">Koleksiyona Git</a>
               </div>
